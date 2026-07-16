@@ -114,8 +114,17 @@ ssh-keygen -t ed25519 -C "github-actions" -f gha_key -N ""
 # add the PUBLIC key to the server's ~/.ssh/authorized_keys for the deploy user
 ```
 
-Then in GitHub → repo **Settings → Secrets and variables → Actions → New repository secret**,
-add:
+These go in a protected **`production` environment**, not as plain repository
+secrets — the deploy job declares `environment: production`, which lets you gate
+deploys behind a reviewer and lock them to `main`.
+
+1. GitHub → repo **Settings → Environments → New environment** → name it
+   **`production`** (must match the workflow exactly).
+2. (Recommended) Under that environment, set **Deployment protection rules**:
+   - **Required reviewers** → yourself, so a human approves each production deploy.
+   - **Deployment branches** → *Selected branches* → `main`, so only `main` can
+     deploy.
+3. Under the same environment, **Environment secrets → Add secret**, add:
 
 | Secret        | Value                                                        |
 | ------------- | ------------------------------------------------------------ |
@@ -125,8 +134,15 @@ add:
 | `SSH_PORT`    | SSH port (optional; defaults to `22`)                        |
 | `DEPLOY_PATH` | absolute path to the clone (e.g. `/var/www/provecq`)         |
 
-That's it. The next merge to `main` deploys automatically. You can also trigger a
-deploy by hand: **Actions → Deploy to server → Run workflow**.
+That's it. The next merge to `main` deploys automatically (pausing for your
+approval if you enabled required reviewers). You can also trigger a deploy by hand:
+**Actions → Deploy to server → Run workflow**.
+
+> Prefer no environment gating? You can instead add these as **repository secrets**
+> (Settings → Secrets and variables → Actions) and delete the `environment:
+> production` line from the workflow — but you lose the reviewer/branch protection.
+> Repo secrets of the same name also act as a fallback if the environment doesn't
+> define them.
 
 > The workflow only becomes active once `.github/workflows/deploy.yml` exists on
 > your **default branch**. This branch (`claude/new-session-pja77r`) carries it —
