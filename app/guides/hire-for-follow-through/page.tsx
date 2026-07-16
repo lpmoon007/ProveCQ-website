@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "How to Hire People Who Actually Follow Through | ProveCQ",
+  title: "How to Hire People Who Actually Follow Through",
   description:
     "Interviews reward people who talk well, not people who follow through. Learn how to hire for behavior — initiative, applied grit, and learnability — so your next hire delivers.",
 };

@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Promote From Within or Hire Outside? How to Decide | ProveCQ",
+  title: "Promote From Within or Hire Outside? How to Decide",
   description:
     "Promoting from within builds loyalty but risks the Peter Principle; hiring outside brings skills but risks culture and cost. Learn how to decide with behavioral proof.",
 };

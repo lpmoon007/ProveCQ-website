@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "How to Build a Leadership Bench Before You Need It | ProveCQ",
+  title: "How to Build a Leadership Bench Before You Need It",
   description:
     "Scaling stalls when leadership cannot keep up. Learn how to build a leadership bench early by proving and developing your highest-capacity people before the need is urgent.",
 };

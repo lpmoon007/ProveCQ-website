@@ -6,7 +6,7 @@ import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
   title:
-    "Behavioral Assessment vs. Personality Test: What is the Difference? | ProveCQ",
+    "Behavioral Assessment vs. Personality Test: What is the Difference?",
   description:
     "Personality tests measure who someone says they are; behavioral assessment measures what they actually do. Learn the difference and why behavior predicts performance.",
 };

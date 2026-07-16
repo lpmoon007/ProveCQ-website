@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Succession Planning for Small Business (Without a Big HR Team) | ProveCQ",
+    "Succession Planning for Small Business (Without a Big HR Team)",
   description:
     "Succession planning is not just for the corner office. Learn how small businesses can build a bench and plan succession for key roles using behavioral proof.",
 };

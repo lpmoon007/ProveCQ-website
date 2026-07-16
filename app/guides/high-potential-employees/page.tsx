@@ -6,10 +6,29 @@ import { ButtonLink, Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
+const CANONICAL = "/guides/high-potential-employees";
+
 export const metadata: Metadata = {
-  title: "How to Identify High-Potential Employees | ProveCQ",
+  title: "How to Identify High-Potential Employees",
   description:
-    "High potential is not the same as high performance. Learn how to identify high-potential employees using behavioral signals — initiative, applied grit, and learnability.",
+    "High potential is not high performance. Learn how to identify high-potential employees from behavioral signals — initiative, applied grit, and learnability — the characteristics that separate real potential from this quarter's numbers.",
+  keywords: [
+    "high-potential employees",
+    "how to identify high-potential employees",
+    "identifying high potential employees",
+    "high potential characteristics",
+    "high potential identification",
+    "high potential assessment",
+    "HiPo employees",
+  ],
+  alternates: { canonical: CANONICAL },
+  openGraph: {
+    title: "How to Identify High-Potential Employees",
+    description:
+      "The behavioral signals and characteristics that separate high-potential employees from high performers — and how to spot them early.",
+    url: CANONICAL,
+    type: "article",
+  },
 };
 
 const SIGNALS = [
@@ -41,9 +60,77 @@ const MISLEADS = [
   },
 ];
 
+// GEO structure (per the keyword map): a definitional checklist of the
+// characteristics of high-potential employees, drawn from the article's own
+// three behaviors + the Prove ethics framing (behavior, not a judgment of worth).
+const CHARACTERISTICS = [
+  "They act before it is their job — taking initiative beyond their defined role.",
+  "They push through hard, unglamorous problems instead of stalling.",
+  "They learn fast when demands change, without needing hand-holding.",
+  "They stay coachable as scope grows, rather than clinging to what worked before.",
+  "Their potential shows up in behavior over time — not in one quarter's numbers.",
+];
+
+// FAQ — the format AI answer engines extract and cite. Answers stay faithful to
+// the article and to the Ethics page (behavioral measurement, decision-support).
+const FAQ = [
+  {
+    q: "What is a high-potential employee?",
+    a: "A high-potential employee — often shortened to “HiPo” — is someone with the capacity to grow into a larger or more ambiguous role. Unlike a high performer, whose value is proven in their current job, a high-potential employee shows the behaviors that predict success in a bigger one: initiative beyond their role, follow-through on hard problems, and fast learnability.",
+  },
+  {
+    q: "How do you identify high-potential employees?",
+    a: "Look at behavior over time, not a single result. The three most predictive signals are initiative (acting before it is their job), applied grit (staying with hard work until it is cracked), and learnability (leveling up when demands change). Because these show up in what people do rather than what they say, they are best measured from observed behavior — not a personality test.",
+  },
+  {
+    q: "What are the characteristics of high-potential employees?",
+    a: "They take initiative beyond their defined role, push through difficult problems instead of stalling, learn fast without hand-holding, and stay coachable as their scope grows. Strong current performance is common but not sufficient — potential is about capacity for the next role, not mastery of the current one.",
+  },
+  {
+    q: "Is a high performer the same as a high-potential employee?",
+    a: "No. Performance is role-bound — being excellent at today's job says little about capacity for a bigger one. Some of your best performers are happiest and most valuable exactly where they are. High potential is specifically the ability to grow into greater demands.",
+  },
+  {
+    q: "What tools help identify high-potential employees?",
+    a: "Free starting points are the Hidden Gem Identifier, which surfaces overlooked performers and strivers, and the Certainty Diagnostic, which shows how much of your talent read is proof versus gut feel. For a measured read, a Prove cycle scores Initiative, Applied Grit, and Learnability from six weeks of real behavior.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How to identify high-potential employees",
+  description:
+    "The behavioral signals and characteristics that separate high-potential employees from high performers — and how to identify them early.",
+  author: { "@type": "Organization", name: "Prove", url: site.domain },
+  publisher: { "@type": "Organization", name: "Be Legendary", url: site.parentUrl },
+  mainEntityOfPage: `${site.domain}${CANONICAL}`,
+  about: "high-potential employees",
+  keywords:
+    "high-potential employees, how to identify high-potential employees, high potential characteristics, high potential assessment",
+};
+
 export default function HighPotentialEmployeesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Nav />
       <PageHero
         crumb="Guides › High-potential employees"
@@ -93,7 +180,36 @@ export default function HighPotentialEmployeesPage() {
         </Container>
       </Section>
 
+      {/* Definitional "characteristics" block — Tier-1 GEO structure */}
       <Section tone="paper2">
+        <Container>
+          <div className="mx-auto max-w-[760px]">
+            <h2 className="mb-4 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
+              Characteristics of high-potential employees
+            </h2>
+            <p className="m-0 mb-6 text-[17px] leading-[1.65] text-content-muted">
+              A high-potential employee is someone with the capacity to grow into a
+              larger or more ambiguous role. In practice, identifying
+              high-potential people means watching for a consistent pattern of
+              behavior rather than a single strong quarter. The characteristics
+              show up as a checklist:
+            </p>
+            <ul className="m-0 flex list-none flex-col gap-3 p-0">
+              {CHARACTERISTICS.map((c) => (
+                <li
+                  key={c}
+                  className="flex gap-3 rounded-[14px] border border-edge-light bg-white px-5 py-3.5 text-[15.5px] leading-[1.5] text-content"
+                >
+                  <span className="mt-0.5 shrink-0 font-bold text-green">✓</span>
+                  {c}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Container>
+      </Section>
+
+      <Section tone="paper">
         <Container>
           <h2 className="mb-6 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
             Why performance alone misleads
@@ -110,6 +226,77 @@ export default function HighPotentialEmployeesPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Put it into practice — distributes the cluster to the tools/dev program */}
+      <Section tone="paper2">
+        <Container>
+          <div className="mx-auto max-w-[760px]">
+            <h2 className="mb-4 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
+              How to measure it on your team
+            </h2>
+            <p className="m-0 mb-6 text-[17px] leading-[1.65] text-content-muted">
+              Two free tools help you turn this into a high-potential assessment,
+              and a subscription keeps your proven people growing:
+            </p>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <Link
+                href="/free-tools/hidden-gem-identifier"
+                className="rounded-[16px] border border-edge-light bg-white p-5 transition-colors hover:border-green"
+              >
+                <h3 className="mb-1.5 text-[16px] font-bold">Hidden Gem Identifier</h3>
+                <p className="m-0 text-[14px] leading-[1.5] text-[#615B4F]">
+                  A free tool to identify high-potential people every leader
+                  overlooks.
+                </p>
+              </Link>
+              <Link
+                href="/free-tools/certainty-diagnostic"
+                className="rounded-[16px] border border-edge-light bg-white p-5 transition-colors hover:border-green"
+              >
+                <h3 className="mb-1.5 text-[16px] font-bold">Certainty Diagnostic</h3>
+                <p className="m-0 text-[14px] leading-[1.5] text-[#615B4F]">
+                  See how much of your talent read is proof versus gut feel.
+                </p>
+              </Link>
+              <Link
+                href="/better-every-day"
+                className="rounded-[16px] border border-edge-light bg-white p-5 transition-colors hover:border-green"
+              >
+                <h3 className="mb-1.5 text-[16px] font-bold">Better Every Day</h3>
+                <p className="m-0 text-[14px] leading-[1.5] text-[#615B4F]">
+                  A high-potential development program for your proven players.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* FAQ — GEO citation block */}
+      <Section tone="paper">
+        <Container>
+          <div className="mx-auto max-w-[760px]">
+            <h2 className="mb-6 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
+              High-potential employees: FAQ
+            </h2>
+            <div className="flex flex-col gap-3">
+              {FAQ.map((f) => (
+                <details
+                  key={f.q}
+                  className="group rounded-[14px] border border-edge-light bg-white px-6 py-4"
+                >
+                  <summary className="cursor-pointer list-none text-[17px] font-bold marker:content-none">
+                    {f.q}
+                  </summary>
+                  <p className="m-0 mt-3 text-[15.5px] leading-[1.6] text-content-muted">
+                    {f.a}
+                  </p>
+                </details>
+              ))}
+            </div>
           </div>
         </Container>
       </Section>

@@ -5,7 +5,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "How to Delegate With Confidence (Stop Being the Bottleneck) | ProveCQ",
+  title: "How to Delegate With Confidence (Stop Being the Bottleneck)",
   description:
     "Founders stay the bottleneck because they do not trust who to hand work to. Learn how to delegate with confidence by proving who can actually own the outcome.",
 };

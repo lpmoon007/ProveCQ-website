@@ -5,7 +5,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "Why Your Best People Are Burning Out (It is Not the Workload) | ProveCQ",
+  title: "Why Your Best People Are Burning Out (It is Not the Workload)",
   description:
     "Top performers rarely burn out from hours — they burn out from carrying passengers and watching drift go unaddressed. Learn the real cause and how to protect your best people.",
 };

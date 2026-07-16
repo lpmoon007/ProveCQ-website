@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "How to Know Who to Promote — Without Guessing | ProveCQ",
+  title: "How to Know Who to Promote — Without Guessing",
   description:
     "Most promotions are bets on past performance, not future capacity. Learn how to know who to promote using behavioral proof — Initiative, Applied Grit, and Learnability — instead of gut feel.",
 };

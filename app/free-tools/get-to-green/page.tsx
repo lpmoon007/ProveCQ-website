@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import GetToGreen from "@/components/GetToGreen";
 
 export const metadata: Metadata = {
-  title: "Get to Green — The 146-Point People-Systems Readiness Map | ProveCQ",
+  title: "Get to Green — The 146-Point People-Systems Readiness Map",
   description:
     "Get to Green scores all 7 macro and 30+ micro people systems red, yellow, or green — a category-weighted readiness map that shows exactly where your company is exposed as you scale, and what to fix first.",
 };

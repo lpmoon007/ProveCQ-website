@@ -5,7 +5,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "How to Measure Employee Commitment (For Real) | ProveCQ",
+  title: "How to Measure Employee Commitment (For Real)",
   description:
     "Commitment is not a feeling you survey — it is a behavior you observe. Learn how to measure employee commitment with behavioral signals instead of self-report.",
 };

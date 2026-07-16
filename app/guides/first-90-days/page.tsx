@@ -5,7 +5,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "How to Use the First 90 Days to Prove a New Hire | ProveCQ",
+  title: "How to Use the First 90 Days to Prove a New Hire",
   description:
     "The first 90 days are your real interview. Learn how to use onboarding as a proving ground to confirm — or disprove — whether a new hire will deliver.",
 };

@@ -6,7 +6,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "The Capacity Problem in EOS: Why GWC's Third Letter Is a Guess | ProveCQ",
+  title: "The Capacity Problem in EOS: Why GWC's Third Letter Is a Guess",
   description:
     'In EOS, Gets it and Wants it get judged over time — but Capacity is a yes/no checkbox, often self-reported. "I have capacity" usually means "I want to please you." Learn why capacity is the weak link in GWC and how behavioral proof fixes it, alongside EOS.',
 };

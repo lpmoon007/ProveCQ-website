@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "The 4 AM Test — Will They Deliver, or Will You Wake Up Wondering? | ProveCQ",
+    "The 4 AM Test — Will They Deliver, or Will You Wake Up Wondering?",
   description:
     "You handed them the project. Now it's 4 AM and you're wondering if you picked the wrong person. The free 4 AM Test grades one person on ownership, initiative, growth, and courage — using the last 90 days — so you know before the fallout.",
 };

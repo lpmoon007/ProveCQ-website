@@ -6,7 +6,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "The Problem Isn't Your People. It's the Metric. | ProveCQ",
+  title: "The Problem Isn't Your People. It's the Metric.",
   description:
     "Only 21% of the workforce is 'engaged,' says Gallup. But engagement measures how people feel about their environment — not how they behave under pressure. Here's why engagement is the wrong metric, and what to measure instead: commitment behavior.",
 };

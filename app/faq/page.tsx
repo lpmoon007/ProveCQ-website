@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Prove & Commitment Quotient — Frequently Asked Questions | ProveCQ",
+    "Prove & Commitment Quotient — Frequently Asked Questions",
   description:
     "Answers to common questions about Prove and the Commitment Quotient (CQ): what it measures, how it differs from personality tests and engagement surveys, whether it can be used for firing, how it works with EOS, timing, and pricing.",
 };

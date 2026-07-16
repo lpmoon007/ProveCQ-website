@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "The Real Cost of a Bad Hire (and How to Avoid It) | ProveCQ",
+  title: "The Real Cost of a Bad Hire (and How to Avoid It)",
   description:
     "A bad hire costs far more than a salary — 40% to 200% of it, plus momentum and morale. Learn the true cost of a bad hire and how behavioral proof reduces the risk.",
 };

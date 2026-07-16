@@ -5,7 +5,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "Signs an Employee Is Quietly Checking Out (Before They Leave) | ProveCQ",
+  title: "Signs an Employee Is Quietly Checking Out (Before They Leave)",
   description:
     "Quiet quitting and disengagement are behavioral, not verbal. Learn the early signs an employee is coasting or checking out — and how to catch drift before it costs you.",
 };

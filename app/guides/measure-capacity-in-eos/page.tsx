@@ -6,7 +6,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "How to Measure Capacity in EOS (Beyond the GWC Checkbox) | ProveCQ",
+  title: "How to Measure Capacity in EOS (Beyond the GWC Checkbox)",
   description:
     "In EOS, Capacity in GWC is treated as a yes/no checkbox. Learn how to actually measure capacity behaviorally so your People Analyzer and Quarterly Conversations run on data.",
 };

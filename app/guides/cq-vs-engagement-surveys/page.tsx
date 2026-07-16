@@ -6,7 +6,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title: "CQ vs. Engagement Surveys: Why Feelings Don't Predict Delivery | ProveCQ",
+  title: "CQ vs. Engagement Surveys: Why Feelings Don't Predict Delivery",
   description:
     "Engagement surveys measure how employees feel; the Commitment Quotient measures how they behave under pressure. Here's why high engagement scores can hide poor delivery — and what to measure instead to know who will actually perform.",
 };

@@ -5,9 +5,23 @@ import CertaintyDiagnostic from "@/components/CertaintyDiagnostic";
 
 export const metadata: Metadata = {
   title:
-    "Are Your People Decisions Ready to Scale? Free 2-Minute Diagnostic | ProveCQ",
+    "Are Your People Decisions Ready to Scale? Free 2-Minute Diagnostic",
   description:
-    "A free 2-minute diagnostic for founders and CEOs: answer 10 quick questions and get an instant read on how much you're guessing about your people — hiring, promoting, and keeping the right ones. See your Certainty Score.",
+    "A free 2-minute diagnostic for founders and CEOs: answer 10 quick questions and get an instant read on how much you're guessing about your people — hiring, promoting, and identifying high-potential employees. See your Certainty Score.",
+  keywords: [
+    "high potential assessment",
+    "leadership readiness assessment",
+    "people decision diagnostic",
+    "certainty score",
+  ],
+  alternates: { canonical: "/free-tools/certainty-diagnostic" },
+  openGraph: {
+    title: "The Certainty Diagnostic — Free 2-Minute People-Decision Read",
+    description:
+      "How much of your hiring, promotion, and high-potential read is proof versus gut feel?",
+    url: "/free-tools/certainty-diagnostic",
+    type: "website",
+  },
 };
 
 export default function CertaintyDiagnosticPage() {

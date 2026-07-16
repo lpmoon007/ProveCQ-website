@@ -8,7 +8,7 @@ import { PageHero } from "@/components/PageParts";
 
 export const metadata: Metadata = {
   title:
-    "People-Decision Glossary — Commitment, Capacity, Retention Terms | ProveCQ",
+    "People-Decision Glossary — Commitment, Capacity, Retention Terms",
   description:
     "Plain-English definitions of the terms behind better people decisions: Commitment Quotient, Initiative, Applied Grit, Learnability, capacity, regretted attrition, quiet quitting, span of control, quality of hire, GWC, and more.",
 };

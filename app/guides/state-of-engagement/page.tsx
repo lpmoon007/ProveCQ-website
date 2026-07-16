@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "The 2026 State of Engagement — Why the Metric Is Broken (and What to Measure Instead) | ProveCQ",
+    "The 2026 State of Engagement — Why the Metric Is Broken (and What to Measure Instead)",
   description:
     "Engagement scores have barely moved in a decade while disengagement costs trillions. The 2026 State of Engagement report explains why the metric itself is broken for small and mid-sized companies — and makes the case for measuring commitment behavior instead.",
 };

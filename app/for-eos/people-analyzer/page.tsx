@@ -6,7 +6,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Give Your EOS People Analyzer a Real Capacity Score | ProveCQ",
+  title: "Give Your EOS People Analyzer a Real Capacity Score",
   description:
     "The EOS People Analyzer scores everyone on GWC and core values — but Capacity stays a guess. Prove adds a behavioral capacity signal (initiative, applied grit, learnability) so your People Analyzer runs on evidence, alongside EOS, not instead of it.",
 };

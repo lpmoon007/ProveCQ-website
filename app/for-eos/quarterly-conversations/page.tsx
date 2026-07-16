@@ -6,7 +6,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Better EOS Quarterly Conversations, Backed by Behavior | ProveCQ",
+  title: "Better EOS Quarterly Conversations, Backed by Behavior",
   description:
     "Quarterly Conversations work best with objective data. Prove brings a behavioral capacity signal to the discussion so leaders and team members talk about what someone actually did — not gut feel — making the conversation fairer and more useful. Alongside EOS.",
 };

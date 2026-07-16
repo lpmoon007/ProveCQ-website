@@ -6,7 +6,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "For EOS Implementers: The Capacity Tool You've Never Had | ProveCQ",
+  title: "For EOS Implementers: The Capacity Tool You've Never Had",
   description:
     "EOS Implementers hit 'capacity issues' in nearly every session with no way to measure them. Prove is a behavioral capacity tool that plugs into the People Analyzer and Quarterly Conversations — a complement to your EOS practice you can bring to clients.",
 };

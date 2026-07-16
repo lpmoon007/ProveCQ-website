@@ -6,7 +6,7 @@ import TalentScorecard from "@/components/TalentScorecard";
 
 export const metadata: Metadata = {
   title:
-    "Talent Development Scorecard — Are You Growing Your Best People? | ProveCQ",
+    "Talent Development Scorecard — Are You Growing Your Best People?",
   description:
     "A 90-second self-check for founders and CEOs: are you actively developing and retaining your high-potential people, or quietly losing them? Six questions, an instant rating, and your next move.",
 };

@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageParts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Why Good Employees Fail After a Promotion | ProveCQ",
+  title: "Why Good Employees Fail After a Promotion",
   description:
     "When a strong performer flops after promotion, it is usually a capacity mismatch, not a character flaw. Learn why good employees fail after promotion and how to prevent it.",
 };

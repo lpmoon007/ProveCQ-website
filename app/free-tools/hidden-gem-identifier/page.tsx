@@ -7,9 +7,24 @@ import HiddenGemForm from "@/components/HiddenGemForm";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "The Hidden Gem Identifier — Find the People You're About to Overlook",
+  title:
+    "Hidden Gem Identifier — A Free Tool to Identify High-Potential Employees",
   description:
-    "Your best people rarely raise their hand. The free Hidden Gem Identifier surfaces the two people every leader overlooks — the quiet consistent performer and the hungry striver in the wrong seat — so you know who to protect, stretch, and stop overlooking.",
+    "A free high-potential assessment for founders and CEOs. The Hidden Gem Identifier is a tool to identify high-potential employees every leader overlooks — the quiet consistent performer and the hungry striver in the wrong seat — so you know who to protect, stretch, and stop overlooking.",
+  keywords: [
+    "high potential assessment",
+    "tools to identify high potential employees",
+    "identify high-potential employees",
+    "hidden gem identifier",
+  ],
+  alternates: { canonical: "/free-tools/hidden-gem-identifier" },
+  openGraph: {
+    title: "Hidden Gem Identifier — Identify High-Potential Employees",
+    description:
+      "A free tool to identify the high-potential people every leader overlooks.",
+    url: "/free-tools/hidden-gem-identifier",
+    type: "website",
+  },
 };
 
 const GEMS = [
