@@ -5,8 +5,7 @@ import { Container, Eyebrow, Section } from "@/components/ui";
 import { PageHero, CTASection } from "@/components/PageParts";
 
 export const metadata: Metadata = {
-  title:
-    "Better Every Day — A High-Potential Development Program for Proven Players",
+  title: "Better Every Day — Keep Proven Players Growing",
   description:
     "Better Every Day is a high-potential development program that keeps your high-CQ, proven players growing and in motion — so your best people don't burn out next to passengers. Weekly tracking, monthly commitments, drift alerts.",
   keywords: [

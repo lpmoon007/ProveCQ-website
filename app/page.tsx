@@ -166,7 +166,10 @@ export default function HomePage() {
           <p className="m-0 mt-8 max-w-[720px] text-[18px] font-semibold leading-[1.6] text-content">
             You start solving for clarity with control — and that&rsquo;s the
             beginning of the end. This isn&rsquo;t a people problem. It&rsquo;s a{" "}
-            <span className="text-green">signal problem</span>.
+            <span className="text-green">signal problem</span>.{" "}
+            <a href="/certainty-gap" className="text-green underline-offset-2 hover:underline">
+              Read the Certainty Gap manifesto &rarr;
+            </a>
           </p>
         </Container>
       </Section>
