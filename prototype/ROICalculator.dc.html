@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Cost of a Bad Bet — People Decision ROI Calculator | ProveCQ</title>
+<meta name="description" content="Estimate what one wrong promotion or bad hire actually costs your company — salary, lost productivity, backfill, and team drag — and what proving the decision first could save. Free interactive calculator.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Prove","legalName":"Be Legendary","url":"https://www.provecq.com","description":"Behavioral proof of who will deliver — before you promote, hire, or hand over the keys. Powered by the Commitment Quotient.","brand":{"@type":"Brand","name":"Commitment Quotient"},"parentOrganization":{"@type":"Organization","name":"Be Legendary","url":"https://www.belegendary.org"},"founder":{"@type":"Person","name":"James Carter"},"telephone":"+1-800-513-8759","areaServed":"US"}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F3EC; font-family: 'Figtree', sans-serif; color: #1B1913; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: #1F8B57; }
+  a:hover { color: #17663F; }
+  input[type=range] { accent-color: #1F8B57; }
+  ::selection { background: #C7ECD5; }
+  @media (max-width: 760px) { nav.pnav { display:none !important; } .calcgrid { grid-template-columns:1fr !important; } h1.rc { font-size:36px !important; } }
+</style>
+</helmet>
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:50; background:rgba(20,19,14,.92); backdrop-filter:blur(12px); border-bottom:1px solid #2A2820;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:15px 32px;">
+      <a href="Home.dc.html" style="display:flex; align-items:center; gap:10px; color:#F6F3EC;">
+        <span style="width:32px; height:32px; border-radius:9px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">P</span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; letter-spacing:-.01em;">Prove</span>
+      </a>
+      <nav class="pnav" style="display:flex; align-items:center; gap:24px; font-size:14.5px; font-weight:600; color:#C9C5B8;">
+        <a href="HowItWorks.dc.html" style="color:#C9C5B8;">How it works</a>
+        <a href="EOS.dc.html" style="color:#C9C5B8;">For EOS</a>
+        <a href="FreeTools.dc.html" style="color:#C9C5B8;">Free tools</a>
+        <a href="Guides.dc.html" style="color:#C9C5B8;">Guides</a>
+        <a href="Ethics.dc.html" style="color:#C9C5B8;">Ethics</a>
+        <a href="https://meetings-na2.hubspot.com/jcarter28" style="padding:10px 20px; background:#1F8B57; color:#fff; border-radius:9px;">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background:#14130E; color:#F6F3EC; padding:64px 32px 52px;">
+    <div style="max-width:900px; margin:0 auto;">
+      <div style="font-size:13px; color:#7C7767; font-weight:600; margin-bottom:16px;"><a href="Home.dc.html" style="color:#7C7767;">Home</a> &rsaquo; <a href="FreeTools.dc.html" style="color:#7C7767;">Free tools</a> &rsaquo; Cost of a bad bet</div>
+      <span style="font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#8FD6AC; font-weight:700;">Free calculator</span>
+      <h1 class="rc" style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:50px; line-height:1.04; letter-spacing:-.03em; margin:14px 0 16px;">What does one wrong bet cost you?</h1>
+      <p style="font-size:19px; line-height:1.55; color:#B8B4A6; max-width:640px; margin:0;">Promote the wrong person or make a bad senior hire, and the bill runs far past their salary. Move the sliders to size it for your company.</p>
+    </div>
+  </section>
+
+  <section style="padding:44px 32px 80px;">
+    <div class="calcgrid" style="max-width:1000px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start;">
+      <!-- inputs -->
+      <div style="background:#fff; border:1px solid #E7E0D2; border-radius:20px; padding:30px;">
+        <div style="margin-bottom:26px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><label style="font-weight:700; font-size:15px;">Role's annual salary</label><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:#1F8B57;">{{ salaryLabel }}</span></div>
+          <input type="range" min="50000" max="300000" step="10000" value="{{ salary }}" onInput="{{ onSalary }}" style="width:100%;">
+        </div>
+        <div style="margin-bottom:26px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><label style="font-weight:700; font-size:15px;">Months before you act on it</label><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:#1F8B57;">{{ months }} mo</span></div>
+          <input type="range" min="1" max="18" step="1" value="{{ months }}" onInput="{{ onMonths }}" style="width:100%;">
+          <p style="font-size:12.5px; color:#8A8474; margin:8px 0 0;">Most wrong bets aren't addressed for 6&ndash;12 months.</p>
+        </div>
+        <div style="margin-bottom:26px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><label style="font-weight:700; font-size:15px;">People affected by this seat</label><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:#1F8B57;">{{ team }}</span></div>
+          <input type="range" min="0" max="20" step="1" value="{{ team }}" onInput="{{ onTeam }}" style="width:100%;">
+          <p style="font-size:12.5px; color:#8A8474; margin:8px 0 0;">Direct reports or close collaborators who lose productivity.</p>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><label style="font-weight:700; font-size:15px;">Do they leave or get replaced?</label></div>
+          <div style="display:flex; gap:8px;">
+            <sc-for list="{{ backfillOpts }}" as="o" hint-placeholder-count="2">
+              <button onClick="{{ o.select }}" style="{{ o.style }}">{{ o.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- result -->
+      <div style="background:#14130E; color:#F6F3EC; border-radius:20px; padding:30px; position:sticky; top:24px;">
+        <div style="font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:#8FD6AC; font-weight:700; margin-bottom:10px;">Estimated cost of this bad bet</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:52px; line-height:1; color:#fff; margin-bottom:6px;">{{ totalLabel }}</div>
+        <div style="font-size:13.5px; color:#7C7767; margin-bottom:24px;">A conservative, salary-anchored estimate.</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; justify-content:space-between; font-size:14.5px; border-bottom:1px solid #221F17; padding-bottom:10px;"><span style="color:#B8B4A6;">Lost productivity in seat</span><span style="font-family:'Space Grotesk',sans-serif; font-weight:600;">{{ lostLabel }}</span></div>
+          <div style="display:flex; justify-content:space-between; font-size:14.5px; border-bottom:1px solid #221F17; padding-bottom:10px;"><span style="color:#B8B4A6;">Team drag</span><span style="font-family:'Space Grotesk',sans-serif; font-weight:600;">{{ dragLabel }}</span></div>
+          <div style="display:flex; justify-content:space-between; font-size:14.5px; border-bottom:1px solid #221F17; padding-bottom:10px;"><span style="color:#B8B4A6;">Backfill &amp; rehire</span><span style="font-family:'Space Grotesk',sans-serif; font-weight:600;">{{ backfillLabel }}</span></div>
+        </div>
+        <div style="margin-top:22px; background:#173A2A; border-radius:12px; padding:18px;">
+          <div style="font-size:13px; color:#8FD6AC; font-weight:700; margin-bottom:4px;">A Prove cycle costs a fraction of this</div>
+          <p style="font-size:14px; color:#D7ECDF; line-height:1.5; margin:0;">Six weeks of behavioral proof before you commit — so you avoid the bill above, or catch it early.</p>
+        </div>
+        <a href="https://meetings-na2.hubspot.com/jcarter28" style="display:block; text-align:center; margin-top:16px; padding:14px; background:#1F8B57; color:#fff; border-radius:11px; font-weight:700; font-size:15px;">See what Prove would cost you</a>
+      </div>
+    </div>
+    <p style="max-width:1000px; margin:22px auto 0; font-size:12.5px; color:#8A8474; text-align:center;">Illustrative estimate for planning only, anchored to widely cited ranges (a bad hire commonly costs 30%&ndash;200%+ of salary; senior mis-promotions run higher). Your actual cost varies. Not financial advice.</p>
+  </section>
+
+  <footer style="background:#0E0D09; color:#8C877A; padding:54px 32px 40px;">
+    <div style="max-width:1080px; margin:0 auto; display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:36px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; color:#F6F3EC; margin-bottom:12px;"><span style="width:30px; height:30px; border-radius:8px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700;">P</span><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">Prove</span></div>
+        <p style="font-size:14px; line-height:1.6; margin:0; max-width:280px;">Behavioral proof of who will deliver — before you bet on them. Powered by the Commitment Quotient™. A Be Legendary company.</p>
+      </div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Product</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="HowItWorks.dc.html" style="color:#8C877A;">How it works</a><a href="Heatmap.dc.html" style="color:#8C877A;">The Heatmap</a><a href="FreeTools.dc.html" style="color:#8C877A;">Free tools</a></div></div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Learn</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="Guides.dc.html" style="color:#8C877A;">Guides</a><a href="Glossary.dc.html" style="color:#8C877A;">Glossary</a><a href="FAQ.dc.html" style="color:#8C877A;">FAQ</a></div></div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Start</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="https://meetings-na2.hubspot.com/jcarter28" style="color:#8C877A;">Book a call</a><a href="https://www.belegendary.org" style="color:#8C877A;">Be Legendary &#8599;</a></div></div>
+    </div>
+    <div style="max-width:1080px; margin:34px auto 0; padding-top:22px; border-top:1px solid #221F17; font-size:13px; color:#605C51;">&copy;2026 Be Legendary. All rights reserved. Commitment Quotient™, Prove™ and Better Every Day™ are trademarks of Be Legendary.</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { salary: 120000, months: 9, team: 5, backfill: "yes" };
+
+  fmt(n) {
+    if (n >= 1000) return "$" + Math.round(n / 1000) + "k";
+    return "$" + Math.round(n);
+  }
+
+  renderVals() {
+    const { salary, months, team, backfill } = this.state;
+    // lost productivity: assume ~50% effective in the seat for the months it drags
+    const lost = salary * (months / 12) * 0.5;
+    // team drag: each affected person loses ~15% productivity, salary-equivalent proxy at 70% of role salary
+    const drag = team * (salary * 0.7) * (months / 12) * 0.15;
+    // backfill: replacing = ~40% of salary if they leave/replaced, else minimal
+    const backfillCost = backfill === "yes" ? salary * 0.4 : 0;
+    const total = lost + drag + backfillCost;
+
+    const backfillOpts = [["yes", "Yes"], ["no", "No"]].map(([k, label]) => ({
+      label,
+      select: () => this.setState({ backfill: k }),
+      style: `flex:1; border:none; cursor:pointer; font-family:inherit; font-weight:600; font-size:14px; padding:11px; border-radius:10px; background:${this.state.backfill === k ? "#1F8B57" : "#F0EADD"}; color:${this.state.backfill === k ? "#fff" : "#575249"};`,
+    }));
+
+    return {
+      salary, months, team,
+      salaryLabel: this.fmt(salary),
+      onSalary: (e) => this.setState({ salary: +e.target.value }),
+      onMonths: (e) => this.setState({ months: +e.target.value }),
+      onTeam: (e) => this.setState({ team: +e.target.value }),
+      backfillOpts,
+      totalLabel: this.fmt(total),
+      lostLabel: this.fmt(lost),
+      dragLabel: this.fmt(drag),
+      backfillLabel: this.fmt(backfillCost),
+    };
+  }
+}
+</script>
+</body>
+</html>

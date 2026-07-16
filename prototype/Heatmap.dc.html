@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The CQ Heatmap — See Your Whole Team in Black and White | ProveCQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Prove","legalName":"Be Legendary","url":"https://www.provecq.com","description":"Behavioral proof of who will deliver — before you promote, hire, or hand over the keys. Powered by the Commitment Quotient.","brand":{"@type":"Brand","name":"Commitment Quotient"},"parentOrganization":{"@type":"Organization","name":"Be Legendary","url":"https://www.belegendary.org"},"founder":{"@type":"Person","name":"James Carter"},"telephone":"+1-800-513-8759","areaServed":"US"}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #14130E; font-family: 'Figtree', sans-serif; color: #F6F3EC; -webkit-font-smoothing: antialiased; }
+  a { color: #8FD6AC; }
+  ::selection { background: #1F8B57; color:#fff; }
+  @media (max-width:820px){
+    header > div { flex-wrap:wrap; gap:10px 14px; }
+    nav { gap:14px !important; font-size:13px !important; flex-wrap:wrap; justify-content:flex-end; }
+    section { padding-left:16px !important; padding-right:16px !important; }
+    [style*="grid-template-columns:1fr 1.25fr"],[style*="grid-template-columns:1.4fr 1fr 1fr 1fr"],[style*="grid-template-columns:1fr 1fr"],[style*="grid-template-columns:1fr auto"] { grid-template-columns:1fr !important; }
+    h1 { font-size:34px !important; }
+  }
+</style>
+</helmet>
+<div style="width:100%; min-height:100vh;">
+
+  <header style="display:flex; align-items:center; justify-content:space-between; padding:15px 32px; border-bottom:1px solid #2A2820; max-width:1200px; margin:0 auto;">
+    <a href="Home.dc.html" style="display:flex; align-items:center; gap:10px; color:#F6F3EC; text-decoration:none;">
+      <span style="width:32px; height:32px; border-radius:9px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">P</span>
+      <span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; letter-spacing:-.01em;">Prove</span>
+    </a>
+    <a href="https://meetings-na2.hubspot.com/jcarter28" style="padding:10px 20px; background:#1F8B57; color:#fff; border-radius:9px; text-decoration:none; font-size:14.5px; font-weight:600;">Book a call</a>
+  </header>
+
+  <section style="max-width:1120px; margin:0 auto; padding:48px 32px 20px;">
+    <div style="font-size:13px; color:#7C7767; font-weight:600; margin-bottom:14px;"><a href="Home.dc.html" style="color:#7C7767; text-decoration:none;">Home</a> &rsaquo; The Heatmap &middot; interactive demo</div>
+    <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:44px; line-height:1.05; letter-spacing:-.02em; margin:0 0 12px;">See your whole team in black and white.</h1>
+    <p style="font-size:18px; line-height:1.55; color:#B8B4A6; max-width:680px; margin:0;">This is a sample CQ Heatmap. Filter by tier, sort by trait, and click any person to see their read, the recommended founder action, and the risk to watch. Sample data — your real Heatmap comes out of a Prove cycle.</p>
+  </section>
+
+  <section style="max-width:1120px; margin:0 auto; padding:24px 32px 80px;">
+    <!-- controls -->
+    <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:18px;">
+      <div style="display:flex; gap:8px;">
+        <sc-for list="{{ tiers }}" as="t" hint-placeholder-count="4">
+          <button onClick="{{ t.select }}" style="{{ t.style }}">{{ t.label }}</button>
+        </sc-for>
+      </div>
+      <div style="display:flex; gap:8px; align-items:center; margin-left:auto;">
+        <span style="font-size:13px; color:#7C7767;">Sort:</span>
+        <sc-for list="{{ sorts }}" as="s" hint-placeholder-count="4">
+          <button onClick="{{ s.select }}" style="{{ s.style }}">{{ s.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:20px; align-items:start;">
+      <!-- table -->
+      <div style="background:#0E0D09; border:1px solid #262319; border-radius:16px; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:1.5fr .8fr .8fr .8fr .7fr; font-size:11px; color:#6E6A5C; padding:14px 16px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; border-bottom:1px solid #1E1B13;"><span>Person</span><span style="text-align:center;">Init.</span><span style="text-align:center;">A. Grit</span><span style="text-align:center;">Learn</span><span style="text-align:center;">CQ</span></div>
+        <sc-for list="{{ rows }}" as="p" hint-placeholder-count="10">
+          <div onClick="{{ p.select }}" style="{{ p.rowStyle }}">
+            <div><div style="font-size:14.5px; font-weight:600; color:#E8E4D6;">{{ p.name }}</div><div style="font-size:12px; color:#6E6A5C;">{{ p.title }}</div></div>
+            <span style="text-align:center; font-size:15px;">{{ p.iDot }}</span>
+            <span style="text-align:center; font-size:15px;">{{ p.gDot }}</span>
+            <span style="text-align:center; font-size:15px;">{{ p.lDot }}</span>
+            <span style="text-align:center; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:{{ p.cqColor }};">{{ p.cq }}</span>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- detail -->
+      <div style="background:#1B1A12; border:1px solid #2A2718; border-radius:16px; padding:26px; position:sticky; top:24px;">
+        <div style="font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:#8FD6AC; font-weight:700; margin-bottom:6px;">{{ selTier }}</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin-bottom:2px;">{{ selName }}</div>
+        <div style="font-size:13.5px; color:#7C7767; margin-bottom:20px;">{{ selTitle }}</div>
+        <div style="display:flex; gap:10px; margin-bottom:20px;">
+          <div style="flex:1; background:#14130E; border-radius:10px; padding:12px; text-align:center;"><div style="font-size:11px; color:#7C7767; margin-bottom:4px;">Initiative</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px;">{{ selI }}</div></div>
+          <div style="flex:1; background:#14130E; border-radius:10px; padding:12px; text-align:center;"><div style="font-size:11px; color:#7C7767; margin-bottom:4px;">A. Grit</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px;">{{ selG }}</div></div>
+          <div style="flex:1; background:#14130E; border-radius:10px; padding:12px; text-align:center;"><div style="font-size:11px; color:#7C7767; margin-bottom:4px;">Learn</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px;">{{ selL }}</div></div>
+          <div style="flex:1; background:#173A2A; border-radius:10px; padding:12px; text-align:center;"><div style="font-size:11px; color:#8FD6AC; margin-bottom:4px;">CQ</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; color:#8FD6AC;">{{ selCQ }}</div></div>
+        </div>
+        <div style="margin-bottom:16px;"><div style="font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:#7C7767; font-weight:700; margin-bottom:6px;">Founder action</div><div style="font-size:15px; color:#E8E4D6; line-height:1.5;">{{ selAction }}</div></div>
+        <div><div style="font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:#7C7767; font-weight:700; margin-bottom:6px;">Risk to watch</div><div style="font-size:15px; color:#B8B4A6; line-height:1.5;">{{ selRisk }}</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:28px; text-align:center;">
+      <a href="https://meetings-na2.hubspot.com/jcarter28" style="display:inline-block; padding:15px 32px; background:#1F8B57; color:#fff; border-radius:12px; font-weight:700; font-size:16px; text-decoration:none;">Get your team's Heatmap &rarr;</a>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tier: "All", sort: "cq", selId: 2 };
+
+  seed() {
+    // [id, name, title, I, G, L]
+    return [
+      [0, "Adrian B.", "Customer Ops", 8, 7, 8],
+      [1, "Alex G.", "Onboarding Coach", 6, 6, 8],
+      [2, "Alexi M.", "Ops Lead", 9, 8, 9],
+      [3, "Avery Z.", "Recruiter", 5, 5, 4],
+      [4, "Bailey R.", "UX Lead", 9, 7, 8],
+      [5, "Barry M.", "Field Tech", 3, 2, 3],
+      [6, "Blake C.", "Sales Rep", 4, 3, 6],
+      [7, "Cameron J.", "Field Ops Mgr", 9, 8, 6],
+      [8, "Curtis D.", "AI Strategist", 10, 9, 7],
+      [9, "Dahlia Y.", "SDR", 3, 3, 6],
+      [10, "Devon H.", "Tech Writer", 9, 7, 7],
+      [11, "Donna E.", "DevOps Tech", 10, 7, 7],
+    ];
+  }
+
+  cqOf(p) { return (p[3] * 0.4 + p[4] * 0.35 + p[5] * 0.25); }
+  dot(n) { return n >= 8 ? "\uD83D\uDFE2" : n >= 5 ? "\uD83D\uDFE1" : "\uD83D\uDD34"; }
+  cqColor(cq) { return cq >= 7 ? "#2E9E5B" : cq >= 5 ? "#E0A73E" : "#D0492E"; }
+  tierOf(cq) { return cq >= 7 ? "Investment-ready" : cq >= 5 ? "Coach" : "Don't bet yet"; }
+
+  actionFor(p, cq) {
+    if (cq >= 7) return "Assign a high-autonomy lead role or stretch project. Double down.";
+    if (cq >= 5) return "Give a scoped challenge and coach the weakest trait before you invest further.";
+    return "Hold investment. Clarify expectations and watch for a signal before any bet.";
+  }
+  riskFor(p) {
+    if (p[3] < p[4] && p[3] < p[5]) return "Low initiative — may wait for direction instead of acting.";
+    if (p[5] < 5) return "Low learnability — can stall when demands change.";
+    if (p[4] < 5) return "Low applied grit — follow-through fades when it gets hard.";
+    return "Watch for burnout if scaled without a support system.";
+  }
+
+  renderVals() {
+    const data = this.seed().map(p => {
+      const cq = this.cqOf(p);
+      return { id: p[0], name: p[1], title: p[2], i: p[3], g: p[4], l: p[5], cq };
+    });
+
+    const tierMatch = (cq) => {
+      if (this.state.tier === "All") return true;
+      return this.tierOf(cq) === this.state.tier;
+    };
+    let rows = data.filter(d => tierMatch(d.cq));
+    const sort = this.state.sort;
+    rows.sort((a, b) => sort === "cq" ? b.cq - a.cq : sort === "i" ? b.i - a.i : sort === "g" ? b.g - a.g : b.l - a.l);
+
+    const sel = data.find(d => d.id === this.state.selId) || data[0];
+
+    const tiers = ["All", "Investment-ready", "Coach", "Don't bet yet"].map(label => ({
+      label,
+      select: () => this.setState({ tier: label }),
+      style: `border:none; cursor:pointer; font-family:inherit; font-weight:600; font-size:13px; padding:9px 15px; border-radius:100px; background:${this.state.tier === label ? "#1F8B57" : "#1B1A12"}; color:${this.state.tier === label ? "#fff" : "#B8B4A6"};`,
+    }));
+    const sorts = [["cq", "CQ"], ["i", "Init"], ["g", "A. Grit"], ["l", "Learn"]].map(([key, label]) => ({
+      label,
+      select: () => this.setState({ sort: key }),
+      style: `border:none; cursor:pointer; font-family:inherit; font-weight:600; font-size:12.5px; padding:7px 13px; border-radius:100px; background:${this.state.sort === key ? "#2A2718" : "transparent"}; color:${this.state.sort === key ? "#F6F3EC" : "#7C7767"};`,
+    }));
+
+    return {
+      tiers, sorts,
+      rows: rows.map(d => ({
+        name: d.name, title: d.title,
+        iDot: this.dot(d.i), gDot: this.dot(d.g), lDot: this.dot(d.l),
+        cq: d.cq.toFixed(2), cqColor: this.cqColor(d.cq),
+        select: () => this.setState({ selId: d.id }),
+        rowStyle: `display:grid; grid-template-columns:1.5fr .8fr .8fr .8fr .7fr; align-items:center; padding:13px 16px; border-bottom:1px solid #1E1B13; cursor:pointer; background:${d.id === this.state.selId ? "#17160F" : "transparent"};`,
+      })),
+      selName: sel.name, selTitle: sel.title, selTier: this.tierOf(sel.cq),
+      selI: sel.i, selG: sel.g, selL: sel.l, selCQ: sel.cq.toFixed(2),
+      selAction: this.actionFor(sel, sel.cq),
+      selRisk: this.riskFor([sel.id, sel.name, sel.title, sel.i, sel.g, sel.l]),
+    };
+  }
+}
+</script>
+</body>
+</html>

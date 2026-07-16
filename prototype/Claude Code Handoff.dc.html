@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Developer Handoff — provecq.com (Prove / Commitment Quotient)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Prove","legalName":"Be Legendary","url":"https://www.provecq.com","description":"Behavioral proof of who will deliver — before you promote, hire, or hand over the keys. Powered by the Commitment Quotient.","brand":{"@type":"Brand","name":"Commitment Quotient"},"parentOrganization":{"@type":"Organization","name":"Be Legendary","url":"https://www.belegendary.org"},"founder":{"@type":"Person","name":"James Carter"},"telephone":"+1-800-513-8759","areaServed":"US"}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F6F3EC; font-family: 'Figtree', sans-serif; color: #1B1913; -webkit-font-smoothing: antialiased; }
+  a { color: #1F8B57; }
+  code, pre { font-family: 'JetBrains Mono', monospace; }
+  ::selection { background: #C7ECD5; }
+  @media (max-width:820px){
+    header > div { flex-wrap:wrap; gap:10px 14px; }
+    nav { gap:14px !important; font-size:13px !important; flex-wrap:wrap; justify-content:flex-end; }
+    section { padding-left:20px !important; padding-right:20px !important; }
+    [style*="grid-template-columns:repeat(2"],[style*="grid-template-columns:repeat(3"],[style*="grid-template-columns:repeat(4"],[style*="grid-template-columns:repeat(5"],[style*="grid-template-columns:1fr 1fr"],[style*="grid-template-columns:1.4fr 1fr 1fr 1fr"],[style*="grid-template-columns:1.5fr 1fr 1fr 1fr"],[style*="grid-template-columns:1.1fr .9fr"],[style*="grid-template-columns:1.05fr .95fr"],[style*="grid-template-columns:1.2fr .8fr"],[style*="grid-template-columns:.9fr 1.1fr"],[style*="grid-template-columns:1fr 1.25fr"],[style*="grid-template-columns:1fr 1.1fr"],[style*="grid-template-columns:280px 1fr"],[style*="grid-template-columns:88px 1fr"],[style*="grid-template-columns:64px 1fr"],[style*="grid-template-columns:56px 1fr"],[style*="grid-template-columns:1fr auto"] { grid-template-columns:1fr !important; }
+    h1 { font-size:36px !important; }
+  }
+</style>
+</helmet>
+<div style="max-width:900px; margin:0 auto; padding:56px 32px 100px;">
+
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+    <span style="width:32px; height:32px; border-radius:9px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700;">P</span>
+    <span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">Prove &middot; provecq.com</span>
+  </div>
+  <div style="font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#1F8B57; font-weight:700; margin-bottom:10px;">Developer handoff brief</div>
+  <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:42px; line-height:1.05; letter-spacing:-.02em; margin:0 0 14px;">Build provecq.com — and kill the FPO site</h1>
+  <p style="font-size:17px; line-height:1.6; color:#3A362C; margin:0 0 8px;">This project pivoted. The old "Fractional People Officer" site is <strong>deprecated</strong>. The new product is <strong>Prove</strong> (brand) / <strong>Commitment Quotient™</strong> (methodology), living at provecq.com. The design-approved prototype is in the <code>provecq/</code> folder — treat it as the source of truth for design, copy, and behavior; rebuild it on a production stack.</p>
+
+  <div style="background:#FBE9E3; border:1px solid #EBC3B4; border-radius:14px; padding:22px; margin:26px 0;">
+    <div style="font-weight:700; color:#B23A20; margin-bottom:8px;">&#9888; First action: retire FPO as the front door — migrate, don't discard</div>
+    <p style="font-size:14.5px; line-height:1.6; color:#5B3A2E; margin:0 0 10px;">The FPO brand and the FPO-branded homepage/services/pricing are <strong>deprecated as positioning</strong> — Prove is the front door now. But do <strong>not</strong> throw the FPO work away. Two moves:</p>
+    <ul style="font-size:14.5px; line-height:1.7; color:#5B3A2E; margin:0; padding-left:18px;">
+      <li><strong>Migrate the FPO landing/keyword pages into provecq.com as SEO funnel content</strong> (a <code>/resources</code> or <code>/guides</code> layer): <code>Landing-*.dc.html</code>, <code>Lifecycle.dc.html</code>, <code>Resources.dc.html</code>. They capture real "fractional CHRO / people officer / HR" search demand that "Commitment Quotient" will never rank for. <strong>Re-point every CTA</strong> from "book an FPO audit / download the Playbook" to "see how Prove works / book a call," and restyle into the Prove design system. FPO-as-a-service survives only as the premium done-for-you delivery tier of Prove.</li>
+      <li><strong>301 redirect FPO.com into provecq.com</strong> so the domain's demand flows into Prove.</li>
+      <li><strong>Retire the FPO-branded shell pages</strong> (<code>Home</code>, <code>Services</code>, <code>GetToGreen*</code>, <code>Playbook</code>, <code>Team</code>, <code>Contact</code>, old <code>Claude Code Handoff</code>) — replaced by the provecq/ versions. Keep the <strong>design craft, the Heatmap pattern, and gtg-data.js</strong>.</li>
+    </ul>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">1. Positioning (do not drift from this)</h2>
+  <ul style="font-size:15.5px; line-height:1.8; color:#3D3A34; margin:0;">
+    <li><strong>Lead with the outcome, never the tool.</strong> Hero = "Stop betting on the wrong people." CQ/Prove is the <em>mechanism</em>, introduced second. Never open a page with "Commitment Quotient is an assessment."</li>
+    <li><strong>Buyer:</strong> founder / CEO of a scaling SMB (esp. EOS-run). Always sold to the founder.</li>
+    <li><strong>Wedge:</strong> "Prove before you promote" + the EOS angle ("make the Capacity box real"). EOS Implementers are a channel.</li>
+    <li><strong>It's behavioral measurement, not psychometric.</strong> Keep outputs framed as <em>decision-support for the leader</em>, never auto-hire/fire. (Removes legal exposure.)</li>
+    <li><strong>Naming:</strong> the trait is <strong>"Applied Grit"</strong> — never "Grit" alone (too closely tied to Duckworth). Abbreviate as "A. Grit" only where space forces it.</li>
+    <li><strong>Brand spine:</strong> Be Legendary is the house; Prove/CQ is the product; "Prove" is the spoken brand; Commitment Quotient™ is the named methodology inside.</li>
+  </ul>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">2. Site map (in <code>provecq/</code>)</h2>
+  <div style="font-size:14.5px; color:#4A443D; line-height:1.9;">
+    <code>Home</code> (outcome hero → Certainty Gap → behavioral proof + Heatmap → How Prove works → flywheel Hire/Prove/Keep → EOS callout → certainty-per-dollar → proof → CTA) &middot; <code>HowItWorks</code> (Snapshot/Validation/Decision + paper-exam-vs-test-drive) &middot; <code>EOS</code> (GWC Capacity wedge) &middot; <code>CertaintyGap</code> (manifesto) &middot; <code>BetterEveryDay</code> (retention/dev subscription) &middot; <code>WorkWithUs</code> (Prove Sprint / BED / Implementer partner) &middot; <code>About</code> (James Carter + Be Legendary) &middot; <code>Contact</code> (HubSpot booking) &middot; <code>Heatmap</code> (interactive demo).
+  </div>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">3. Design tokens</h2>
+  <pre style="background:#14130E; color:#F6F3EC; border-radius:14px; padding:22px; font-size:13px; line-height:1.7; overflow-x:auto; margin:0 0 16px;">Colors
+  paper      #F6F3EC   light section bg
+  ink        #14130E   dark hero/sections (near-black, warm)
+  ink-2      #0E0D09 / #1B1A12   panels on dark
+  text       #1B1913   / muted #575249 / #7C7767
+  green      #1F8B57   primary accent / CTA
+  green-soft #8FD6AC   accent-on-dark, links on dark
+  green-700  #17663F   link hover
+  signal     R #D0492E   Y #E0A73E   G #2E9E5B   (Heatmap dots)
+  border     #E7E0D2 (light)  #2A2718 / #262319 (dark)
+
+Type
+  display + numerals  'Space Grotesk' 700 (headlines, scores)
+  body / UI           'Figtree' 400-800
+  mono (handoff only) 'JetBrains Mono'
+Radii cards 14-22 · buttons 9-14 · pills 100
+Layout max-width 1080-1200 · section pad ~80px</pre>
+  <p style="font-size:14px; color:#615B4F; margin:0;">Aesthetic: warm near-black + signal-green + R/Y/G, confident grotesk display. A focused, "measurement/proof" sibling to belegendary.org (dark, disciplined) — deliberately NOT the old FPO cream/sage look.</p>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">4. The product: CQ Heatmap + Prove</h2>
+  <p style="font-size:15.5px; line-height:1.65; color:#3D3A34; margin:0 0 12px;">The hero asset is the <strong>CQ Heatmap</strong> (see <code>provecq/Heatmap.dc.html</code> for the interaction): a team roster scored on three behaviors, with a per-person CQ score, tier, recommended founder action, and risk note. Build it as the authed product. <strong>Authoritative scoring source:</strong> follow <code>uploads/CQ_Scoring_System_Technical_Specification_Current_State.docx</code> — it governs over the demo numbers below.</p>
+  <pre style="background:#14130E; color:#F6F3EC; border-radius:14px; padding:22px; font-size:13px; line-height:1.7; overflow-x:auto; margin:0 0 12px;">// PRODUCTION model (per the Technical Spec) — trait + composite on 0-100
+Person = { name, title,
+  initiative_score: 0-100,      // store independently
+  applied_grit_score: 0-100,    // "Applied Grit" in data model; "Grit" = display only
+  learnability_score: 0-100,
+  cq_composite: 0-100,          // versioned weighted_mean, full precision, round on display
+  scoring_profile_id, version,  // e.g. "cq-core-2026-demo" v0.1.0 (status: provisional)
+  tier, founderAction, riskNote }
+
+// Composite (provisional profile "cq-core-2026-demo", NOT permanent doctrine):
+CQ = Initiative*0.40 + Applied_Grit*0.35 + Learnability*0.25   // weights sum to 1.0
+// Weights/thresholds live in a versioned scoring PROFILE, never hard-coded.
+// Published profiles are immutable; store raw responses + version for reproducibility.
+// The prototype Heatmap/ROI use a simplified 0-10 display scale — cosmetic only.
+Prove cycle: Snapshot (15min) -> Validation (6wk, 40+ datapoints
+  via micro-commitments/attendance/self-ratings) -> Decision</pre>
+  <ul style="font-size:15px; line-height:1.75; color:#3D3A34; margin:0 0 12px;">
+    <li><strong>Migration blockers (from the spec):</strong> the assessment item bank, item-to-trait mapping, reverse-scoring rules, norms/percentiles, and the 7 archetype thresholds were <em>not</em> recovered. Do not invent them — keep archetypes/percentile claims disabled until source rules are supplied. Do not represent CQ as norm-referenced or clinically validated beyond available evidence.</li>
+  </ul>
+  <ul style="font-size:15px; line-height:1.75; color:#3D3A34; margin:0;">
+    <li><strong>Prove can run self-directed</strong> (like Be Legendary's Mindset Gym) — build the async challenge/tracking engine so delivery isn't gated by a facilitator. This is the scalability unlock.</li>
+    <li><strong>Multi-tenant + auth</strong> (Clerk/Auth.js), Postgres, per-company Heatmaps, cycle history. The behavioral dataset that accumulates is the long-term moat — design the schema to capture and benchmark it.</li>
+    <li><strong>Better Every Day</strong> = the recurring subscription for high-CQ players (weekly tracking, monthly commitments, drift alerts); gated by passing Prove. Per-seat billing (Stripe).</li>
+    <li><strong>EOS mode:</strong> map CQ output to the People Analyzer / GWC "Capacity" and Quarterly Conversations.</li>
+  </ul>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">5. Stack &amp; integrations</h2>
+  <ul style="font-size:15.5px; line-height:1.8; color:#3D3A34; margin:0;">
+    <li>Next.js (App Router) + TypeScript on Vercel; Tailwind with the tokens above.</li>
+    <li>Auth: Clerk/Auth.js. DB: Postgres (Supabase/Neon). Billing: Stripe (Prove Sprint one-time + BED per-seat subscription).</li>
+    <li>Booking: HubSpot — <a href="https://meetings-na2.hubspot.com/jcarter28">meetings-na2.hubspot.com/jcarter28</a>. Forms POST to HubSpot CRM.</li>
+    <li>SEO/GEO: keep the retired FPO keyword content as a blog/resources layer that funnels into Prove (301s from FPO.com). Add sitemap, JSON-LD (Organization, FAQPage), OG images.</li>
+    <li>Trademarks: Commitment Quotient™, Prove™, Better Every Day™. EOS®/GWC™/People Analyzer™ belong to EOS Worldwide — use "works alongside EOS," no implied endorsement.</li>
+  </ul>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">6. The free-tool funnel (build the ladder)</h2>
+  <p style="font-size:15.5px; line-height:1.7; color:#3D3A34; margin:0 0 10px;">Three gated/ungated free tools feed the pipeline. Wire them as one ladder that always ends at "book a call":</p>
+  <ul style="font-size:15.5px; line-height:1.8; color:#3D3A34; margin:0;">
+    <li><strong>Certainty Diagnostic</strong> (<code>Diagnostic.dc.html</code>) — ungated 10-question quiz → instant Certainty Score. Result CTA → Get to Green + book a call. (Optionally capture email to "send my results.")</li>
+    <li><strong>Hidden Gem Identifier</strong> (<code>HiddenGem.dc.html</code>) — HubSpot-gated (form id <code>7f180c70-7e33-4570-8d3e-b37de009dfd3</code>, portal <code>20276071</code>). Mount the HubSpot embed OUTSIDE the React tree (see the DC's imperative mount) or via a real form component in the rebuild.</li>
+    <li><strong>Get to Green</strong> (<code>GetToGreen.dc.html</code>) — <strong>fully open interactive sample</strong> (real 146-item schema from <code>gtg-data.js</code>, category-weighted). The <em>personalized</em> map is behind a <strong>real self-serve account (auth + database)</strong>: user signs up automatically, scores/saves their own company's map, and manages it themselves — no manual provisioning by the client. This free account is the wedge that upgrades to Prove/BED. Persist per-company scores, status history, and owners; this accumulating data is also part of the moat.</li>
+    <li><strong>Free Tools hub</strong> (<code>FreeTools.dc.html</code>) — the container for all three; linked in nav. Homepage has a "Start free" band. Every tool → book a call.</li>
+    <li>Lead magnet copy + the "It's the Metric" manifesto (<code>Metric.dc.html</code>) and 15 guide pages are the GEO/SEO top-of-funnel that route into these tools.</li>
+  </ul>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <div style="margin-top:40px; padding:24px; background:#F0EADD; border-radius:16px; font-size:14.5px; line-height:1.7; color:#3D3A34;">
+    <strong style="font-family:'Space Grotesk',sans-serif;">Suggested build order:</strong> (1) marketing site + Guides/SEO layer &rarr; (2) the free tools (Diagnostic, 4 AM Test, Hidden Gem, Get to Green sample) &rarr; (3) the self-serve Get to Green account (auth + DB) &rarr; (4) the Prove engine (Snapshot / Validation / Decision + Heatmap) &rarr; (5) Better Every Day subscription + billing. Ship 1&ndash;2 to start capturing leads while 3&ndash;5 are built.
+  </div>
+
+  <hr style="border:none; border-top:1px solid #E4DCCC; margin:36px 0;">
+
+  <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px;">7. Open items from the client</h2>
+  <ul style="font-size:15.5px; line-height:1.8; color:#3D3A34; margin:0;">
+    <li>CQ scoring is governed by the <strong>Technical Specification</strong> (<code>uploads/CQ_Scoring_System_Technical_Specification_Current_State.docx</code>): 0&ndash;100 trait + composite scale, provisional profile <code>cq-core-2026-demo v0.1.0</code> weighting 40/35/25. Client to confirm final weights, tier bands, and recover the item bank / archetype rules.</li>
+    <li>Employment-law review of any decision-influencing language (keep it decision-support).</li>
+    <li>Pricing set: Prove Sprint <strong>$10,000</strong> (up to 35, +$100/head); Better Every Day <strong>$500/mo base + $150/mo per active seat</strong>. Still open: Implementer partner terms.</li>
+    <li>Real James headshot + client proof/testimonials (prototype uses image slots + quotes from source docs).</li>
+    <li>Domain: provecq.com primary, commitment-quotient.com + FPO.com redirect in.</li>
+  </ul>
+
+  <div style="margin-top:40px; padding:24px; background:#14130E; color:#B8B4A6; border-radius:16px; font-size:14px; line-height:1.6;">
+    Read first: <code>provecq/Home.dc.html</code> (design system + narrative), <code>provecq/Heatmap.dc.html</code> (product interaction + scoring), <code>provecq/EOS.dc.html</code> (wedge), and this brief. All prototype pages open directly in a browser to view live.
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

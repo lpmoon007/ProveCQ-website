@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f3ec;
+  color: #1b1913;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #c7ecd5;
+}
+
+/* Dark sections invert the selection tint for legibility. */
+.on-dark ::selection {
+  background: #1f8b57;
+  color: #fff;
+}
+
+@layer components {
+  /* Section eyebrow / kicker label */
+  .eyebrow {
+    @apply text-[13px] font-bold uppercase tracking-[.14em];
+  }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Are Your People Decisions Ready to Scale? Free 2-Minute Diagnostic | ProveCQ</title>
+<meta name="description" content="A free 2-minute diagnostic for founders and CEOs: answer 10 quick questions and get an instant read on how much you're guessing about your people — hiring, promoting, and keeping the right ones. See your Certainty Score.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Prove","legalName":"Be Legendary","url":"https://www.provecq.com","description":"Behavioral proof of who will deliver — before you promote, hire, or hand over the keys. Powered by the Commitment Quotient.","brand":{"@type":"Brand","name":"Commitment Quotient"},"parentOrganization":{"@type":"Organization","name":"Be Legendary","url":"https://www.belegendary.org"},"founder":{"@type":"Person","name":"James Carter"},"telephone":"+1-800-513-8759","areaServed":"US"}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F3EC; font-family: 'Figtree', sans-serif; color: #1B1913; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: #1F8B57; }
+  a:hover { color: #17663F; }
+  ::selection { background: #C7ECD5; }
+  @media (max-width:820px){
+    header > div { flex-wrap:wrap; gap:10px 14px; }
+    nav { gap:14px !important; font-size:13px !important; flex-wrap:wrap; justify-content:flex-end; }
+    section { padding-left:16px !important; padding-right:16px !important; }
+    [style*="grid-template-columns:1fr 1.25fr"],[style*="grid-template-columns:1.4fr 1fr 1fr 1fr"],[style*="grid-template-columns:1fr 1fr"],[style*="grid-template-columns:1fr auto"] { grid-template-columns:1fr !important; }
+    h1 { font-size:34px !important; }
+  }
+</style>
+</helmet>
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:50; background:rgba(20,19,14,.92); backdrop-filter:blur(12px); border-bottom:1px solid #2A2820;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:15px 32px;">
+      <a href="Home.dc.html" style="display:flex; align-items:center; gap:10px; color:#F6F3EC;">
+        <span style="width:32px; height:32px; border-radius:9px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">P</span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; letter-spacing:-.01em;">Prove</span>
+      </a>
+      <nav style="display:flex; align-items:center; gap:26px; font-size:14.5px; font-weight:600; color:#C9C5B8;">
+        <a href="HowItWorks.dc.html" style="color:#C9C5B8;">How it works</a>
+        <a href="EOS.dc.html" style="color:#C9C5B8;">For EOS</a>
+        <a href="FreeTools.dc.html" style="color:#C9C5B8;">Free tools</a>
+        <a href="Guides.dc.html" style="color:#C9C5B8;">Guides</a>
+        <a href="About.dc.html" style="color:#C9C5B8;">About</a>
+        <a href="Ethics.dc.html" style="color:#C9C5B8;">Ethics</a>
+        <a href="https://meetings-na2.hubspot.com/jcarter28" style="padding:10px 20px; background:#1F8B57; color:#fff; border-radius:9px;">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background:#14130E; color:#F6F3EC; padding:70px 32px 40px;">
+    <div style="max-width:760px; margin:0 auto; text-align:center;">
+      <span style="font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#8FD6AC; font-weight:700;">Free 2-minute diagnostic</span>
+      <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:46px; line-height:1.05; letter-spacing:-.03em; margin:14px 0 16px;">How much are you guessing about your people?</h1>
+      <p style="font-size:19px; line-height:1.55; color:#B8B4A6; margin:0;">Ten quick questions. One honest number: your <strong style="color:#F6F3EC;">Certainty Score</strong> &mdash; how much proof (versus gut feel) is behind your hiring, promotion, and retention decisions.</p>
+    </div>
+  </section>
+
+  <section style="padding:40px 32px 84px;">
+    <div style="max-width:760px; margin:0 auto;">
+
+      <!-- QUIZ -->
+      <sc-if value="{{ quizActive }}" hint-placeholder-val="{{ true }}">
+        <div style="background:#fff; border:1px solid #E7E0D2; border-radius:22px; padding:38px 40px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#1F8B57;">Question {{ qNum }} of {{ qTotal }}</span>
+            <span style="font-size:13px; color:#8A8474; font-weight:600;">{{ qCategory }}</span>
+          </div>
+          <div style="height:6px; background:#EDE7DA; border-radius:6px; overflow:hidden; margin-bottom:26px;"><div style="height:100%; background:#1F8B57; width:{{ progressPct }};"></div></div>
+          <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; line-height:1.25; letter-spacing:-.01em; margin:0 0 24px;">{{ qText }}</h2>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <sc-for list="{{ options }}" as="opt" hint-placeholder-count="4">
+              <button onClick="{{ opt.choose }}" style="{{ opt.style }}">{{ opt.label }}</button>
+            </sc-for>
+          </div>
+          <div style="margin-top:24px;">
+            <sc-if value="{{ canGoBack }}" hint-placeholder-val="{{ false }}">
+              <button onClick="{{ back }}" style="background:none; border:none; color:#8A8474; font-family:inherit; font-size:14px; font-weight:600; cursor:pointer; padding:0;">&larr; Back</button>
+            </sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- RESULT -->
+      <sc-if value="{{ showResult }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#14130E; color:#F6F3EC; border-radius:22px; padding:44px 40px; text-align:center; margin-bottom:20px;">
+          <span style="font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#8FD6AC; font-weight:700;">Your Certainty Score</span>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:88px; line-height:1; letter-spacing:-.03em; margin:14px 0 6px; color:{{ scoreColor }};">{{ scorePct }}</div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:24px; margin-bottom:14px; color:{{ scoreColor }};">{{ tierLabel }}</div>
+          <p style="font-size:17px; line-height:1.6; color:#B8B4A6; max-width:520px; margin:0 auto 10px;">{{ tierBlurb }}</p>
+          <div style="height:10px; background:#262319; border-radius:6px; overflow:hidden; max-width:420px; margin:24px auto 0;"><div style="height:100%; background:{{ scoreColor }}; width:{{ scorePct }};"></div></div>
+        </div>
+        <div style="background:#fff; border:1px solid #E7E0D2; border-radius:20px; padding:34px;">
+          <h3 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:22px; letter-spacing:-.01em; margin:0 0 8px;">Where you're most exposed</h3>
+          <p style="color:#615B4F; font-size:15px; margin:0 0 18px;">Your three lowest-certainty areas &mdash; the decisions where you're guessing most.</p>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:26px;">
+            <sc-for list="{{ gaps }}" as="g" hint-placeholder-count="3">
+              <div style="display:flex; align-items:center; gap:12px; padding:14px 16px; background:#FBF8F2; border:1px solid #EEE7DA; border-radius:12px;">
+                <span style="font-size:16px;">{{ g.dot }}</span>
+                <span style="font-size:15px; font-weight:600; color:#2A261D;">{{ g.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="background:#F0EADD; border-radius:14px; padding:24px; text-align:center;">
+            <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; margin:0 0 6px;">Get your full breakdown + the fix</div>
+            <p style="color:#615B4F; font-size:14.5px; margin:0 0 18px;">See all ten scores and a prioritized action plan &mdash; and how a Prove Sprint turns your reds green.</p>
+            <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+              <a href="https://meetings-na2.hubspot.com/jcarter28" style="padding:14px 26px; background:#1F8B57; color:#fff; border-radius:11px; font-weight:700; font-size:15px;">Book a call to review it</a>
+              <a href="GetToGreen.dc.html" style="padding:14px 26px; background:#14130E; color:#fff; border-radius:11px; font-weight:700; font-size:15px;">See the full 146-point map &rarr;</a>
+            </div>
+          </div>
+          <div style="text-align:center; margin-top:20px;"><button onClick="{{ restart }}" style="background:none; border:none; color:#8A8474; font-family:inherit; font-size:14px; font-weight:600; cursor:pointer;">&#8635; Retake the diagnostic</button></div>
+        </div>
+      </sc-if>
+
+    </div>
+  </section>
+
+  <footer style="background:#0E0D09; color:#8C877A; padding:54px 32px 40px;">
+    <div style="max-width:1080px; margin:0 auto; display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:36px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; color:#F6F3EC; margin-bottom:12px;"><span style="width:30px; height:30px; border-radius:8px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700;">P</span><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">Prove</span></div>
+        <p style="font-size:14px; line-height:1.6; margin:0; max-width:280px;">Behavioral proof of who will deliver — before you bet on them. Powered by the Commitment Quotient&trade;. A Be Legendary company.</p>
+      </div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Product</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="HowItWorks.dc.html" style="color:#8C877A;">How it works</a><a href="Heatmap.dc.html" style="color:#8C877A;">The Heatmap</a><a href="BetterEveryDay.dc.html" style="color:#8C877A;">Better Every Day</a></div></div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Company</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="EOS.dc.html" style="color:#8C877A;">For EOS</a><a href="Guides.dc.html" style="color:#8C877A;">Guides</a><a href="About.dc.html" style="color:#8C877A;">About</a></div></div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Start</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="https://meetings-na2.hubspot.com/jcarter28" style="color:#8C877A;">Book a call</a><a href="https://www.belegendary.org" style="color:#8C877A;">Be Legendary &#8599;</a></div></div>
+    </div>
+    <div style="max-width:1080px; margin:34px auto 0; padding-top:22px; border-top:1px solid #221F17; font-size:13px; color:#605C51;">&copy;2026 Be Legendary. All rights reserved. Commitment Quotient&trade;, Prove&trade; and Better Every Day&trade; are trademarks of Be Legendary.</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { i: 0, answers: [] };
+
+  questions() {
+    return [
+      { cat: "Hiring", q: "When you make a hire, how confident are you they'll follow through once the shine wears off?" },
+      { cat: "Hiring", q: "How much of your last hiring decision came from the interview versus how they actually behaved?" },
+      { cat: "Promotion", q: "Before you promote someone, how well can you predict they'll succeed in the new role?" },
+      { cat: "Promotion", q: "How often does your best individual performer turn out to be the right person to lead?" },
+      { cat: "Retention", q: "Do you know which of your best people are quietly disengaging right now?" },
+      { cat: "Retention", q: "Can you tell who's truly committed versus who's just staying because leaving feels risky?" },
+      { cat: "Potential", q: "How well can you spot the hungry striver stuck in an entry-level seat?" },
+      { cat: "Bottleneck", q: "How confident are you handing over a real outcome without it routing back to you?" },
+      { cat: "Signal", q: "When you make a big people call, is it backed by evidence or mostly gut feel?" },
+      { cat: "Consistency", q: "Do you have a consistent way to measure who delivers when things get hard?" },
+    ];
+  }
+  opts() {
+    return [
+      { label: "Very confident \u2014 I have real proof", v: 3 },
+      { label: "Somewhat \u2014 informed guess", v: 2 },
+      { label: "Not really \u2014 mostly gut feel", v: 1 },
+      { label: "Honestly, I'm flying blind", v: 0 },
+    ];
+  }
+
+  choose(v) {
+    const answers = this.state.answers.slice(0, this.state.i);
+    answers[this.state.i] = v;
+    this.setState({ answers, i: this.state.i + 1 });
+  }
+
+  renderVals() {
+    const qs = this.questions();
+    const total = qs.length;
+    const i = this.state.i;
+    const done = i >= total;
+
+    if (!done) {
+      const q = qs[i];
+      return {
+        quizActive: true,
+        showResult: false,
+        qNum: i + 1,
+        qTotal: total,
+        qCategory: q.cat,
+        qText: q.q,
+        progressPct: Math.round((i / total) * 100) + "%",
+        canGoBack: i > 0,
+        back: () => this.setState({ i: Math.max(0, i - 1) }),
+        options: this.opts().map(o => ({
+          label: o.label,
+          choose: () => this.choose(o.v),
+          style: "text-align:left; width:100%; cursor:pointer; font-family:inherit; font-size:16px; font-weight:600; color:#2A261D; padding:16px 18px; border:1.5px solid #E4DCCB; border-radius:12px; background:#FBF8F2;",
+        })),
+      };
+    }
+
+    // score
+    const max = total * 3;
+    const raw = this.state.answers.reduce((a, b) => a + (b || 0), 0);
+    const pct = Math.round((raw / max) * 100);
+    const color = pct >= 67 ? "#2E9E5B" : pct >= 40 ? "#E0A73E" : "#E5674C";
+    const tier = pct >= 67 ? "Green \u2014 mostly proof" : pct >= 40 ? "Amber \u2014 half guesswork" : "Red \u2014 flying blind";
+    const blurb = pct >= 67
+      ? "You have real signal behind most people decisions. Prove tightens the few areas still running on gut feel."
+      : pct >= 40
+      ? "You're guessing on roughly half your people calls. That's where the six-figure mistakes hide \u2014 and where Prove pays for itself fastest."
+      : "Most of your people decisions are gut feel right now. The good news: that's the highest-return place to add proof, fast.";
+
+    // three weakest categories
+    const scored = qs.map((q, idx) => ({ cat: q.cat, v: this.state.answers[idx] || 0 }));
+    scored.sort((a, b) => a.v - b.v);
+    const seen = {};
+    const gaps = [];
+    for (const s of scored) {
+      if (seen[s.cat]) continue; seen[s.cat] = true;
+      gaps.push({ label: s.cat + (s.v <= 1 ? " \u2014 high exposure" : " \u2014 some risk"), dot: s.v <= 1 ? "\uD83D\uDD34" : "\uD83D\uDFE1" });
+      if (gaps.length === 3) break;
+    }
+
+    return {
+      quizActive: false,
+      showResult: true,
+      scorePct: pct + "%",
+      scoreColor: color,
+      tierLabel: tier,
+      tierBlurb: blurb,
+      gaps,
+      restart: () => this.setState({ i: 0, answers: [] }),
+    };
+  }
+}
+</script>
+</body>
+</html>

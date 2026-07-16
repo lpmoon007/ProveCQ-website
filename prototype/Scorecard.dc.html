@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Talent Development Scorecard — Are You Growing Your Best People? | ProveCQ</title>
+<meta name="description" content="A 90-second self-check for founders and CEOs: are you actively developing and retaining your high-potential people, or quietly losing them? Six questions, an instant rating, and your next move.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Prove","legalName":"Be Legendary","url":"https://www.provecq.com","brand":{"@type":"Brand","name":"Commitment Quotient"},"parentOrganization":{"@type":"Organization","name":"Be Legendary","url":"https://www.belegendary.org"},"founder":{"@type":"Person","name":"James Carter"},"telephone":"+1-800-513-8759","areaServed":"US"}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F3EC; font-family: 'Figtree', sans-serif; color: #1B1913; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: #1F8B57; }
+  a:hover { color: #17663F; }
+  ::selection { background: #C7ECD5; }
+  @media (max-width: 720px) { nav.pnav { display:none !important; } h1.sc { font-size:36px !important; } }
+</style>
+</helmet>
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:50; background:rgba(20,19,14,.92); backdrop-filter:blur(12px); border-bottom:1px solid #2A2820;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:15px 32px;">
+      <a href="Home.dc.html" style="display:flex; align-items:center; gap:10px; color:#F6F3EC;">
+        <span style="width:32px; height:32px; border-radius:9px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">P</span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; letter-spacing:-.01em;">Prove</span>
+      </a>
+      <nav class="pnav" style="display:flex; align-items:center; gap:24px; font-size:14.5px; font-weight:600; color:#C9C5B8;">
+        <a href="HowItWorks.dc.html" style="color:#C9C5B8;">How it works</a>
+        <a href="EOS.dc.html" style="color:#C9C5B8;">For EOS</a>
+        <a href="FreeTools.dc.html" style="color:#C9C5B8;">Free tools</a>
+        <a href="Guides.dc.html" style="color:#C9C5B8;">Guides</a>
+        <a href="https://meetings-na2.hubspot.com/jcarter28" style="padding:10px 20px; background:#1F8B57; color:#fff; border-radius:9px;">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background:#14130E; color:#F6F3EC; padding:60px 32px 44px;">
+    <div style="max-width:760px; margin:0 auto;">
+      <div style="font-size:13px; color:#7C7767; font-weight:600; margin-bottom:16px;"><a href="Home.dc.html" style="color:#7C7767;">Home</a> &rsaquo; <a href="FreeTools.dc.html" style="color:#7C7767;">Free tools</a> &rsaquo; Talent scorecard</div>
+      <span style="font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#8FD6AC; font-weight:700;">90-second self-check</span>
+      <h1 class="sc" style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:46px; line-height:1.05; letter-spacing:-.03em; margin:14px 0 14px;">Are you growing your best people &mdash; or quietly losing them?</h1>
+      <p style="font-size:18px; line-height:1.55; color:#B8B4A6; margin:0;">Six honest questions on how you develop and keep your high-potential talent. Rate each 1&ndash;5. Get an instant rating and your next move.</p>
+    </div>
+  </section>
+
+  <section style="padding:40px 32px 80px;">
+    <div style="max-width:760px; margin:0 auto;">
+      <sc-for list="{{ questions }}" as="q" hint-placeholder-count="6">
+        <div style="background:#fff; border:1px solid #E7E0D2; border-radius:16px; padding:24px 26px; margin-bottom:14px;">
+          <div style="font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#1F8B57; font-weight:700; margin-bottom:8px;">{{ q.cat }}</div>
+          <p style="font-size:16.5px; font-weight:600; line-height:1.45; margin:0 0 16px;">{{ q.text }}</p>
+          <div style="display:flex; gap:8px;">
+            <sc-for list="{{ q.opts }}" as="o" hint-placeholder-count="5">
+              <button onClick="{{ o.pick }}" style="{{ o.style }}">{{ o.n }}</button>
+            </sc-for>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:11.5px; color:#8A8474; margin-top:8px;"><span>Not at all</span><span>Absolutely</span></div>
+        </div>
+      </sc-for>
+
+      <!-- result -->
+      <div style="background:#14130E; color:#F6F3EC; border-radius:20px; padding:32px; margin-top:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+          <div style="font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:#8FD6AC; font-weight:700;">Your talent-development rating</div>
+          <div style="font-size:13px; color:#7C7767;">{{ answered }}/6 answered</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:6px;">
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:52px; line-height:1; color:{{ ratingColor }};">{{ total }}<span style="font-size:22px; color:#7C7767;">/30</span></div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:22px; color:{{ ratingColor }};">{{ band }}</div>
+        </div>
+        <p style="font-size:15.5px; line-height:1.6; color:#B8B4A6; margin:6px 0 20px;">{{ verdict }}</p>
+        <div style="background:#1B1A12; border:1px solid #2A2718; border-radius:12px; padding:20px; margin-bottom:18px;">
+          <div style="font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:#8FD6AC; font-weight:700; margin-bottom:6px;">Your next move</div>
+          <p style="font-size:15px; line-height:1.6; color:#D7D3C5; margin:0;">{{ nextMove }}</p>
+        </div>
+        <a href="https://meetings-na2.hubspot.com/jcarter28" style="display:block; text-align:center; padding:15px; background:#1F8B57; color:#fff; border-radius:11px; font-weight:700; font-size:16px;">Book a call to close the gap</a>
+      </div>
+      <p style="font-size:13px; color:#8A8474; text-align:center; margin:18px 0 0;">A reflective self-assessment, not a validated instrument. For your team's actual talent picture, a <a href="HowItWorks.dc.html">Prove cycle</a> measures behavior directly.</p>
+    </div>
+  </section>
+
+  <footer style="background:#0E0D09; color:#8C877A; padding:54px 32px 40px;">
+    <div style="max-width:1080px; margin:0 auto; display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:36px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; color:#F6F3EC; margin-bottom:12px;"><span style="width:30px; height:30px; border-radius:8px; background:#1F8B57; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700;">P</span><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:17px;">Prove</span></div>
+        <p style="font-size:14px; line-height:1.6; margin:0; max-width:280px;">Behavioral proof of who will deliver — before you bet on them. Powered by the Commitment Quotient™. A Be Legendary company.</p>
+      </div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Product</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="HowItWorks.dc.html" style="color:#8C877A;">How it works</a><a href="Heatmap.dc.html" style="color:#8C877A;">The Heatmap</a><a href="FreeTools.dc.html" style="color:#8C877A;">Free tools</a></div></div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Learn</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="Guides.dc.html" style="color:#8C877A;">Guides</a><a href="Ethics.dc.html" style="color:#8C877A;">What CQ is &amp; isn't</a><a href="FAQ.dc.html" style="color:#8C877A;">FAQ</a></div></div>
+      <div><div style="color:#F6F3EC; font-weight:700; font-size:14px; margin-bottom:12px;">Start</div><div style="display:flex; flex-direction:column; gap:8px; font-size:14px;"><a href="https://meetings-na2.hubspot.com/jcarter28" style="color:#8C877A;">Book a call</a><a href="https://www.belegendary.org" style="color:#8C877A;">Be Legendary &#8599;</a></div></div>
+    </div>
+    <div style="max-width:1080px; margin:34px auto 0; padding-top:22px; border-top:1px solid #221F17; font-size:13px; color:#605C51;">&copy;2026 Be Legendary. All rights reserved. Commitment Quotient™, Prove™ and Better Every Day™ are trademarks of Be Legendary.</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { answers: {} };
+
+  qs() {
+    return [
+      { cat: "High-potential development", text: "My best employees are actively growing, taking on more responsibility, and being challenged." },
+      { cat: "High-potential development", text: "I have a clear system to identify, coach, and retain my high-potential people." },
+      { cat: "Retention & growth", text: "My best employees feel seen, valued, and challenged in meaningful ways." },
+      { cat: "Retention & growth", text: "We have clear development opportunities that keep top talent engaged." },
+      { cat: "Knowing who to bet on", text: "I can tell — with evidence, not gut feel — who's truly ready for more scope." },
+      { cat: "Knowing who to bet on", text: "When I promote or hand off, the right person consistently steps up." },
+    ];
+  }
+
+  renderVals() {
+    const a = this.state.answers;
+    const questions = this.qs().map((q, i) => ({
+      cat: q.cat, text: q.text,
+      opts: [1, 2, 3, 4, 5].map(n => ({
+        n,
+        pick: () => this.setState({ answers: { ...this.state.answers, [i]: n } }),
+        style: `flex:1; border:none; cursor:pointer; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:16px; padding:13px 0; border-radius:10px; background:${a[i] === n ? "#1F8B57" : "#F0EADD"}; color:${a[i] === n ? "#fff" : "#575249"};`,
+      })),
+    }));
+
+    const vals = Object.values(a);
+    const answered = vals.length;
+    const total = vals.reduce((s, v) => s + v, 0);
+
+    let band = "—", color = "#7C7767", verdict = "Answer the six questions to see your rating.", nextMove = "Rate each statement above from 1 to 5.";
+    if (answered === 6) {
+      if (total >= 25) { band = "Talent Builder"; color = "#2E9E5B"; verdict = "You're actively developing and keeping your best people, and you can back your bets with evidence. Keep sharpening the system."; nextMove = "Protect what's working — a light Better Every Day cadence keeps your proven players from plateauing."; }
+      else if (total >= 19) { band = "On Track"; color = "#8FD6AC"; verdict = "Good instincts, real gaps. Some high-potentials are growing; others are probably being overlooked or under-challenged."; nextMove = "Run a Prove cycle on your next promotion or key project so your bets are proof-based, not hopeful."; }
+      else if (total >= 12) { band = "At Risk"; color = "#E0A73E"; verdict = "Your best people aren't being seen or stretched systematically — the conditions where hidden gems quietly leave."; nextMove = "Start with the Hidden Gem Identifier, then prove who's ready before your next promotion."; }
+      else { band = "Losing Them"; color = "#D0492E"; verdict = "Talent development is running on luck. Without a system, you'll keep promoting the wrong people and losing the right ones."; nextMove = "Book a call — a single Prove cycle will show you exactly who to invest in first."; }
+    }
+
+    return {
+      questions, answered, total,
+      band, ratingColor: color, verdict, nextMove,
+    };
+  }
+}
+</script>
+</body>
+</html>
