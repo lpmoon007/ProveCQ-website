@@ -7,8 +7,7 @@ import HiddenGemForm from "@/components/HiddenGemForm";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Hidden Gem Identifier — A Free Tool to Identify High-Potential Employees",
+  title: "Hidden Gem Identifier — Free High-Potential Tool",
   description:
     "A free high-potential assessment for founders and CEOs. The Hidden Gem Identifier is a tool to identify high-potential employees every leader overlooks — the quiet consistent performer and the hungry striver in the wrong seat — so you know who to protect, stretch, and stop overlooking.",
   keywords: [
