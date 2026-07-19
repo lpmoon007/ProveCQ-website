@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "People-Decision Glossary — Commitment, Capacity, Retention Terms",
   description:
-    "Plain-English definitions of the terms behind better people decisions: Commitment Quotient, Initiative, Applied Grit, Learnability, capacity, regretted attrition, quiet quitting, span of control, quality of hire, GWC, and more.",
+    "Plain-English definitions of the terms behind better people decisions: Commitment Quotient, its three dimensions (Initiative, Applied Grit, Learnability) and 9 sub-traits, capacity, regretted attrition, quiet quitting, quality of hire, GWC, and more.",
 };
 
 const GLOSSARY_JSONLD = `{
@@ -27,9 +27,57 @@ const GLOSSARY_JSONLD = `{
     {"@type":"DefinedTerm","name":"Quiet quitting","description":"Doing the minimum required and no more; disengagement that looks like retention but withholds discretionary effort."},
     {"@type":"DefinedTerm","name":"Span of control","description":"The number of direct reports a manager oversees; too wide a span degrades coaching and engagement."},
     {"@type":"DefinedTerm","name":"Quality of hire","description":"A measure of how well a new hire performs and stays, ideally assessed by behavior in the first 90 days."},
-    {"@type":"DefinedTerm","name":"GWC (Gets it, Wants it, Capacity)","description":"An EOS framework for evaluating whether a person fits a seat; Capacity is the component Prove makes measurable."}
+    {"@type":"DefinedTerm","name":"GWC (Gets it, Wants it, Capacity)","description":"An EOS framework for evaluating whether a person fits a seat; Capacity is the component Prove makes measurable."},
+    {"@type":"DefinedTerm","name":"Proactive Start","description":"A sub-trait of Initiative: starting on what needs doing before being asked or assigned, rather than waiting for direction."},
+    {"@type":"DefinedTerm","name":"Follow-Through","description":"A sub-trait of Initiative: carrying work all the way to done — especially the unglamorous last mile — not just starting strong."},
+    {"@type":"DefinedTerm","name":"Resourcefulness","description":"A sub-trait of Initiative: finding a way around obstacles with the access and tools at hand instead of stalling until the path is cleared."},
+    {"@type":"DefinedTerm","name":"Resilience","description":"A sub-trait of Applied Grit: recovering from setbacks and staying in the work after a failure rather than deflating or disengaging."},
+    {"@type":"DefinedTerm","name":"Ownership","description":"A sub-trait of Applied Grit: taking responsibility for outcomes — including the messy and shared ones — instead of assigning blame."},
+    {"@type":"DefinedTerm","name":"Long-Game Drive","description":"A sub-trait of Applied Grit: sustaining effort toward a payoff that isn't immediate, staying motivated when the reward is distant."},
+    {"@type":"DefinedTerm","name":"Openness to Feedback","description":"A sub-trait of Learnability: taking correction without defensiveness and acting on it, rather than protecting ego or track record."},
+    {"@type":"DefinedTerm","name":"Self-Awareness","description":"A sub-trait of Learnability: an accurate read of one's own strengths and gaps — the starting point for real improvement."},
+    {"@type":"DefinedTerm","name":"Growth Orientation","description":"A sub-trait of Learnability: actively seeking to get better without being pushed, treating skill as something built rather than fixed."}
   ]
 }`;
+
+/** The 9 CQ sub-traits, grouped under the three measured dimensions. */
+const SUBTRAITS: {
+  dim: string;
+  question: string;
+  href: string;
+  items: { name: string; def: string }[];
+}[] = [
+  {
+    dim: "Initiative",
+    question: "Do they act without being told?",
+    href: "/guides/the-science-behind-cq",
+    items: [
+      { name: "Proactive Start", def: "Starting on what needs doing before being asked or assigned — moving first instead of waiting for direction." },
+      { name: "Follow-Through", def: "Carrying work all the way to done, especially the unglamorous last mile — not just starting strong." },
+      { name: "Resourcefulness", def: "Finding a way around obstacles with the access and tools at hand, instead of stalling until someone clears the path." },
+    ],
+  },
+  {
+    dim: "Applied Grit",
+    question: "Do they hold when it gets hard?",
+    href: "/guides/the-science-behind-cq",
+    items: [
+      { name: "Resilience", def: "Recovering from setbacks and staying in the work after a failure, rather than deflating or checking out." },
+      { name: "Ownership", def: "Taking responsibility for outcomes — including the messy and shared ones — instead of reaching for blame." },
+      { name: "Long-Game Drive", def: "Sustaining effort toward a payoff that isn't immediate — staying motivated when the reward is still distant." },
+    ],
+  },
+  {
+    dim: "Learnability",
+    question: "Do they evolve over time?",
+    href: "/guides/the-science-behind-cq",
+    items: [
+      { name: "Openness to Feedback", def: "Taking correction without defensiveness and acting on it, rather than protecting ego or a track record." },
+      { name: "Self-Awareness", def: "An accurate read of one's own strengths and gaps — the starting point for any real improvement." },
+      { name: "Growth Orientation", def: "Actively seeking to get better without being pushed, treating skill as something built rather than fixed." },
+    ],
+  },
+];
 
 const TERMS: { term: ReactNode; def: ReactNode }[] = [
   {
@@ -178,6 +226,54 @@ export default function GlossaryPage() {
                 <p className="m-0 text-[14.5px] leading-[1.6] text-[#575249] [&_a]:text-green">
                   {t.def}
                 </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* The 9 CQ sub-traits, grouped by dimension */}
+      <Section tone="paper2">
+        <Container wide className="max-w-[1000px]">
+          <div className="mb-8 max-w-[680px]">
+            <h2 className="m-0 mb-3 font-display text-[26px] font-bold tracking-[-.02em] sm:text-[32px]">
+              The 9 CQ sub-traits
+            </h2>
+            <p className="m-0 text-[16px] leading-[1.65] text-content-muted">
+              The Commitment Quotient score rests on three measured dimensions.
+              Each breaks down into three observable behaviors — the specific
+              things Prove watches for in real work, rather than a personality
+              label.{" "}
+              <Link href="/guides/the-science-behind-cq" className="font-semibold text-green">
+                See the first-principles science behind them &rarr;
+              </Link>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            {SUBTRAITS.map((group) => (
+              <div
+                key={group.dim}
+                className="flex flex-col rounded-[18px] border border-edge-light bg-white p-6"
+              >
+                <div className="mb-1 font-display text-[19px] font-bold tracking-[-.01em]">
+                  {group.dim}
+                </div>
+                <div className="mb-4 text-[13px] font-semibold uppercase tracking-[.04em] text-green">
+                  {group.question}
+                </div>
+                <dl className="m-0 flex flex-col gap-3.5">
+                  {group.items.map((it) => (
+                    <div key={it.name}>
+                      <dt className="text-[15px] font-bold text-content">
+                        {it.name}
+                      </dt>
+                      <dd className="m-0 mt-0.5 text-[13.5px] leading-[1.5] text-[#575249]">
+                        {it.def}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
             ))}
           </div>
