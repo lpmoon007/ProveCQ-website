@@ -97,8 +97,8 @@ const CRITERIA = [
     b: "Grounded in behavior you can actually see — not sentiment, personality type, or self-report.",
   },
   {
-    h: "Predictive across roles",
-    b: "Correlates with execution, growth, and resilience in almost any role and industry — not one narrow context.",
+    h: "Built to travel across roles",
+    b: "Each is chosen because it maps, in principle, to execution, growth, and resilience across roles and industries — not one narrow context. (Formal predictive-validity evidence is something any behavioral measure has to earn; we treat these as well-reasoned foundations, not settled science.)",
   },
   {
     h: "Distinct & influenceable",
