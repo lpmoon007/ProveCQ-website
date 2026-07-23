@@ -23,7 +23,10 @@ export const site = {
    * (identity verification). Add confirmed URLs ONLY — a 404 here hurts more
    * than an omission. TODO: add LinkedIn company page + Crunchbase once confirmed.
    */
-  orgSameAs: ["https://www.belegendary.org"] as string[],
+  orgSameAs: [
+    "https://www.belegendary.org",
+    "https://www.linkedin.com/company/repario-and-be-legendary/",
+  ] as string[],
 } as const;
 
 /** Primary nav (dark header). */
