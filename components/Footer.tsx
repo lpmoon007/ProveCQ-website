@@ -43,7 +43,30 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="mx-auto mt-[34px] max-w-content border-t border-[#221F17] pt-[22px] text-[13px] text-[#605C51]">
+      <div className="mx-auto mt-[34px] max-w-content border-t border-[#221F17] pt-[22px] text-[13px] leading-relaxed text-[#605C51]">
+        <p className="m-0 mb-3 max-w-[760px]">
+          Prove and the Commitment Quotient (CQ) are from{" "}
+          <a
+            href="https://www.belegendary.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8C877A] underline-offset-2 hover:text-paper hover:underline"
+          >
+            Be Legendary
+          </a>
+          , founded by James Carter, creator of the{" "}
+          <a
+            href="https://www.belegendary.org/flag-model/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8C877A] underline-offset-2 hover:text-paper hover:underline"
+          >
+            Flag Model
+          </a>
+          . CQ measures whether your people can deliver; the Flag Model measures
+          whether your team can execute. Prove is behavioral measurement — not the
+          identity-verification service at prove.com.
+        </p>
         ©2026 {site.legalName}. All rights reserved. Commitment Quotient™, Prove™
         and Better Every Day™ are trademarks of Be Legendary.
       </div>

@@ -18,13 +18,12 @@ export const site = {
   // Microsoft Clarity project ID (session recordings + heatmaps).
   clarityProjectId: "xp70d5yroz",
   /**
-   * Public profiles that refer to the SAME organization — feeds schema `sameAs`
-   * so a model can tell this "Prove" (the CQ assessment) apart from prove.com
-   * (identity verification). Add confirmed URLs ONLY — a 404 here hurts more
-   * than an omission. TODO: add LinkedIn company page + Crunchbase once confirmed.
+   * Public profiles that refer to the SAME organization (the Prove brand) —
+   * feeds schema `sameAs` so a model can tell this "Prove" (the CQ assessment)
+   * apart from prove.com (identity verification). Be Legendary is NOT listed
+   * here: it's the PARENT brand, linked via `parentOrganization`, not `sameAs`.
    */
   orgSameAs: [
-    "https://www.belegendary.org",
     "https://www.linkedin.com/company/repario-and-be-legendary/",
   ] as string[],
 } as const;

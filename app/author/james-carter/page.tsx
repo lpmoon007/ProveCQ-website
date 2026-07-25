@@ -26,17 +26,20 @@ export const metadata: Metadata = {
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
+  // Same @id as Be Legendary's James Carter node — declares one shared entity.
+  "@id": "https://www.belegendary.org/#james",
   name: AUTHOR.name,
   jobTitle: AUTHOR.jobTitle,
   url: `${site.domain}${CANONICAL}`,
   sameAs: AUTHOR.sameAs,
   worksFor: {
     "@type": "Organization",
+    "@id": "https://www.belegendary.org/#org",
     name: "Be Legendary",
-    url: site.parentUrl,
+    url: "https://www.belegendary.org/",
   },
   description:
-    "Founder of Be Legendary and creator of the Commitment Quotient, the behavioral method behind Prove.",
+    "Founder of Be Legendary and creator of the Flag Model, and creator of the Commitment Quotient (CQ) — the behavioral method behind Prove.",
   knowsAbout: [
     "employee commitment",
     "leadership readiness",

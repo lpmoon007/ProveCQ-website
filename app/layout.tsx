@@ -55,12 +55,20 @@ const orgJsonLd = {
   description: site.description,
   sameAs: site.orgSameAs,
   brand: { "@type": "Brand", name: "Commitment Quotient" },
+  // Reciprocal of belegendary.org declaring Prove a subOrganization. The @id
+  // matches Be Legendary's Organization node exactly so the two graphs interlock.
   parentOrganization: {
     "@type": "Organization",
+    "@id": "https://www.belegendary.org/#org",
     name: "Be Legendary",
-    url: site.parentUrl,
+    url: "https://www.belegendary.org/",
   },
-  founder: { "@type": "Person", name: "James Carter" },
+  founder: {
+    "@type": "Person",
+    "@id": "https://www.belegendary.org/#james",
+    name: "James Carter",
+    url: `${site.domain}/author/james-carter`,
+  },
   telephone: site.telephone,
   areaServed: "US",
   knowsAbout: [

@@ -484,6 +484,37 @@ export default function HomePage() {
         </Container>
       </Section>
 
+      {/* COMPANION MEASURE — reciprocal of the callout on belegendary.org's Flag Model page */}
+      <Section tone="paper">
+        <Container className="max-w-[820px]">
+          <div className="rounded-[18px] border-l-4 border-green bg-paper-2 p-8 sm:p-10">
+            <Eyebrow>The companion measure</Eyebrow>
+            <p className="mt-3.5 mb-4 text-[18px] leading-[1.6] text-content">
+              Prove measures whether your people can deliver &mdash; the{" "}
+              <strong>Commitment Quotient (CQ)</strong>. Its companion, the{" "}
+              <a
+                href="https://www.belegendary.org/flag-model/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-green underline-offset-2 hover:underline"
+              >
+                Flag Model
+              </a>{" "}
+              from Be Legendary, measures whether your <em>team</em> can execute.
+              Same founder; two layers of the same question.
+            </p>
+            <a
+              href="https://www.belegendary.org/flag-model/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[15px] font-bold text-green underline-offset-2 hover:underline"
+            >
+              See the Flag Model &rarr;
+            </a>
+          </div>
+        </Container>
+      </Section>
+
       {/* CTA */}
       <section className="bg-green px-5 py-[88px] text-center text-white sm:px-8 on-dark">
         <div className="mx-auto max-w-[760px]">

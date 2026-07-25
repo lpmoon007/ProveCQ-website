@@ -12,7 +12,16 @@ export const AUTHOR = {
   // Relative path for on-page links; absolute `url` for schema.
   path: "/author/james-carter",
   url: `${site.domain}/author/james-carter`,
-  sameAs: [site.parentUrl, "https://www.linkedin.com/in/jlcarter"] as string[],
+  // MUST match Be Legendary's James Carter node exactly (linkedin/amazon/wikidata/
+  // buildingteams) — identical sameAs sets are what merge the two nodes into one
+  // entity — plus a direct link to his Be Legendary profile.
+  sameAs: [
+    "https://www.linkedin.com/in/jlcarter/",
+    "https://www.amazon.com/stores/James-Carter/author/B009FAZ2NG",
+    "https://www.wikidata.org/wiki/Q140514540",
+    "https://www.buildingteams.com/about/james-carter/",
+    "https://www.belegendary.org/about/james-carter/",
+  ] as string[],
 };
 
 /** Content was published together at launch; updated as pages are revised. */
