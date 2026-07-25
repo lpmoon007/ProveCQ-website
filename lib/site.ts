@@ -53,6 +53,7 @@ export const footerCols = [
     title: "Company",
     links: [
       { label: "For EOS", href: "/for-eos" },
+      { label: "Fractional CPO", href: "/fractional-chief-people-officer" },
       { label: "About", href: "/about" },
       { label: "Case studies", href: "/case-studies" },
       { label: "Work with us", href: "/work-with-us" },

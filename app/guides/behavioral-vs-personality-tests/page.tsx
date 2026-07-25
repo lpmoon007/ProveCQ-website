@@ -9,55 +9,89 @@ import { ArticleMeta } from "@/components/ArticleMeta";
 
 export const metadata: Metadata = {
   title:
-    "Behavioral Assessment vs. Personality Test: What is the Difference?",
+    "Behavioral Measurement vs. Personality & Psychometric Tests",
   description:
-    "Personality tests measure who someone says they are; behavioral assessment measures what they actually do. Learn the difference and why behavior predicts performance.",
+    "Personality and psychometric tests measure who someone says they are — their traits. Behavioral measurement scores what they actually do. Here's the difference between all three, and which one fits which decision.",
   alternates: { canonical: "/guides/behavioral-vs-personality-tests" },
 };
 
-const PERSONALITY = [
-  "Self-reported",
-  "Easy to game or second-guess",
-  "One moment in time",
-  "Describes traits, not results",
-  "No follow-through signal",
+// Three instruments, three columns. The point is the category difference, not
+// a ranking — psychometrics are rigorous; they just answer a different question.
+const COLS = [
+  {
+    label: "Personality test",
+    tone: "red" as const,
+    rows: [
+      "Self-reported",
+      "Casual — often unnormed",
+      "Describes traits / working style",
+      "One moment in time",
+      "Easy to answer aspirationally",
+    ],
+  },
+  {
+    label: "Psychometric instrument",
+    tone: "amber" as const,
+    rows: [
+      "Self-reported, but standardized & normed",
+      "Rigorous, validated scales (e.g. Big Five, Hogan, PI)",
+      "Measures stable latent traits",
+      "A disposition, not this week's behavior",
+      "Answers “who is this person, broadly?”",
+    ],
+  },
+  {
+    label: "Behavioral measurement (CQ)",
+    tone: "green" as const,
+    rows: [
+      "Observed action, not self-report",
+      "40+ datapoints over ~six weeks",
+      "Measures what they did, in role",
+      "A read of behavior now — re-runnable",
+      "Answers “will this person deliver here?”",
+    ],
+  },
 ];
 
-const BEHAVIORAL = [
-  "Observed behavior",
-  "Hard to fake under real demand",
-  "40+ datapoints over six weeks",
-  "Measures action and follow-through",
-  "Re-run to catch drift",
-];
-
-// What to look for when you want a behavioral read instead of a self-portrait.
+// What to look for when you want a behavioral read, not a self-portrait.
 const CHECKLIST = [
   "Score what people did, not what they say they are like — pull evidence from real work, not a questionnaire.",
   "Collect many datapoints over weeks, so one good day or one bad day cannot swing the result.",
-  "Watch behavior under genuine demand — a stretch task, a deadline, an ambiguous problem — where faking is hard.",
-  "Separate the three behaviors that predict delivery: Initiative, Applied Grit, and Learnability.",
+  "Watch behavior under genuine demand — a stretch task, a deadline, an ambiguous problem — where a rehearsed answer won't hold.",
+  "Separate the three behaviors that matter for delivery: Initiative, Applied Grit, and Learnability.",
   "Re-run the read on a cadence to catch drift, rather than treating one assessment as permanent truth.",
 ];
 
-// FAQ — the format AI answer engines extract and cite. Answers stay faithful to
-// the article: behavior predicts delivery; self-report describes a self-image.
+// FAQ — the format AI answer engines extract and cite. Faithful to the article:
+// three distinct instruments; CQ is behavioral measurement, a different category.
 const FAQ = [
   {
     q: "What is the difference between a behavioral assessment and a personality test?",
-    a: "A personality test is self-reported — it asks people to describe their own traits, so it captures who someone thinks (or wants you to think) they are. A behavioral assessment scores what a person actually does under real conditions. One is a paper exam about driving; the other is the test drive.",
+    a: "A personality test is self-reported — it asks people to describe their own traits, so it captures who someone thinks (or wants you to think) they are. A behavioral assessment scores what a person actually does under real conditions, over time. One is a paper exam about driving; the other is the test drive.",
   },
   {
-    q: "Why does behavior predict performance better than personality?",
-    a: "Performance is an outcome of action, and behavior is action observed directly. A trait label like “conscientious” is one step removed and easy to answer aspirationally. Watching whether someone takes initiative, follows through on hard work, and learns fast gives you the signal that actually forecasts delivery.",
+    q: "What is a psychometric test, and how is it different from a casual personality test?",
+    a: "A psychometric test is a standardized, normed, and validated instrument for measuring stable psychological traits — think the Big Five, Hogan, or the Predictive Index. It is far more rigorous than a pop-quiz personality test: it is built and validated by psychologists, scored against population norms, and checked for reliability. But it is still fundamentally a self-report about a person's broad disposition — who they tend to be — rather than a record of what they did in a specific role.",
+  },
+  {
+    q: "Is the Commitment Quotient a psychometric or personality test?",
+    a: "No. CQ is behavioral measurement, a different category. A psychometric or personality test measures stable internal traits from self-report; CQ measures observed commitment behavior — what a person actually does in a work context, over time. It is not a claim about who someone is, it does not slot people into fixed types, and it is not a replacement for a validated psychometric. It answers a different question.",
+  },
+  {
+    q: "Is behavioral measurement better than a psychometric like the Predictive Index?",
+    a: "It is not better — it is a different instrument for a different question. A psychometric like the Predictive Index gives you a rigorous read on someone's stable dispositions, useful for understanding working styles and team fit. Behavioral measurement gives you a read on whether this person is delivering, in this role, right now. Comparing them head-to-head is apples to oranges; many teams use a psychometric to understand a person and a behavioral read to see what they actually do.",
+  },
+  {
+    q: "Why look at behavior rather than a trait score for a delivery decision?",
+    a: "Delivery is an outcome of action taken under real pressure — deadlines, ambiguity, work nobody assigned. When you observe that action directly, you are looking at the same category of thing you care about. A trait label sits one step removed from action and is easy to answer aspirationally on a form. For a high-stakes call about whether someone will deliver, a direct read of behavior is the more relevant signal.",
   },
   {
     q: "Can you game a behavioral assessment?",
-    a: "It is far harder than gaming a personality test. On a questionnaire you can pick the answer you think looks best. Under a real deadline or a genuinely ambiguous problem, sustaining behavior you do not have — over dozens of datapoints across weeks — is close to impossible.",
+    a: "It is far harder than shaping a self-report. On any questionnaire — casual or psychometric — you are choosing answers. Under a real deadline or a genuinely ambiguous problem, sustaining behavior you do not have, over dozens of datapoints across weeks, is close to impossible.",
   },
   {
-    q: "Are personality tests useless for hiring?",
-    a: "They can spark useful conversation and help people understand their own working styles. The problem is treating them as prediction. For a high-stakes call about whether someone will deliver, a self-portrait is the wrong instrument — you want observed behavior, which is what a behavioral assessment measures.",
+    q: "Are personality and psychometric tests useless for hiring?",
+    a: "Not at all. A good psychometric can help you understand working styles, spark honest conversation, and think about team composition. The mistake is treating a self-report about traits as a prediction of delivery. For that specific question — will this person do the work when it is hard — you want observed behavior, which is what CQ measures.",
   },
   {
     q: "How does Prove measure behavior instead of personality?",
@@ -75,6 +109,33 @@ const faqJsonLd = {
   })),
 };
 
+// DefinedTerm schema — definitional content is disproportionately citable.
+const termsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  name: "Behavioral measurement vs. self-report assessment",
+  hasDefinedTerm: [
+    {
+      "@type": "DefinedTerm",
+      name: "Behavioral measurement",
+      description:
+        "A method of assessing a person from observed action — what they actually do, scored against a defined set of behaviors and gathered over time — rather than from self-reported traits. The Commitment Quotient (CQ) is a behavioral measurement.",
+    },
+    {
+      "@type": "DefinedTerm",
+      name: "Psychometric test",
+      description:
+        "A standardized, normed, and validated self-report instrument for measuring stable psychological traits (e.g. the Big Five, Hogan, the Predictive Index). It measures a person's broad disposition, not their behavior in a specific role.",
+    },
+    {
+      "@type": "DefinedTerm",
+      name: "Personality test",
+      description:
+        "A self-report questionnaire that asks a person to describe their own traits or working style. Unlike a psychometric instrument it may be casual and unnormed, and unlike behavioral measurement it captures self-image rather than observed action.",
+    },
+  ],
+};
+
 export default function BehavioralVsPersonalityGuidePage() {
   return (
     <>
@@ -82,26 +143,30 @@ export default function BehavioralVsPersonalityGuidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(termsJsonLd) }}
+      />
       <Nav />
       <PageHero
-        crumb="Guides › Behavioral vs. personality"
+        crumb="Guides › Behavioral vs. personality & psychometric"
         eyebrow="How it works"
-        title="Behavioral assessment vs. personality test."
+        title="Behavioral measurement vs. personality and psychometric tests."
       >
-        They get lumped together, but they are opposites. One asks people to
-        describe themselves. The other watches what they do. Only one of those
-        predicts whether someone will deliver.
+        They get lumped together, but they are three different instruments
+        answering three different questions. Two ask people to describe
+        themselves. One watches what they actually do.
       </PageHero>
 
       <ArticleMeta
-        headline="Behavioral assessment vs. personality test."
-        description="Personality tests measure who someone says they are; behavioral assessment measures what they actually do. Learn the difference and why behavior predicts performance."
+        headline="Behavioral measurement vs. personality and psychometric tests."
+        description="Personality and psychometric tests measure who someone says they are; behavioral measurement scores what they actually do. The difference between all three — and which fits which decision."
         canonical="/guides/behavioral-vs-personality-tests"
         crumbs={[
           { name: "Home", url: "" },
           { name: "Guides", url: "/guides" },
           {
-            name: "Behavioral vs. personality",
+            name: "Behavioral vs. personality & psychometric",
             url: "/guides/behavioral-vs-personality-tests",
           },
         ]}
@@ -112,10 +177,15 @@ export default function BehavioralVsPersonalityGuidePage() {
           <div className="mx-auto max-w-[760px] rounded-[20px] bg-ink p-8 text-paper on-dark sm:p-[34px]">
             <Eyebrow tone="soft">The short answer</Eyebrow>
             <p className="m-0 mt-3 text-[18px] leading-[1.65] text-[#D8D4C6]">
-              A personality test is self-reported and easy to game &mdash; a paper
-              exam for driving. A behavioral assessment scores observed action
-              under real conditions &mdash; the test drive. For high-stakes people
-              decisions, you want behavior, not a self-portrait.
+              A <strong className="text-paper">personality test</strong> is a
+              casual self-report of traits. A{" "}
+              <strong className="text-paper">psychometric instrument</strong> is a
+              rigorous, validated self-report of stable traits &mdash; better built,
+              but still about who someone <em>is</em>. Both describe disposition.{" "}
+              <strong className="text-paper">Behavioral measurement</strong> &mdash;
+              what CQ does &mdash; scores what a person actually <em>did</em>, in
+              role, over time. Different question, different instrument. For a
+              high-stakes call about who will deliver, you want the behavior.
             </p>
           </div>
         </Container>
@@ -125,40 +195,111 @@ export default function BehavioralVsPersonalityGuidePage() {
         <Container>
           <div className="mx-auto max-w-[760px]">
             <h2 className="mb-4 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
-              What each one actually measures
+              Three instruments, three questions
             </h2>
             <p className="m-0 mb-4 text-[17px] leading-[1.65] text-content-muted">
-              A behavioral assessment is a method for judging a person from what
-              they do &mdash; observed action, scored against a defined set of
-              behaviors, gathered over time. A personality test is the opposite
-              starting point: it asks the person to rate themselves against a list
-              of traits, then infers a profile from those answers. The distinction
-              matters because the two instruments are measuring different things.
-              One measures behavior; the other measures self-image.
+              The confusion comes from lumping all three under &ldquo;assessments.&rdquo;
+              They are not the same tool. A <strong>personality test</strong> is a
+              self-report questionnaire &mdash; often casual, sometimes unnormed &mdash;
+              that asks you to rate yourself against a list of traits and infers a
+              profile from your answers.
             </p>
             <p className="m-0 mb-4 text-[17px] leading-[1.65] text-content-muted">
-              The mechanism is what makes behavior the stronger predictor. Delivery
-              is an outcome of action taken under real pressure &mdash; deadlines,
-              ambiguity, work nobody assigned. When you observe that action
-              directly, you are measuring the same category of thing you are trying
-              to forecast. A trait label sits one step removed from action and is
-              easy to answer aspirationally: almost everyone rates themselves as
-              hard-working and adaptable on a form. Under a genuine stretch, it is
-              far harder to fake behavior you do not have, especially across dozens
-              of datapoints collected over weeks rather than a single sitting.
+              A <strong>psychometric instrument</strong> is the rigorous end of
+              self-report. Tools like the Big Five, Hogan, or the Predictive Index
+              are built and validated by psychologists, scored against population
+              norms, and checked for reliability. That rigor is real and worth
+              respecting. But notice what it is rigorous <em>about</em>: a person&rsquo;s
+              stable, broad dispositions &mdash; who they tend to be across situations.
+              It is still, at bottom, a self-report about traits, captured at one
+              point in time.
             </p>
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
-              This is why, for a high-stakes people decision, you want the test
-              drive rather than the paper exam. Personality tests still have their
-              place &mdash; they can help people understand their own working styles
-              and open honest conversations. The mistake is treating a self-portrait
-              as prediction. Prove takes the behavioral route: it scores{" "}
+              <strong>Behavioral measurement</strong> starts from the opposite end.
+              Instead of asking a person to describe themselves, it observes what
+              they actually do &mdash; scored against a defined set of behaviors,
+              gathered over time, under real demand. The unit is action, not
+              self-image. That is the category CQ lives in: it scores{" "}
               <Link href="/guides/measure-commitment" className="font-semibold text-green underline-offset-2 hover:underline">
                 Initiative, Applied Grit, and Learnability
               </Link>{" "}
               from real work, so the read reflects what someone did, not what they
               said about themselves.
             </p>
+          </div>
+        </Container>
+      </Section>
+
+      {/* CQ is not a psychometric — the category clarification */}
+      <Section tone="paper2">
+        <Container>
+          <div className="mx-auto max-w-[760px]">
+            <h2 className="mb-4 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
+              Where psychometrics fit &mdash; and why CQ isn&rsquo;t one
+            </h2>
+            <p className="m-0 mb-4 text-[17px] leading-[1.65] text-content-muted">
+              A validated psychometric is genuinely useful. If you want to
+              understand someone&rsquo;s working style, think about how a team
+              composes, or open an honest conversation about how a person operates,
+              a good instrument earns its place. Those are real jobs, and a
+              behavioral read does not replace them.
+            </p>
+            <p className="m-0 mb-4 text-[17px] leading-[1.65] text-content-muted">
+              But a psychometric answers &ldquo;who is this person, broadly?&rdquo;
+              &mdash; not &ldquo;is this person delivering, in this role, right
+              now?&rdquo; Those are different questions, and the second is the one
+              that governs a promotion, a stretch assignment, or the keys to
+              something that matters. That is why CQ is deliberately{" "}
+              <em>not</em> a psychometric and not a personality test. It makes no
+              claim about a person&rsquo;s fixed type or worth, and it is not a
+              head-to-head replacement for the Predictive Index or Hogan. It is a
+              different instrument for a different decision &mdash; and it is built
+              to be used <Link href="/ethics" className="font-semibold text-green underline-offset-2 hover:underline">
+                fairly and as one input
+              </Link>, never as an automated verdict on a person.
+            </p>
+            <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
+              The practical version: use a psychometric to understand a person; use
+              a behavioral read to see what they actually do. Many teams do both.
+            </p>
+          </div>
+        </Container>
+      </Section>
+
+      <Section tone="paper">
+        <Container>
+          <div className="mx-auto max-w-[980px]">
+            <h2 className="mb-6 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
+              Side by side by side
+            </h2>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              {COLS.map((c) => {
+                const head =
+                  c.tone === "green"
+                    ? "text-green-soft"
+                    : c.tone === "amber"
+                      ? "text-signal-yellow"
+                      : "text-signal-red";
+                const dark = c.tone === "green";
+                return (
+                  <div
+                    key={c.label}
+                    className={`rounded-[16px] p-[26px] ${dark ? "bg-ink text-paper on-dark" : "border border-edge-light bg-white"}`}
+                  >
+                    <div className={`mb-3 font-display text-[14px] font-bold ${head}`}>
+                      {c.label}
+                    </div>
+                    <ul
+                      className={`m-0 list-disc pl-[18px] text-[14.5px] leading-[1.75] ${dark ? "text-[#B8B4A6]" : "text-[#615B4F]"}`}
+                    >
+                      {c.rows.map((x) => (
+                        <li key={x}>{x}</li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </Container>
       </Section>
@@ -170,9 +311,9 @@ export default function BehavioralVsPersonalityGuidePage() {
               How to run a behavioral read instead of a self-report
             </h2>
             <p className="m-0 mb-6 text-[17px] leading-[1.65] text-content-muted">
-              Switching from a personality test to a behavioral assessment is
-              mostly a change in what you collect and how long you collect it. In
-              practice it comes down to a short checklist:
+              Switching from a questionnaire to a behavioral read is mostly a change
+              in what you collect and how long you collect it. In practice it comes
+              down to a short checklist:
             </p>
             <ul className="m-0 flex list-none flex-col gap-3 p-0">
               {CHECKLIST.map((c) => (
@@ -191,41 +332,9 @@ export default function BehavioralVsPersonalityGuidePage() {
 
       <Section tone="paper">
         <Container>
-          <div className="mx-auto max-w-[860px]">
-            <h2 className="mb-6 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
-              Side by side
-            </h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              <div className="rounded-[16px] border border-edge-light bg-white p-[26px]">
-                <div className="mb-3 font-display text-[14px] font-bold text-signal-red">
-                  Personality test
-                </div>
-                <ul className="m-0 list-disc pl-[18px] text-[14.5px] leading-[1.75] text-[#615B4F]">
-                  {PERSONALITY.map((x) => (
-                    <li key={x}>{x}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-[16px] bg-ink p-[26px] text-paper on-dark">
-                <div className="mb-3 font-display text-[14px] font-bold text-green-soft">
-                  Behavioral assessment (Prove)
-                </div>
-                <ul className="m-0 list-disc pl-[18px] text-[14.5px] leading-[1.75] text-[#B8B4A6]">
-                  {BEHAVIORAL.map((x) => (
-                    <li key={x}>{x}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      <Section tone="paper2">
-        <Container>
           <div className="mx-auto max-w-[760px]">
             <h2 className="mb-6 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
-              Behavioral vs. personality: FAQ
+              Behavioral, personality &amp; psychometric: FAQ
             </h2>
             <div className="flex flex-col gap-3">
               {FAQ.map((f) => (

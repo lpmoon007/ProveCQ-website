@@ -9,6 +9,7 @@ const ROUTES = [
   "",
   "/how-it-works",
   "/for-eos",
+  "/fractional-chief-people-officer",
   "/founder-bottleneck",
   "/certainty-gap",
   "/better-every-day",
