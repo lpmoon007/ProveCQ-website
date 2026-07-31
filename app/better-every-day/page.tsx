@@ -7,7 +7,7 @@ import { PageHero, CTASection } from "@/components/PageParts";
 export const metadata: Metadata = {
   title: "Better Every Day — Keep Proven Players Growing",
   description:
-    "Better Every Day is a high-potential development program that keeps your high-CQ, proven players growing and in motion — so your best people don't burn out next to passengers. Weekly tracking, monthly commitments, drift alerts.",
+    "Better Every Day is a high-potential development program that keeps your proven players with higher current signal growing and in motion — so your best people don't burn out. Weekly tracking, monthly commitments, drift alerts.",
   keywords: [
     "high potential development program",
     "high potential leadership program",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const PILLARS = [
   {
     title: "Gated entry",
-    body: "Only proven high-CQ players — or those who challenge their way in — get access. Proof, not promise.",
+    body: "Only proven players with higher current signal — or those who challenge their way in — get access. Proof, not promise.",
   },
   {
     title: "Weekly participation tracking",
@@ -62,8 +62,7 @@ export default function BetterEveryDayPage() {
         High performers don&rsquo;t burn out because they&rsquo;re overworked.
         They burn out surrounded by drift, deadweight, and inaction.{" "}
         <strong className="text-paper">Better Every Day</strong> keeps your
-        proven, high-CQ people growing and accountable — and quietly clears the
-        passengers.
+        proven people with higher current signal growing and accountable.
       </PageHero>
 
       <Section tone="paper">
@@ -77,7 +76,7 @@ export default function BetterEveryDayPage() {
               You can&rsquo;t teach commitment — you can only track it. BED is
               gated: only people who&rsquo;ve passed Prove get in. From there, they
               either keep showing up or they&rsquo;re out. No potential bets. No
-              coast mode. No passengers.
+              coast mode.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -93,6 +92,11 @@ export default function BetterEveryDayPage() {
               </div>
             ))}
           </div>
+          <p className="m-0 mt-8 max-w-[720px] text-[13.5px] leading-[1.6] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
         </Container>
       </Section>
 

@@ -43,7 +43,7 @@ export default function CqVsEngagementSurveysGuidePage() {
       >
         They answer different questions. One tells you how your team{" "}
         <em>feels</em>. The other tells you who will <em>deliver</em>. You need
-        both — but only one predicts who to bet on.
+        both — but only one predicts where to focus development.
       </PageHero>
 
       <ArticleMeta
@@ -67,10 +67,13 @@ export default function CqVsEngagementSurveysGuidePage() {
             <p className="m-0 mt-2 text-[16.5px] leading-[1.6] text-[#2A261D]">
               Engagement surveys measure <strong>sentiment</strong> — how people
               feel about their work and environment. CQ measures{" "}
-              <strong>behavior under pressure</strong> — Initiative, Applied Grit,
+              <strong>behavior under pressure</strong> — Initiative, Follow-Through,
               and Learnability. Sentiment is worth tracking, but it doesn&rsquo;t
               tell you who follows through when it&rsquo;s hard. A team can score
-              high on engagement and still miss deadlines and dodge ownership.
+              high on engagement and still miss deadlines and dodge ownership. A CQ
+              result reflects observed behavior during a defined window and is valid
+              for twelve months. Anyone assessed receives their own result and may
+              request re-assessment at any time.
             </p>
           </div>
         </Container>
@@ -114,8 +117,7 @@ export default function CqVsEngagementSurveysGuidePage() {
               economy kept growing. If engagement scores captured what actually
               drives results, that gap couldn&rsquo;t persist. It can — because
               feeling engaged and behaving in ways that deliver are different
-              things. Use engagement to improve your environment. Use CQ to decide
-              who to promote, hire, and hand the keys to.{" "}
+              things. Use engagement to improve your environment.{" "}
               <Link href="/guides/state-of-engagement" className="text-green">
                 See the 2026 State of Engagement &rarr;
               </Link>

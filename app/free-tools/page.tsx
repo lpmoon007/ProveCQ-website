@@ -26,14 +26,6 @@ const TOOLS: {
   href: string;
 }[] = [
   {
-    label: "Interactive · hiring",
-    title: "The CQ Interview Kit",
-    body: "Run a behavioral interview and score it live: 18 questions grouped by Initiative, Applied Grit, and Learnability, each with what to listen for and the red flags — plus an instant CQ read on the candidate.",
-    cta: "Open the interview kit",
-    dark: true,
-    href: "/free-tools/interview-kit",
-  },
-  {
     label: "2 minutes · instant",
     title: "The Certainty Diagnostic",
     body: "Ten quick questions, one honest number: how much proof (versus gut feel) is behind your hiring, promotion, and retention calls. Instant Certainty Score.",
@@ -84,7 +76,7 @@ const TOOLS: {
   {
     label: "Free resource · hiring",
     title: "Behavioral Interview Questions",
-    body: "17 ready-to-use questions that predict follow-through — grouped by Initiative, Applied Grit, and Learnability, with the strong signals and red flags to listen for in each answer.",
+    body: "17 ready-to-use questions that predict follow-through — grouped by Initiative, Follow-Through, and Learnability, with the strong signals and red flags to listen for in each answer.",
     cta: "Get the questions",
     dark: true,
     href: "/guides/behavioral-interview-questions",
@@ -92,7 +84,7 @@ const TOOLS: {
   {
     label: "Free resource · hiring",
     title: "The Hiring Scorecard",
-    body: "Score each candidate 1–5 on Initiative, Applied Grit, and Learnability with clear anchors — then check the number against your gut. Decide on evidence, not the last good impression.",
+    body: "Score each candidate 1–5 on Initiative, Follow-Through, and Learnability with clear anchors — then check the number against your gut. Decide on evidence, not the last good impression.",
     cta: "Get the scorecard",
     dark: true,
     href: "/guides/hiring-scorecard",
@@ -193,7 +185,7 @@ export default function FreeToolsPage() {
           <div className="mx-auto mt-12 max-w-[720px] text-center">
             <p className="m-0 mb-6 text-[17px] leading-[1.6] text-content-muted">
               Each tool tells you <em>where</em> you&rsquo;re exposed. A Prove
-              Sprint tells you <em>who</em> to bet on — with six weeks of real
+              Sprint tells you <em>where</em> to focus development — with six weeks of real
               behavior, not a hunch.
             </p>
             <ButtonLink href={site.bookingUrl}>Book a call</ButtonLink>

@@ -8,8 +8,8 @@
  * in one named profile so nothing is hard-coded at the call site.
  *
  * IMPORTANT (handoff §4): weights/thresholds live in a versioned profile;
- * published profiles are immutable. "Applied Grit" is the data-model trait name;
- * "Grit" is display-only. Archetypes / percentile / norm-referenced claims stay
+ * published profiles are immutable. `applied_grit` is the data-model key name;
+ * "Follow-Through" is its display label. Archetypes / percentile / norm-referenced claims stay
  * DISABLED until the source item bank + archetype rules are recovered.
  */
 
@@ -103,7 +103,7 @@ function founderAction(cq: number, profile = DEMO_PROFILE): string {
   if (cq >= profile.tierBands.investmentReady)
     return "Assign a high-autonomy lead role or stretch project. Double down.";
   if (cq >= profile.tierBands.coach)
-    return "Give a scoped challenge and coach the weakest trait before you invest further.";
+    return "Give a scoped challenge and coach the weakest signal before you invest further.";
   return "Hold investment. Clarify expectations and watch for a signal before any bet.";
 }
 
@@ -113,7 +113,7 @@ function riskNote(p: Person): string {
   if (p.learnability < 5)
     return "Low learnability — can stall when demands change.";
   if (p.applied_grit < 5)
-    return "Low applied grit — follow-through fades when it gets hard.";
+    return "Low follow-through — completion fades when it gets hard.";
   return "Watch for burnout if scaled without a support system.";
 }
 

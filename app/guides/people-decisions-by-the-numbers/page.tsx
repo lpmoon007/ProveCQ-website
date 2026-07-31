@@ -269,7 +269,7 @@ export default function PeopleDecisionsByTheNumbersPage() {
           </p>
           <p className="m-0 mb-4 text-[18px] leading-[1.7] text-[#3A362C]">
             Measuring that &mdash; over time, in real conditions &mdash; before
-            you promote, hire, or hand over the keys is the one change that moves
+            you promote or hire is the one change that moves
             a people decision from a guess to a bet you can defend. It&rsquo;s
             what the{" "}
             <Link href="/how-it-works" className="font-semibold text-green">

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "People-Decision Glossary — Commitment, Capacity, Retention Terms",
   description:
-    "Plain-English definitions of the terms behind better people decisions: Commitment Quotient, its three dimensions (Initiative, Applied Grit, Learnability) and 9 sub-traits, capacity, regretted attrition, quiet quitting, quality of hire, GWC, and more.",
+    "Plain-English definitions of the terms behind better people decisions: Commitment Quotient, its three dimensions (Initiative, Follow-Through, Learnability) and 9 sub-behaviors, capacity, regretted attrition, quiet quitting, quality of hire, GWC, and more.",
 };
 
 const GLOSSARY_JSONLD = `{
@@ -19,29 +19,29 @@ const GLOSSARY_JSONLD = `{
   "@type": "DefinedTermSet",
   "name": "ProveCQ People-Decision Glossary",
   "hasDefinedTerm": [
-    {"@type":"DefinedTerm","name":"Commitment Quotient (CQ)","description":"A behavioral signal scoring Initiative, Applied Grit, and Learnability under pressure to indicate who is ready for more scope."},
-    {"@type":"DefinedTerm","name":"Initiative","description":"The behavior of acting without being told — spotting what needs doing and moving before being directed."},
-    {"@type":"DefinedTerm","name":"Applied Grit","description":"Follow-through under difficulty: staying with a commitment when it gets hard, distinct from general trait grit."},
-    {"@type":"DefinedTerm","name":"Learnability","description":"The behavior of adapting and improving from feedback and new demands."},
+    {"@type":"DefinedTerm","name":"Commitment Quotient (CQ)","description":"A behavioral signal scoring Initiative, Follow-Through, and Learnability under pressure to indicate who is ready for more scope."},
+    {"@type":"DefinedTerm","name":"Initiative","description":"How consistently someone acts without being prompted."},
+    {"@type":"DefinedTerm","name":"Follow-Through","description":"How consistently someone completes what they committed to."},
+    {"@type":"DefinedTerm","name":"Learnability","description":"How consistently someone acts on feedback."},
     {"@type":"DefinedTerm","name":"Capacity","description":"In people decisions, the current ability to take on scope — time, energy, and behavioral readiness — as opposed to a fixed trait."},
     {"@type":"DefinedTerm","name":"Regretted attrition","description":"Turnover among people the company wanted to keep; a truer retention signal than overall turnover."},
     {"@type":"DefinedTerm","name":"Quiet quitting","description":"Doing the minimum required and no more; disengagement that looks like retention but withholds discretionary effort."},
     {"@type":"DefinedTerm","name":"Span of control","description":"The number of direct reports a manager oversees; too wide a span degrades coaching and engagement."},
     {"@type":"DefinedTerm","name":"Quality of hire","description":"A measure of how well a new hire performs and stays, ideally assessed by behavior in the first 90 days."},
     {"@type":"DefinedTerm","name":"GWC (Gets it, Wants it, Capacity)","description":"An EOS framework for evaluating whether a person fits a seat; Capacity is the component Prove makes measurable."},
-    {"@type":"DefinedTerm","name":"Proactive Start","description":"A sub-trait of Initiative: starting on what needs doing before being asked or assigned, rather than waiting for direction."},
-    {"@type":"DefinedTerm","name":"Follow-Through","description":"A sub-trait of Initiative: carrying work all the way to done — especially the unglamorous last mile — not just starting strong."},
-    {"@type":"DefinedTerm","name":"Resourcefulness","description":"A sub-trait of Initiative: finding a way around obstacles with the access and tools at hand instead of stalling until the path is cleared."},
-    {"@type":"DefinedTerm","name":"Resilience","description":"A sub-trait of Applied Grit: recovering from setbacks and staying in the work after a failure rather than deflating or disengaging."},
-    {"@type":"DefinedTerm","name":"Ownership","description":"A sub-trait of Applied Grit: taking responsibility for outcomes — including the messy and shared ones — instead of assigning blame."},
-    {"@type":"DefinedTerm","name":"Long-Game Drive","description":"A sub-trait of Applied Grit: sustaining effort toward a payoff that isn't immediate, staying motivated when the reward is distant."},
-    {"@type":"DefinedTerm","name":"Openness to Feedback","description":"A sub-trait of Learnability: taking correction without defensiveness and acting on it, rather than protecting ego or track record."},
-    {"@type":"DefinedTerm","name":"Self-Awareness","description":"A sub-trait of Learnability: an accurate read of one's own strengths and gaps — the starting point for real improvement."},
-    {"@type":"DefinedTerm","name":"Growth Orientation","description":"A sub-trait of Learnability: actively seeking to get better without being pushed, treating skill as something built rather than fixed."}
+    {"@type":"DefinedTerm","name":"Proactive Start","description":"A sub-behavior of Initiative: starting on what needs doing before being asked or assigned, rather than waiting for direction."},
+    {"@type":"DefinedTerm","name":"Follow-Through","description":"A sub-behavior of Initiative: carrying work all the way to done — especially the unglamorous last mile — not just starting strong."},
+    {"@type":"DefinedTerm","name":"Resourcefulness","description":"A sub-behavior of Initiative: finding a way around obstacles with the access and tools at hand instead of stalling until the path is cleared."},
+    {"@type":"DefinedTerm","name":"Resilience","description":"A sub-behavior of Follow-Through: recovering from setbacks and staying in the work after a failure rather than deflating or disengaging."},
+    {"@type":"DefinedTerm","name":"Ownership","description":"A sub-behavior of Follow-Through: taking responsibility for outcomes — including the messy and shared ones — instead of assigning blame."},
+    {"@type":"DefinedTerm","name":"Long-Game Drive","description":"A sub-behavior of Follow-Through: sustaining effort toward a payoff that isn't immediate, staying motivated when the reward is distant."},
+    {"@type":"DefinedTerm","name":"Openness to Feedback","description":"A sub-behavior of Learnability: taking correction without defensiveness and acting on it, rather than protecting ego or track record."},
+    {"@type":"DefinedTerm","name":"Self-Awareness","description":"A sub-behavior of Learnability: an accurate read of one's own strengths and gaps — the starting point for real improvement."},
+    {"@type":"DefinedTerm","name":"Growth Orientation","description":"A sub-behavior of Learnability: actively seeking to get better without being pushed, treating skill as something built rather than fixed."}
   ]
 }`;
 
-/** The 9 CQ sub-traits, grouped under the three measured dimensions. */
+/** The 9 CQ sub-behaviors, grouped under the three measured dimensions. */
 const SUBTRAITS: {
   dim: string;
   question: string;
@@ -59,7 +59,7 @@ const SUBTRAITS: {
     ],
   },
   {
-    dim: "Applied Grit",
+    dim: "Follow-Through",
     question: "Do they hold when it gets hard?",
     href: "/guides/the-science-behind-cq",
     items: [
@@ -85,7 +85,7 @@ const TERMS: { term: ReactNode; def: ReactNode }[] = [
     term: <>Commitment Quotient (CQ)</>,
     def: (
       <>
-        A behavioral signal that scores Initiative, Applied Grit, and Learnability
+        A behavioral signal that scores Initiative, Follow-Through, and Learnability
         under pressure to indicate who&apos;s ready for more scope — measured from
         behavior, not self-report.
       </>
@@ -95,18 +95,19 @@ const TERMS: { term: ReactNode; def: ReactNode }[] = [
     term: <>Initiative</>,
     def: (
       <>
-        Acting without being told — spotting what needs doing and moving before
-        being directed, especially when the situation is unclear.
+        How consistently someone acts without being prompted — spotting what needs
+        doing and moving before being directed, especially when the situation is
+        unclear.
       </>
     ),
   },
   {
-    term: <>Applied Grit</>,
+    term: <>Follow-Through</>,
     def: (
       <>
-        Follow-through under difficulty — staying with a commitment when it gets
-        hard. Distinct from general &quot;grit&quot; as a personality trait; this
-        is grit <em>demonstrated</em> in context.
+        How consistently someone completes what they committed to — staying with a
+        commitment when it gets hard. A behavior demonstrated in context, not a
+        personality label.
       </>
     ),
   },
@@ -114,8 +115,8 @@ const TERMS: { term: ReactNode; def: ReactNode }[] = [
     term: <>Learnability</>,
     def: (
       <>
-        Adapting and improving from feedback and new demands — the behavior that
-        predicts who grows into a role rather than plateauing.
+        How consistently someone acts on feedback — the behavior observed when
+        someone is given correction and asked to adjust.
       </>
     ),
   },
@@ -233,12 +234,12 @@ export default function GlossaryPage() {
         </Container>
       </Section>
 
-      {/* The 9 CQ sub-traits, grouped by dimension */}
+      {/* The 9 CQ sub-behaviors, grouped by dimension */}
       <Section tone="paper2">
         <Container wide className="max-w-[1000px]">
           <div className="mb-8 max-w-[680px]">
             <h2 className="m-0 mb-3 font-display text-[26px] font-bold tracking-[-.02em] sm:text-[32px]">
-              The 9 CQ sub-traits
+              The 9 CQ sub-behaviors
             </h2>
             <p className="m-0 text-[16px] leading-[1.65] text-content-muted">
               The Commitment Quotient score rests on three measured dimensions.
@@ -283,6 +284,11 @@ export default function GlossaryPage() {
 
       <Section tone="paper" className="!pt-5 text-center">
         <Container wide className="max-w-[1000px]">
+          <p className="mx-auto mb-8 max-w-[680px] text-[13.5px] leading-[1.6] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
           <ButtonLink href="/guides" variant="dark">
             Explore the full guides library &rarr;
           </ButtonLink>

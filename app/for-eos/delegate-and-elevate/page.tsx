@@ -113,7 +113,7 @@ const FAQ = [
   },
   {
     q: "How does Prove help with Delegate and Elevate?",
-    a: "Prove measures the behaviors that tell you who can actually catch a handoff — initiative, applied grit, and learnability — from real behavior over time rather than a gut call. It gives you evidence of capacity before you delegate, so the handoff holds and your elevated time stays elevated.",
+    a: "Prove measures the behaviors that tell you who can actually catch a handoff — initiative, follow-through, and learnability — from real behavior over time rather than a gut call. It gives you evidence of capacity before you delegate, so the handoff holds and your elevated time stays elevated.",
   },
 ];
 
@@ -168,6 +168,11 @@ export default function EosDelegateAndElevatePage() {
               the person you delegate to must have the <strong>capacity</strong> to
               catch it &mdash; or you&rsquo;ve just moved the bottleneck and burned
               out a good person.
+            </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#A8A290]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

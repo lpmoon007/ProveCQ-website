@@ -47,7 +47,7 @@ const AHEAD = [
 // A build sequence — how to actually stand up a bench before the crunch.
 const BUILD = [
   "Map the leadership roles you will need in the next 12 to 24 months, not just the ones open today.",
-  "Look across the whole team for leadership behavior — initiative, applied grit, and learnability — including the quiet people who never campaign.",
+  "Look across the whole team for leadership behavior — initiative, follow-through, and learnability — including the quiet people who never campaign.",
   "Separate proven capacity from strong current performance; your best individual contributor is not automatically your next leader.",
   "Give likely candidates real stretch — a project they can own, a decision they have to make — and watch how they handle ambiguity.",
   "Pair the stretch with honest coaching and feedback, so people grow into the gap instead of being thrown at it.",
@@ -62,7 +62,7 @@ const FAQ = [
   },
   {
     q: "How do you build a leadership bench?",
-    a: "Start by mapping the leadership roles you will need over the next year or two, then look across your whole team for the behaviors that predict leadership — initiative beyond the role, follow-through on hard problems, and fast learning. Give the strongest candidates real stretch paired with honest coaching, and revisit the bench regularly. The core move is building capacity ahead of the need rather than filling gaps in a panic.",
+    a: "Start by mapping the leadership roles you will need over the next year or two, then look across your whole team for the behaviors that predict leadership — initiative beyond the role, follow-through on hard problems, and acting on feedback. Give the strongest candidates real stretch paired with honest coaching, and revisit the bench regularly. The core move is building capacity ahead of the need rather than filling gaps in a panic.",
   },
   {
     q: "Why do most companies lack a leadership bench?",
@@ -74,7 +74,7 @@ const FAQ = [
   },
   {
     q: "How do you identify future leaders early?",
-    a: "Look at behavior over time rather than a single result or a strong personality. The most predictive signals are initiative (acting before it is their job), applied grit (staying with hard work until it is cracked), and learnability (leveling up when demands change). A Prove cycle scores these from several weeks of real work, so you can see leadership capacity before a role is on the line.",
+    a: "Look at behavior over time rather than a single result or a strong personality. The most predictive signals are initiative (acting before it is their job), follow-through (staying with hard work until it is cracked), and learnability (acting on feedback). A Prove cycle scores these from several weeks of real work, so you can see leadership capacity before a role is on the line.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function LeadershipBenchPage() {
             <p className="m-0 mt-3 text-[18px] leading-[1.65] text-[#D8D4C6]">
               Build a bench by proving which people have leadership-grade behavior
               now, then developing them deliberately ahead of the need. When you
-              can see initiative, applied grit, and learnability across your team,
+              can see initiative, follow-through, and learnability across your team,
               you know exactly who to grow &mdash; before the seat opens.
             </p>
           </div>
@@ -161,8 +161,8 @@ export default function LeadershipBenchPage() {
               Building ahead of the need means doing two things early: proving who
               has leadership-grade behavior now, and developing those people
               deliberately before a role is on the line. Leadership capacity shows
-              up in behavior &mdash; initiative beyond the current role, grit on
-              hard problems, and the learnability to grow into ambiguity &mdash; not
+              up in behavior &mdash; initiative beyond the current role, follow-through on
+              hard problems, and the learnability to act on feedback &mdash; not
               in tenure or presentation. Once you can see that pattern across the
               team, you know exactly who to grow. A strong bench is also what makes{" "}
               <Link href="/guides/succession-planning" className="font-semibold text-green underline-offset-2 hover:underline">
@@ -243,6 +243,11 @@ export default function LeadershipBenchPage() {
                 </li>
               ))}
             </ol>
+            <p className="m-0 mt-6 text-[13px] leading-[1.55] text-content-faint">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
+            </p>
           </div>
         </Container>
       </Section>

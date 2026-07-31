@@ -50,7 +50,7 @@ const serviceJsonLd = {
   provider: { "@type": "Organization", name: "Be Legendary", url: site.parentUrl },
   areaServed: "US",
   description:
-    "Behavioral proof of who will deliver — before you promote, hire, or hand over the keys. Powered by the Commitment Quotient.",
+    "Behavioral proof of who will deliver — before you promote or hire. Powered by the Commitment Quotient.",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Ways to work with Prove",

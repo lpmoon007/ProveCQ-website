@@ -117,7 +117,7 @@ const FAQ = [
   },
   {
     q: "How do you measure Capacity for a seat?",
-    a: "Capacity is the GWC letter teams most often guess on, because it usually gets a yes/no checkbox. A Prove cycle scores Initiative, Applied Grit, and Learnability from about six weeks of real behavior, so the Capacity read for a seat is evidence you can trust rather than a hunch — working alongside your GWC and People Analyzer.",
+    a: "Capacity is the GWC letter teams most often guess on, because it usually gets a yes/no checkbox. A Prove cycle scores Initiative, Follow-Through, and Learnability from about six weeks of real behavior, so the Capacity read for a seat is evidence you can trust rather than a hunch — working alongside your GWC and People Analyzer.",
   },
 ];
 
@@ -172,6 +172,11 @@ export default function RightPersonRightSeatPage() {
               it, and have the Capacity for that specific seat (GWC). Most
               placement mistakes aren&rsquo;t wrong people &mdash; they&rsquo;re
               right people in a seat whose Capacity was assumed, not proven.
+            </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#A8A290]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

@@ -186,8 +186,12 @@ export default function CaseStudyOwnershipPage() {
             </div>
             <p className="m-0 mt-[22px] text-[13px] text-[#8A8474]">
               Anonymized and generalized to protect client confidentiality. CQ
-              informs development and investment decisions, not adverse
-              employment actions.
+              results may be used to identify coaching focus areas, allocate
+              development investment, design team interventions, and support
+              individual self-directed growth. CQ results may not be used, in whole
+              or in part, as a factor in hiring, candidate screening, termination,
+              demotion, discipline, compensation, or as a gate on promotion
+              eligibility.
             </p>
           </div>
         </Container>

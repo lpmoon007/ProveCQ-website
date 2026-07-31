@@ -35,7 +35,7 @@ export default function MiniHeatmap() {
       >
         <span>Person</span>
         <span className="text-center">Init.</span>
-        <span className="text-center">A. Grit</span>
+        <span className="text-center">Follow</span>
         <span className="text-center">Learn</span>
         <span className="text-center">CQ</span>
       </div>

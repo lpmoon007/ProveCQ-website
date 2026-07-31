@@ -80,7 +80,7 @@ const FAQ = [
   },
   {
     q: "How do you know someone is ready to take something over?",
-    a: "You watch what they do, not what they say. Readiness shows up as initiative (acting before it's their job), applied grit (staying with hard problems), and learnability (leveling up without hand-holding) — and it shows up repeatedly, over weeks, not in one good moment. When you can see that pattern, letting go stops being a bet.",
+    a: "You watch what they do, not what they say. Readiness shows up as initiative (acting before it's their job), follow-through (staying with hard problems), and learnability (acting on feedback) — and it shows up repeatedly, over weeks, not in one good moment. When you can see that pattern, letting go stops being a bet.",
   },
 ];
 
@@ -197,7 +197,7 @@ export default function HowToLetGoAsAFounderPage() {
               earn the confidence that makes handing off feel safe. And confidence
               isn&rsquo;t a mood you talk yourself into &mdash; it&rsquo;s evidence.
               When you can actually see that a person takes initiative, pushes
-              through hard problems, and learns fast, betting on them stops being a
+              through hard problems, and acts on feedback, betting on them stops being a
               gamble and starts being a read. That shift &mdash; from hoping to
               knowing &mdash; is what makes letting go possible.
             </p>

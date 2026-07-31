@@ -19,7 +19,7 @@ const FAQ_JSONLD = `{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"What is the Commitment Quotient (CQ)?","acceptedAnswer":{"@type":"Answer","text":"CQ is a behavioral signal that scores three observable behaviors under pressure — Initiative, Applied Grit, and Learnability — to show who is ready for more scope. It is measured from what people actually do over time, not from a self-report questionnaire."}},
+    {"@type":"Question","name":"What is the Commitment Quotient (CQ)?","acceptedAnswer":{"@type":"Answer","text":"CQ is a behavioral signal that scores three observable behaviors under pressure — Initiative, Follow-Through, and Learnability — to show who is ready for more scope. It is measured from what people actually do over time, not from a self-report questionnaire."}},
     {"@type":"Question","name":"Is CQ a personality test?","acceptedAnswer":{"@type":"Answer","text":"No. Personality tests rely on self-report and describe stable traits. CQ measures observed behavior under real pressure across a six-week window, so it captures follow-through and the gap between what someone says and what they do."}},
     {"@type":"Question","name":"Can CQ be used to fire someone?","acceptedAnswer":{"@type":"Answer","text":"No. CQ is decision-support for leadership development, coaching, and investment decisions only. It is explicitly not a performance review or a basis for termination, demotion, or other adverse employment actions. A low CQ does not mean low performance."}},
     {"@type":"Question","name":"How is CQ different from an engagement survey?","acceptedAnswer":{"@type":"Answer","text":"Engagement surveys measure how people feel about their environment. CQ measures how people behave under pressure. A team can score high on engagement and still miss deadlines and dodge ownership; CQ surfaces the behavior that actually predicts who delivers."}},
@@ -29,8 +29,8 @@ const FAQ_JSONLD = `{
     {"@type":"Question","name":"Who is Prove for?","acceptedAnswer":{"@type":"Answer","text":"Founders and CEOs of scaling small and mid-sized companies who make high-stakes people decisions — promotions, key hires, and project handoffs — and want behavioral proof before they invest. It is especially useful for companies running on EOS."}},
     {"@type":"Question","name":"Is CQ a psychometric test?","acceptedAnswer":{"@type":"Answer","text":"No. A psychometric or personality test claims to measure a fixed internal trait. CQ measures commitment behavior — what a person actually does in a work context over time. It is a description of behavior in a situation, not a verdict on character or a fixed trait, and it can change with role, clarity, and support."}},
     {"@type":"Question","name":"Does a low CQ score mean someone is a bad employee or person?","acceptedAnswer":{"@type":"Answer","text":"No. A low CQ is not 'bad' — it just is. A score is information, not judgment. Many valuable people score lower and do excellent work for years in well-defined roles. A low score only signals a person may need more structure, clarity, or support before a higher-scope or more ambiguous role. It is never a measure of worth."}},
-    {"@type":"Question","name":"What does CQ not measure?","acceptedAnswer":{"@type":"Answer","text":"CQ does not measure personality, intelligence, character, worth, or any protected characteristic such as race, gender, age, religion, or disability. Scoring is blind to identity data. It measures only observable work behavior across Initiative, Applied Grit, and Learnability."}},
-    {"@type":"Question","name":"How does CQ prevent bias?","acceptedAnswer":{"@type":"Answer","text":"CQ does not collect or use protected-class information; scoring is blind to identity and based on human-defined, behavior-based rubrics that are reviewed for fairness. Everyone in a process receives the same assessment, and CQ generates insights for a human to interpret — it does not make automated employment decisions."}}
+    {"@type":"Question","name":"What does CQ not measure?","acceptedAnswer":{"@type":"Answer","text":"CQ does not measure personality, intelligence, character, worth, or any protected characteristic such as race, gender, age, religion, or disability. Scoring does not collect or store protected characteristics. It measures only observable work behavior across Initiative, Follow-Through, and Learnability."}},
+    {"@type":"Question","name":"How does CQ prevent bias?","acceptedAnswer":{"@type":"Answer","text":"CQ does not collect or use protected-class information; scoring does not collect or store protected characteristics and is based on human-defined, behavior-based rubrics that are reviewed for fairness. Everyone in a process receives the same assessment, and CQ generates insights for a human to interpret — it does not make automated employment decisions."}}
   ]
 }`;
 
@@ -40,9 +40,9 @@ const FAQS: { q: ReactNode; a: ReactNode }[] = [
     a: (
       <>
         CQ is a behavioral signal that scores three observable behaviors under
-        pressure — <strong>Initiative</strong> (who acts without being told),{" "}
-        <strong>Applied Grit</strong> (who stays with it when it&apos;s hard), and{" "}
-        <strong>Learnability</strong> (who adapts and grows). It&apos;s measured
+        pressure — <strong>Initiative</strong> (who acts without being prompted),{" "}
+        <strong>Follow-Through</strong> (who completes what they commit to), and{" "}
+        <strong>Learnability</strong> (who acts on feedback). It&apos;s measured
         from what people actually do over time, not from a self-report
         questionnaire.
       </>
@@ -172,8 +172,8 @@ const FAQS: { q: ReactNode; a: ReactNode }[] = [
       <>
         Not personality, intelligence, character, worth, or any protected
         characteristic (race, gender, age, religion, disability, and so on).
-        Scoring is blind to identity data. It measures only observable work
-        behavior across Initiative, Applied Grit, and Learnability.
+        Scoring does not collect or store protected characteristics. It measures only observable work
+        behavior across Initiative, Follow-Through, and Learnability.
       </>
     ),
   },
@@ -181,11 +181,13 @@ const FAQS: { q: ReactNode; a: ReactNode }[] = [
     q: <>How do you prevent bias, and can CQ be used in hiring?</>,
     a: (
       <>
-        CQ collects no protected-class data; scoring is blind to identity and uses
-        human-defined, behavior-based rubrics reviewed for fairness. Used in
-        hiring or promotion, it must be given to everyone in that process as one
-        input alongside interviews, references, and job requirements &mdash; never
-        as the sole decision-maker.{" "}
+        CQ collects no protected-class data; scoring does not collect or store
+        protected characteristics and uses human-defined, behavior-based rubrics
+        reviewed for fairness. CQ results may be used to identify coaching focus
+        areas, allocate development investment, design team interventions, and
+        support individual self-directed growth. CQ results may not be used, in
+        whole or in part, as a factor in hiring, candidate screening, termination,
+        demotion, discipline, compensation, or as a gate on promotion eligibility.{" "}
         <Link href="/ethics">See our fair-use principles &rarr;</Link>
       </>
     ),
@@ -228,6 +230,11 @@ export default function FAQPage() {
 
       <Section tone="paper" className="!pt-5 text-center">
         <Container className="max-w-[820px]">
+          <p className="mx-auto mb-8 max-w-[680px] text-[13.5px] leading-[1.6] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
           <ButtonLink href={site.bookingUrl} variant="primary">
             Still have a question? Book a call
           </ButtonLink>

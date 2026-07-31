@@ -24,7 +24,7 @@ const ADDS = [
   },
   {
     title: "A development path",
-    body: "Pinpoint the one trait to grow — initiative, applied grit, or learnability — and coach it deliberately.",
+    body: "Pinpoint the one behavior to grow — initiative, follow-through, or learnability — and coach it deliberately.",
   },
 ];
 
@@ -65,6 +65,11 @@ export default function EosQuarterlyConversationsPage() {
               fairer (evidence, not impressions), more forward-looking (what to
               develop next), and less political &mdash; all while keeping the EOS
               structure exactly as it is.
+            </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#615B4F]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

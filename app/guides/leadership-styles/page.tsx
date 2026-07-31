@@ -64,7 +64,7 @@ const STYLES: Style[] = [
     risk: "Drives out your highest-commitment talent.",
     tell: "If your top performers have stopped offering ideas, you've crossed from clarity into suppression.",
     lever: "Add a weekly “why” behind decisions — keep meaning alive without giving up control.",
-    cqLens: "Protects order but kills compounding commitment: high-CQ people disengage, low-CQ people stay comfortable but stagnant.",
+    cqLens: "Protects order but kills compounding commitment: people with higher current signal disengage, people with lower current signal stay comfortable but stagnant.",
   },
   {
     slug: "servant",
@@ -92,7 +92,7 @@ const STYLES: Style[] = [
     risk: "Dependency on you, and a shaky succession.",
     tell: "If performance crashes when you leave the room, you've built dependency, not commitment.",
     lever: "Rotate who presents ideas and runs meetings — shift the spotlight off yourself.",
-    cqLens: "Reveals enthusiasm but hides true commitment depth: loyal followers can look like high-CQ players.",
+    cqLens: "Reveals enthusiasm but hides true commitment depth: loyal followers can look like people with higher current signal.",
   },
   {
     slug: "laissez-faire",
@@ -120,7 +120,7 @@ const STYLES: Style[] = [
     risk: "Near-zero adaptability the moment conditions change.",
     tell: "If people only push when the bonus is at stake, you're locked in transactional mode.",
     lever: "Tie rewards to growth behaviors, not just outputs.",
-    cqLens: "Protects order but suppresses initiative and learning — grit shows up only for the carrot.",
+    cqLens: "Protects order but suppresses initiative and learning — follow-through shows up only for the carrot.",
   },
   {
     slug: "situational",
@@ -146,9 +146,9 @@ const STYLES: Style[] = [
     worstNote: "vision-driven, but burned out the culture and the people in it.",
     bestUse: "Change, innovation, and scaling phases.",
     risk: "Burnout and turnover when commitment is mismatched to the pace.",
-    tell: "If turnover spikes among your steady performers, you're overdriving grit.",
+    tell: "If turnover spikes among your steady performers, you're overdriving follow-through.",
     lever: "Build in rest and recovery rhythms — transformational doesn't mean relentless.",
-    cqLens: "Amplifies commitment in the ready; strains everyone whose grit can't yet carry the pace.",
+    cqLens: "Amplifies commitment in the ready; strains everyone whose follow-through can't yet carry the pace.",
   },
   {
     slug: "democratic",
@@ -191,11 +191,11 @@ const FAQ = [
   },
   {
     q: "Which leadership style is most effective?",
-    a: "For most teams over the long run, situational and coaching styles tend to produce the best results, because they adjust to each person's readiness rather than forcing everyone into one mold. But that only works if you can actually read where each person is — their initiative, follow-through, and ability to learn under pressure. Flexing your style to what you can't see is just guessing with extra steps.",
+    a: "For most teams over the long run, situational and coaching styles tend to produce the best results, because they adjust to each person's readiness rather than forcing everyone into one mold. But that only works if you can actually read where each person is — their initiative, follow-through, and how consistently they act on feedback. Flexing your style to what you can't see is just guessing with extra steps.",
   },
   {
     q: "How do I know which leadership style to use with my team?",
-    a: "Start by reading the people, not the theory. Once you can see who is high or low on the behaviors that make up commitment — initiative, applied grit, and learnability — the right style becomes clear: give high-commitment people autonomy and stretch, and give structure-preferring people clarity and guardrails. The clash almost always comes from applying one default style to everyone regardless of who they are.",
+    a: "Start by reading the people, not the theory. Once you can see who is high or low on the behaviors that make up commitment — initiative, follow-through, and learnability — the right style becomes clear: give high-commitment people autonomy and stretch, and give structure-preferring people clarity and guardrails. The clash almost always comes from applying one default style to everyone regardless of who they are.",
   },
 ];
 

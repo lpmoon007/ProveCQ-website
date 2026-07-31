@@ -72,7 +72,7 @@ const FAQ = [
   },
   {
     q: "How do you catch regretted attrition before it happens?",
-    a: "The exit flag is a lagging signal — by the time you record it, the person is already gone. To get ahead of it, watch behavioral commitment signals on the people you most want to keep: fading initiative, grit that used to show up on hard problems going quiet, curiosity narrowing. Those shifts surface at-risk keepers weeks before they resign, while you can still act.",
+    a: "The exit flag is a lagging signal — by the time you record it, the person is already gone. To get ahead of it, watch behavioral commitment signals on the people you most want to keep: fading initiative, follow-through that used to show up on hard problems going quiet, curiosity narrowing. Those shifts surface at-risk keepers weeks before they resign, while you can still act.",
   },
 ];
 
@@ -254,7 +254,7 @@ export default function RegrettedAttritionPage() {
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               Behavioral commitment signals are what surface an at-risk keeper
               early. When someone who used to take initiative stops reaching
-              beyond their role, when the grit that showed up on hard problems
+              beyond their role, when the follow-through that showed up on hard problems
               goes quiet, when curiosity narrows to just getting through the day
               &mdash; those are the changes that precede a regretted exit by
               weeks. Reading them is the difference between{" "}

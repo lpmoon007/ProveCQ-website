@@ -40,13 +40,13 @@ export default function CaseStudiesPage() {
               className="block rounded-[20px] border border-edge-light bg-white p-8 text-content"
             >
               <div className="mb-3 text-[12px] font-bold uppercase tracking-[.12em] text-green">
-                Applied Grit, overextended
+                Follow-Through, overextended
               </div>
               <h2 className="mb-2.5 font-display text-[24px] font-bold leading-[1.15] tracking-[-.01em]">
                 From driving results to building accountability
               </h2>
               <p className="m-0 mb-4 text-[15px] leading-[1.6] text-[#575249]">
-                A high-grit functional leader who protected results by taking
+                A high-Follow-Through functional leader who protected results by taking
                 over &mdash; and unintentionally taught her team not to own the
                 work.
               </p>
@@ -87,8 +87,8 @@ export default function CaseStudiesPage() {
               </h2>
               <p className="m-0 mb-4 text-[15px] leading-[1.6] text-[#B8B4A6]">
                 See exactly what you receive: three HVAC technicians scored on
-                Initiative, Applied Grit, and Learnability &mdash; with zones and
-                a leadership move for each.
+                Initiative, Follow-Through, and Learnability &mdash; with areas and
+                a development suggestion for each.
               </p>
               <span className="text-[14px] font-bold text-green-soft">
                 See the report &rarr;
@@ -97,8 +97,17 @@ export default function CaseStudiesPage() {
           </div>
           <p className="mx-auto mt-[22px] max-w-[1000px] text-center text-[12.5px] text-[#8A8474]">
             Cases are anonymized and generalized to protect client
-            confidentiality. CQ is used for development and investment decisions,
-            not as a basis for adverse employment action.
+            confidentiality. CQ results may be used to identify coaching focus
+            areas, allocate development investment, design team interventions, and
+            support individual self-directed growth. CQ results may not be used, in
+            whole or in part, as a factor in hiring, candidate screening,
+            termination, demotion, discipline, compensation, or as a gate on
+            promotion eligibility.
+          </p>
+          <p className="mx-auto mt-[10px] max-w-[1000px] text-center text-[12.5px] text-[#8A8474]">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
           </p>
         </Container>
       </Section>

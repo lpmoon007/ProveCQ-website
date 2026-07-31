@@ -33,12 +33,12 @@ const MEASURE = [
     body: "Acts on the seat without being pushed.",
   },
   {
-    title: "Applied Grit",
+    title: "Follow-Through",
     body: "Delivers the hard parts of the role, not just the easy ones.",
   },
   {
     title: "Learnability",
-    body: "Grows into rising demands as the company scales.",
+    body: "How consistently someone acts on feedback.",
   },
 ];
 
@@ -47,7 +47,7 @@ const STEPS = [
   "Separate the three letters of GWC before you score — a person can Get it and Want it and still lack the Capacity, and scoring one when you mean another muddies the whole People Analyzer.",
   "Define the seat by its behaviors — write the roles and responsibilities as actions the person must consistently take, not as a job title or a list of skills.",
   "Watch Initiative on the seat — do they move the Rock and the day-to-day forward without being pushed, or do things stall until someone chases them?",
-  "Watch Applied Grit on the hard parts — capacity shows up in the unglamorous 20% of the seat that people quietly avoid, not the parts they enjoy.",
+  "Watch Follow-Through on the hard parts — capacity shows up in the unglamorous 20% of the seat that people quietly avoid, not the parts they enjoy.",
   "Watch Learnability against a scaling company — the seat gets heavier every quarter, so the question is whether they grow into rising demands, not whether they clear today's bar.",
   "Bring the pattern to the Quarterly Conversation — a Capacity read backed by six weeks of observed behavior turns a gut-feel checkbox into a conversation both people can trust.",
 ];
@@ -65,7 +65,7 @@ const FAQ = [
   },
   {
     q: "How do you measure Capacity in EOS behaviorally?",
-    a: "Measure it as three observable behaviors on the seat: Initiative (acts without being pushed), Applied Grit (delivers the hard parts of the role, not just the easy ones), and Learnability (grows into rising demands as the company scales). Reading these from real behavior over several weeks turns the Capacity box from a guess into evidence you can defend.",
+    a: "Measure it as three observable behaviors on the seat: Initiative (acts without being pushed), Follow-Through (delivers the hard parts of the role, not just the easy ones), and Learnability (how consistently someone acts on feedback). Reading these from real behavior over several weeks turns the Capacity box from a guess into evidence you can defend.",
   },
   {
     q: "Is Capacity the same as Get it and Want it?",
@@ -73,7 +73,7 @@ const FAQ = [
   },
   {
     q: "How does behavioral capacity data help Quarterly Conversations?",
-    a: "A Quarterly Conversation is only as honest as the data behind it. When the Capacity read is backed by six weeks of observed behavior across Initiative, Applied Grit, and Learnability, the conversation moves from opinion to evidence — the leader can point to specifics, and the person can see exactly where to grow. See how Prove maps to EOS Capacity and GWC for the full fit.",
+    a: "A Quarterly Conversation is only as honest as the data behind it. When the Capacity read is backed by six weeks of observed behavior across Initiative, Follow-Through, and Learnability, the conversation moves from opinion to evidence — the leader can point to specifics, and the person can see exactly where to grow. See how Prove maps to EOS Capacity and GWC for the full fit.",
   },
 ];
 
@@ -123,7 +123,7 @@ export default function MeasureCapacityEosGuidePage() {
             <p className="m-0 mt-3 text-[18px] leading-[1.65] text-[#D8D4C6]">
               Capacity is not one thing and it is not static &mdash; it is the
               behavioral ability to deliver a specific role right now. Measure it
-              as Initiative, Applied Grit, and Learnability from observed behavior,
+              as Initiative, Follow-Through, and Learnability from observed behavior,
               and the Capacity box becomes real data you can bring to Quarterly
               Conversations.
             </p>
@@ -163,7 +163,7 @@ export default function MeasureCapacityEosGuidePage() {
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               That is where behavior comes in. Instead of asking &ldquo;do I think
               they can handle it?&rdquo; you watch three things over time:
-              Initiative, Applied Grit, and Learnability. Read across several weeks
+              Initiative, Follow-Through, and Learnability. Read across several weeks
               of real work, these turn a gut-feel checkbox into{" "}
               <Link href="/for-eos/capacity" className="text-green">
                 Capacity you can actually measure

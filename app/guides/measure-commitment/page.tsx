@@ -33,9 +33,9 @@ const TOOLS = [
 ];
 
 const BEHAVIORS = [
-  { title: "Initiative", body: "Acting without being told." },
-  { title: "Applied Grit", body: "Following through when it is hard." },
-  { title: "Learnability", body: "Adapting and growing under new demands." },
+  { title: "Initiative", body: "How consistently someone acts without being prompted." },
+  { title: "Follow-Through", body: "How consistently someone completes what they committed to." },
+  { title: "Learnability", body: "How consistently someone acts on feedback." },
 ];
 
 // A concrete sequence for turning commitment into an observed, defensible number.
@@ -80,7 +80,7 @@ const FAQ = [
   },
   {
     q: "What is the Commitment Quotient?",
-    a: "The Commitment Quotient (CQ) is a score built from three observed behaviors: Initiative, Applied Grit, and Learnability. It is calculated from real work over roughly six weeks, so it reflects what a person actually does under real demand rather than what they say about themselves.",
+    a: "The Commitment Quotient (CQ) is a score built from three observed behaviors: Initiative, Follow-Through, and Learnability. It is calculated from real work over roughly six weeks, so it reflects what a person actually does under real demand rather than what they say about themselves.",
   },
   {
     q: "Can employee commitment be faked?",
@@ -232,6 +232,11 @@ export default function MeasureCommitmentGuidePage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-[13px] leading-[1.6] text-[#8A8474]">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
         </Container>
       </Section>
 

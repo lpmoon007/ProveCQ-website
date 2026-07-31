@@ -188,7 +188,7 @@ export default function AboutPage() {
               <p className="m-0 mb-5 text-[16px] leading-[1.65] text-content-muted">
                 Be Legendary helps executive teams find where they break first and
                 rebuild the disciplines that broke. Prove answers the companion
-                question — <em>who</em> on the team has the behavioral capacity to
+                question — <em>who</em> on the team has the current signal to
                 carry the load. Two doors, one house: truth over comfort, paid
                 daily.
               </p>

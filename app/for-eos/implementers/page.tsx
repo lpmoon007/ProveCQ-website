@@ -77,6 +77,11 @@ export default function EosImplementersPage() {
               something concrete to offer clients when GWC&rsquo;s Capacity box
               turns into a debate.
             </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#615B4F]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
+            </p>
           </div>
         </Container>
       </Section>

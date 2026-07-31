@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 const CANONICAL = "/guides/behavioral-interview-questions";
 
 const DESCRIPTION =
-  "17 free behavioral interview questions that predict follow-through — grouped by Initiative, Applied Grit, and Learnability, with the strong signals and red flags to listen for in each answer.";
+  "17 free behavioral interview questions that predict follow-through — grouped by Initiative, Follow-Through, and Learnability, with the strong signals and red flags to listen for in each answer.";
 
 export const metadata: Metadata = {
   title: "Behavioral Interview Questions That Predict Follow-Through",
@@ -68,7 +68,7 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    trait: "Applied Grit",
+    trait: "Follow-Through",
     facet: "Ownership",
     tagline: "Do they own outcomes — good and bad?",
     questions: [
@@ -93,7 +93,7 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    trait: "Applied Grit",
+    trait: "Follow-Through",
     facet: "Resilience",
     tagline: "Do they hold up under pressure?",
     questions: [
@@ -118,7 +118,7 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    trait: "Applied Grit",
+    trait: "Follow-Through",
     facet: "Long-game drive",
     tagline: "Do they persist when the payoff is far off?",
     questions: [
@@ -144,7 +144,7 @@ const GROUPS: Group[] = [
   },
   {
     trait: "Learnability",
-    tagline: "Do they adapt and grow?",
+    tagline: "Do they act on feedback?",
     questions: [
       {
         q: "Tell me about a time you had to quickly acquire new knowledge or skills. What steps did you take?",
@@ -177,7 +177,7 @@ const GROUPS: Group[] = [
 const RUN_STEPS = [
   "Ask for a specific past example — not a hypothetical. “Tell me about a time…” beats “What would you do if…” every time.",
   "Probe once: “What was the outcome?” and “What would you do differently?” The follow-up separates a real story from a rehearsed one.",
-  "Score right after, before impressions fade — rate each trait 1–5 from the evidence, and note the exact example.",
+  "Score right after, before impressions fade — rate each signal 1–5 from the evidence, and note the exact example.",
   "Check the score against your gut. Where they disagree, that gap is your signal to dig deeper in the next round.",
 ];
 
@@ -192,7 +192,7 @@ const FAQ = [
   },
   {
     q: "How do you score a behavioral interview?",
-    a: "Rate each trait — Initiative, Applied Grit, and Learnability — 1 to 5 from the examples the candidate gives, and write down the specific evidence. Then check whether your scores match your overall impression. Where they diverge, that's exactly where to probe in the next round.",
+    a: "Rate each signal — Initiative, Follow-Through, and Learnability — 1 to 5 from the examples the candidate gives, and write down the specific evidence. Then check whether your scores match your overall impression. Where they diverge, that's exactly where to probe in the next round.",
   },
   {
     q: "What are red flags in a behavioral interview?",
@@ -200,7 +200,7 @@ const FAQ = [
   },
   {
     q: "Can you rely on a behavioral interview alone to hire?",
-    a: "No. Use these questions alongside references, a real work sample, and — ideally — observed behavior in the first weeks. Treat CQ as a signal that prompts better questions and surfaces gaps, not a standalone hiring gate or a legally validated assessment.",
+    a: "No. Use these questions alongside references, a real work sample, and — ideally — observed behavior in the first weeks. CQ results may be used to identify coaching focus areas, allocate development investment, design team interventions, and support individual self-directed growth. CQ results may not be used, in whole or in part, as a factor in hiring, candidate screening, termination, demotion, discipline, compensation, or as a gate on promotion eligibility.",
   },
 ];
 
@@ -229,7 +229,7 @@ export default function BehavioralInterviewQuestionsPage() {
       >
         A great interview rewards a great talker. These 17 questions reward the
         opposite &mdash; evidence of what a candidate actually did. They probe the
-        three behaviors that predict who delivers: Initiative, Applied Grit, and
+        three behaviors that predict who delivers: Initiative, Follow-Through, and
         Learnability. Free to use, no sign-up.
       </PageHero>
 
@@ -253,11 +253,7 @@ export default function BehavioralInterviewQuestionsPage() {
           <p className="m-0 mb-6 text-[17px] leading-[1.65] text-content-muted">
             Behavioral questions only work if you push past the first answer.
             Four rules make the difference between a real read and a rehearsed
-            one. (Prefer to score as you go?{" "}
-            <Link href="/free-tools/interview-kit" className="font-semibold text-green">
-              Run the interactive CQ Interview Kit
-            </Link>{" "}
-            &mdash; the same questions with live 1&ndash;5 scoring.)
+            one.
           </p>
           <ol className="m-0 flex list-none flex-col gap-3 p-0">
             {RUN_STEPS.map((s, i) => (
@@ -286,8 +282,14 @@ export default function BehavioralInterviewQuestionsPage() {
               These questions are here to help you ask better questions and spot
               gaps between polish and performance &mdash; not to auto-eliminate
               anyone. Pair them with references, a work sample, and structured
-              scoring. CQ is directional; it is not a legally validated assessment
-              or a standalone hiring gate.{" "}
+              scoring. CQ results may be used to identify coaching focus areas,
+              allocate development investment, design team interventions, and
+              support individual self-directed growth. CQ results may not be used,
+              in whole or in part, as a factor in hiring, candidate screening,
+              termination, demotion, discipline, compensation, or as a gate on
+              promotion eligibility. A CQ result reflects observed behavior during a
+              defined window and is valid for twelve months. Anyone assessed
+              receives their own result and may request re-assessment at any time.{" "}
               <Link href="/ethics" className="font-semibold text-green">
                 What CQ is &amp; isn&rsquo;t &rarr;
               </Link>
@@ -331,7 +333,7 @@ export default function BehavioralInterviewQuestionsPage() {
                     </div>
                     <div className="rounded-[12px] bg-[#F7E4DE] px-4 py-3">
                       <div className="mb-1 text-[12px] font-bold uppercase tracking-[.06em] text-signal-red">
-                        Red flag (low CQ)
+                        Red flag (lower current signal)
                       </div>
                       <p className="m-0 text-[14px] leading-[1.5] text-[#7A4536]">
                         {item.red}
@@ -385,7 +387,7 @@ export default function BehavioralInterviewQuestionsPage() {
           </h2>
           <p className="m-0 mb-8 text-[18px] leading-[1.6] text-[#E4F5EB]">
             A 45-minute interview only samples behavior. A Prove cycle scores
-            Initiative, Applied Grit, and Learnability from six weeks of it &mdash;
+            Initiative, Follow-Through, and Learnability from six weeks of it &mdash;
             so you hire on proof, not a good first impression.
           </p>
           <div className="flex flex-wrap justify-center gap-3">

@@ -86,7 +86,7 @@ const FAQ = [
   },
   {
     q: "How does Prove strengthen the Accountability Chart?",
-    a: "Prove works alongside EOS by turning the Capacity question into evidence. Instead of assuming the person in a seat can carry it, Prove measures behavior over six weeks — Initiative, Applied Grit, and Learnability — so you can confirm the right person is in the right seat, or see clearly when a seat should stay open.",
+    a: "Prove works alongside EOS by turning the Capacity question into evidence. Instead of assuming the person in a seat can carry it, Prove measures behavior over six weeks — Initiative, Follow-Through, and Learnability — so you can confirm the right person is in the right seat, or see clearly when a seat should stay open.",
   },
 ];
 
@@ -146,6 +146,11 @@ export default function EosAccountabilityChartPage() {
               and who owns each?&rdquo; The hard part it can&rsquo;t answer alone:
               does the person in each seat actually have the{" "}
               <strong>capacity</strong> for it?
+            </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#A8A290]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

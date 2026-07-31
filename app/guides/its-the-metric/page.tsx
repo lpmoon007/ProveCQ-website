@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 
 const BEHAVIORS = [
   { name: "Initiative", body: "Do they act without waiting to be told?" },
-  { name: "Applied Grit", body: "Do they own the outcome when it gets hard?" },
-  { name: "Learnability", body: "Do they grow under pressure?" },
+  { name: "Follow-Through", body: "Do they own the outcome when it gets hard?" },
+  { name: "Learnability", body: "Do they act on feedback?" },
 ];
 
 export default function ItsTheMetricPage() {
@@ -71,7 +71,7 @@ export default function ItsTheMetricPage() {
             Engagement scores are built on sentiment (&ldquo;Do I have a best
             friend at work?&rdquo;) and context cues (&ldquo;Do I know what&rsquo;s
             expected of me?&rdquo;). What they don&rsquo;t measure: performance,
-            applied grit, initiative, learning velocity, adaptive behavior, or
+            follow-through, initiative, response to feedback, adaptive behavior, or
             real contribution. They measure how people <em>feel</em> about their
             environment &mdash; not how they <em>behave</em> under pressure.
           </p>

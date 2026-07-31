@@ -51,7 +51,7 @@ const COMPARISON = [
   {
     row: "What it predicts",
     review: "Mastery of the current role.",
-    prove: "Readiness to carry more — initiative, applied grit, learnability.",
+    prove: "Readiness to carry more — initiative, follow-through, learnability.",
   },
   {
     row: "Decision it supports",
@@ -93,7 +93,7 @@ const CANT_TELL = [
 // paper2 checklist — how to make a promotion call a review can't.
 const PROMOTION_CALL = [
   "Watch behavior over weeks, not a single end-of-period rating.",
-  "Score the three forward-looking signals: initiative, applied grit, and learnability.",
+  "Score the three forward-looking signals: initiative, follow-through, and learnability.",
   "Look at conduct under pressure — the hard problem, not the easy quarter.",
   "Separate the promotion decision from the compensation cycle so recency bias doesn't drive it.",
   "Use the review for the record and the raise; use the proof for who carries more.",
@@ -102,7 +102,7 @@ const PROMOTION_CALL = [
 const FAQ = [
   {
     q: "Do performance reviews predict promotion success?",
-    a: "Weakly. A performance review rates mastery of the current role, and current-role performance is a poor predictor of readiness for a bigger one. Some of your strongest performers are most valuable exactly where they are. Promotion success depends on forward-looking behaviors — initiative, applied grit, and learnability — that a backward-looking rating is not designed to capture.",
+    a: "Weakly. A performance review rates mastery of the current role, and current-role performance is a poor predictor of readiness for a bigger one. Some of your strongest performers are most valuable exactly where they are. Promotion success depends on forward-looking behaviors — initiative, follow-through, and learnability — that a backward-looking rating is not designed to capture.",
   },
   {
     q: "Why do annual reviews fail?",
@@ -110,7 +110,7 @@ const FAQ = [
   },
   {
     q: "What's the alternative to performance reviews?",
-    a: "You don't have to replace them. Reviews are genuinely good for compensation, calibration, and the HR record. The alternative is to add a forward-looking, continuous measure for the decisions reviews can't support — a Prove cycle scores commitment behavior (initiative, applied grit, learnability) from weeks of real work, under pressure, so the promotion call rests on proof rather than the last quarter.",
+    a: "You don't have to replace them. Reviews are genuinely good for compensation, calibration, and the HR record. The alternative is to add a forward-looking, continuous measure for the decisions reviews can't support — a Prove cycle scores commitment behavior (initiative, follow-through, learnability) from weeks of real work, under pressure, so the promotion call rests on proof rather than the last quarter.",
   },
   {
     q: "Prove vs performance reviews?",
@@ -289,6 +289,11 @@ export default function VsPerformanceReviewsPage() {
               </Link>
               , handing off scope, and asking whether someone can carry more. One
               measure defends the past; the other predicts the next role.
+            </p>
+            <p className="m-0 mt-6 text-[13px] leading-[1.6] text-content-muted">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

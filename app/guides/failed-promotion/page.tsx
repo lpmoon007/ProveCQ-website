@@ -40,18 +40,18 @@ const PREVENT = [
   },
   {
     h: "Coach the gap first",
-    b: "If one trait is weak, develop it deliberately before you hand over authority, not after.",
+    b: "If one signal is weak, develop it deliberately before you hand over authority, not after.",
   },
 ];
 
 // GEO checklist — how to de-risk a promotion before the title changes, built on
 // proving the behavior the new role demands rather than betting on hope.
 const DERISK_STEPS = [
-  "Define the behavior the new role actually needs — more initiative, higher-altitude judgment, faster learnability — not just the seniority of the title.",
+  "Define the behavior the new role actually needs — more initiative, higher-altitude judgment, learnability — not just the seniority of the title.",
   "Design a scoped stretch that demands that exact behavior at lower stakes, with a real outcome the person has to own.",
   "Watch how they carry it: do they act before being told, push through the hard middle, and adapt when the plan breaks?",
   "Confirm they actually want the role. Rule out the person who is accepting out of loyalty or money rather than desire.",
-  "Coach any single weak trait deliberately, before the title change — develop the gap first, hand over authority second.",
+  "Coach any single weak signal deliberately, before the title change — develop the gap first, hand over authority second.",
   "Promote on proof, not tenure or gut feel. Give the role to the person whose behavior already looks like the next altitude.",
 ];
 
@@ -68,11 +68,11 @@ const FAQ = [
   },
   {
     q: "How do you prevent a failed promotion?",
-    a: "Prove the missing behavior before the title changes. Run a scoped stretch that demands the exact initiative, judgment, or learnability the new role needs, at lower stakes, and watch how the person carries it. Coach any weak trait deliberately first — then promote on the behavior you actually saw, not on tenure or gut feel.",
+    a: "Prove the missing behavior before the title changes. Run a scoped stretch that demands the exact initiative, judgment, or learnability the new role needs, at lower stakes, and watch how the person carries it. Coach any weak signal deliberately first — then promote on the behavior you actually saw, not on tenure or gut feel.",
   },
   {
     q: "What is the difference between a high performer and someone ready for promotion?",
-    a: "A high performer has mastered the current role; readiness is about capacity for the next one. The two often diverge. Some of your best people are most valuable exactly where they are. Promotion readiness shows up as initiative beyond the role, follow-through on hard problems, and the learnability to adapt as demands grow.",
+    a: "A high performer has mastered the current role; readiness is about capacity for the next one. The two often diverge. Some of your best people are most valuable exactly where they are. Promotion readiness shows up as initiative beyond the role, follow-through on hard problems, and the learnability to act on feedback as demands grow.",
   },
   {
     q: "Should you promote someone who does not want the role?",
@@ -165,7 +165,7 @@ export default function FailedPromotionPage() {
             </p>
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               The failure is also predictable, which means it is preventable. If
-              the new role will demand more initiative, faster learnability, or
+              the new role will demand more initiative, learnability, or
               judgment under ambiguity, those are behaviors you can look for &mdash;
               and prove &mdash; before the title changes rather than after. The
               mistake most leaders make is betting on hope and finding out in

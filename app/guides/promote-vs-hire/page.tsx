@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const WITHIN = [
   {
     h: "An insider has proven the behavior",
-    b: "They already show the initiative, applied grit, and learnability the new role demands.",
+    b: "They already show the initiative, follow-through, and learnability the new role demands.",
   },
   {
     h: "Culture & context matter most",
@@ -52,7 +52,7 @@ const DECIDE = [
 const FAQ = [
   {
     q: "Is it better to promote from within or hire externally?",
-    a: "Neither is better in the abstract — it depends on proof. Promote from within when an internal candidate has already demonstrated the behavior the new role demands: initiative beyond their current job, follow-through on hard problems, and fast learning. Hire externally when no internal candidate has shown that behavior and the missing capability is a genuine skill you cannot coach into someone in the time you have.",
+    a: "Neither is better in the abstract — it depends on proof. Promote from within when an internal candidate has already demonstrated the behavior the new role demands: initiative beyond their current job, follow-through on hard problems, and consistently acting on feedback. Hire externally when no internal candidate has shown that behavior and the missing capability is a genuine skill you cannot coach into someone in the time you have.",
   },
   {
     q: "What is the Peter Principle and how do you avoid it?",
@@ -60,7 +60,7 @@ const FAQ = [
   },
   {
     q: "How do you decide who to promote?",
-    a: "Define the target role by the behaviors it actually requires, list everyone who could grow into it, and separate what each person has proven from what you are hoping they will become. The strongest candidate is the one who has already shown initiative, applied grit, and learnability under real conditions — not the one with the longest tenure or the loudest case for themselves.",
+    a: "Define the target role by the behaviors it actually requires, list everyone who could grow into it, and separate what each person has proven from what you are hoping they will become. The strongest candidate is the one who has already shown initiative, follow-through, and learnability under real conditions — not the one with the longest tenure or the loudest case for themselves.",
   },
   {
     q: "What is the real cost of a wrong promotion?",
@@ -68,7 +68,7 @@ const FAQ = [
   },
   {
     q: "How does behavioral proof help with the promote-versus-hire decision?",
-    a: "Behavioral proof replaces the gut call with a signal built from observed behavior. A Prove cycle scores Initiative, Applied Grit, and Learnability from several weeks of real work, so you can compare an internal candidate and an external one on the same evidence — capacity to do the next job — rather than on charm, tenure, or a strong interview.",
+    a: "Behavioral proof replaces the gut call with a signal built from observed behavior. A Prove cycle scores Initiative, Follow-Through, and Learnability from several weeks of real work, so you can compare an internal candidate and an external one on the same evidence — capacity to do the next job — rather than on charm, tenure, or a strong interview.",
   },
 ];
 
@@ -122,6 +122,11 @@ export default function PromoteVsHirePage() {
               hinge on demonstrated capacity, not tenure or convenience.
             </p>
           </div>
+          <p className="mx-auto mt-4 max-w-[760px] text-[13px] leading-[1.6] text-[#8A8474]">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
         </Container>
       </Section>
 

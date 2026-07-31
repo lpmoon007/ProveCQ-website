@@ -18,6 +18,8 @@ RewriteRule ^eos/(.*)$                        /for-eos/$1 [R=301,L]
 # /for-eos/ path so it resolves instead of 404ing.
 RewriteRule ^for-eos/eos-people-issues/?$    /guides/eos-people-issues [R=301,L]
 RewriteRule ^free-tools/hidden-gem/?$         /free-tools/hidden-gem-identifier [R=301,L]
+# The CQ Interview Kit (a public candidate-scoring tool) was retired; redirect to the tools hub.
+RewriteRule ^free-tools/interview-kit/?$      /free-tools [R=301,L]
 RewriteRule ^services/?$                      /work-with-us [R=301,L]
 RewriteRule ^get-to-green/?$                  /free-tools/get-to-green [R=301,L]
 RewriteRule ^get-to-green-app/?$              /free-tools/get-to-green [R=301,L]

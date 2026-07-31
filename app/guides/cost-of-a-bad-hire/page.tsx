@@ -50,7 +50,7 @@ const REDUCE = [
   "Write down the two or three behaviors the role actually fails without, then screen for those instead of a polished resume.",
   "Treat the interview as a hypothesis, not a verdict — assume charm and rehearsal inflate it, and look for evidence outside the room.",
   "Give finalists real work, not hypotheticals, and watch how they follow through when the task gets tedious.",
-  "Check references for behavior under pressure — initiative, grit, and learning — rather than a general thumbs-up.",
+  "Check references for behavior under pressure — initiative, follow-through, and learning — rather than a general thumbs-up.",
   "Define what “working out” looks like at 90 days before the offer, so you catch a bad fit early instead of rationalizing it.",
   "Give a struggling new hire honest feedback fast — the longer a wrong seat stays filled, the more it costs the team around it.",
 ];

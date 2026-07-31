@@ -58,7 +58,7 @@ const CHECKLIST = [
   "Score what people did, not what they say they are like — pull evidence from real work, not a questionnaire.",
   "Collect many datapoints over weeks, so one good day or one bad day cannot swing the result.",
   "Watch behavior under genuine demand — a stretch task, a deadline, an ambiguous problem — where a rehearsed answer won't hold.",
-  "Separate the three behaviors that matter for delivery: Initiative, Applied Grit, and Learnability.",
+  "Separate the three behaviors that matter for delivery: Initiative, Follow-Through, and Learnability.",
   "Re-run the read on a cadence to catch drift, rather than treating one assessment as permanent truth.",
 ];
 
@@ -95,7 +95,7 @@ const FAQ = [
   },
   {
     q: "How does Prove measure behavior instead of personality?",
-    a: "Prove scores three behaviors — Initiative, Applied Grit, and Learnability — from real work over roughly six weeks, aggregating 40+ datapoints into the Commitment Quotient. Because the signal comes from what people did under real demand, it is hard to fake and can be re-run to catch drift.",
+    a: "Prove scores three behaviors — Initiative, Follow-Through, and Learnability — from real work over roughly six weeks, aggregating 40+ datapoints into the Commitment Quotient. Because the signal comes from what people did under real demand, it is hard to fake and can be re-run to catch drift.",
   },
 ];
 
@@ -221,7 +221,7 @@ export default function BehavioralVsPersonalityGuidePage() {
               gathered over time, under real demand. The unit is action, not
               self-image. That is the category CQ lives in: it scores{" "}
               <Link href="/guides/measure-commitment" className="font-semibold text-green underline-offset-2 hover:underline">
-                Initiative, Applied Grit, and Learnability
+                Initiative, Follow-Through, and Learnability
               </Link>{" "}
               from real work, so the read reflects what someone did, not what they
               said about themselves.
@@ -253,10 +253,15 @@ export default function BehavioralVsPersonalityGuidePage() {
               <em>not</em> a psychometric and not a personality test. It makes no
               claim about a person&rsquo;s fixed type or worth, and it is not a
               head-to-head replacement for the Predictive Index or Hogan. It is a
-              different instrument for a different decision &mdash; and it is built
-              to be used <Link href="/ethics" className="font-semibold text-green underline-offset-2 hover:underline">
-                fairly and as one input
-              </Link>, never as an automated verdict on a person.
+              different instrument for a different decision. CQ results may be used
+              to identify coaching focus areas, allocate development investment,
+              design team interventions, and support individual self-directed
+              growth. CQ results may not be used, in whole or in part, as a factor
+              in hiring, candidate screening, termination, demotion, discipline,
+              compensation, or as a gate on promotion eligibility. A CQ result
+              reflects observed behavior during a defined window and is valid for
+              twelve months. Anyone assessed receives their own result and may
+              request re-assessment at any time.
             </p>
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               The practical version: use a psychometric to understand a person; use

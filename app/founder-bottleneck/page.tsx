@@ -103,7 +103,7 @@ const FAQ = [
   },
   {
     q: "How does Prove help a founder get out of the bottleneck?",
-    a: "Prove measures who on your team actually delivers when it's hard — Initiative, Applied Grit, and Learnability from real behavior over time. That gives you the one thing that makes letting go feel safe: evidence of who can carry more, so you can delegate, promote, and hand over the keys on proof instead of a hunch.",
+    a: "Prove measures who on your team actually delivers when it's hard — Initiative, Follow-Through, and Learnability from real behavior over time. That gives you the one thing that makes letting go feel safe: evidence of who can carry more, so you can delegate on proof instead of a hunch.",
   },
 ];
 
@@ -306,6 +306,11 @@ export default function FounderBottleneckPage() {
                 </details>
               ))}
             </div>
+            <p className="m-0 mt-6 text-[13.5px] leading-[1.6] text-content-faint">
+              A CQ result reflects observed behavior during a defined window and is
+              valid for twelve months. Anyone assessed receives their own result
+              and may request re-assessment at any time.
+            </p>
           </div>
         </Container>
       </Section>

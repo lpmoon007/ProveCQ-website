@@ -142,9 +142,9 @@ export default function DelegateGuidePage() {
           <div className="mx-auto max-w-[760px] rounded-[20px] bg-ink p-8 text-paper on-dark sm:p-[34px]">
             <Eyebrow tone="soft">The short answer</Eyebrow>
             <p className="m-0 mt-3 text-[18px] leading-[1.65] text-[#D8D4C6]">
-              Delegate with confidence by proving capacity before you hand over
-              the keys: give a scoped, real responsibility and watch initiative
-              and follow-through. When you can see who owns outcomes, letting go
+              Delegate with confidence by proving capacity: give a scoped, real
+              responsibility and watch initiative and follow-through. When you can
+              see who owns outcomes, letting go
               stops feeling like a risk and starts feeling like leverage.
             </p>
           </div>
@@ -182,7 +182,7 @@ export default function DelegateGuidePage() {
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               The behaviors that predict a clean handoff are the same ones that
               predict who is worth investing in generally &mdash; initiative,
-              follow-through, and the learnability to adapt when the work changes.
+              follow-through, and the learnability to act on feedback as the work changes.
               When you can see those in someone&rsquo;s actual behavior, you stop
               betting on hope. You match the size of each handoff to what the
               person has already shown, and delegation turns from a gamble into

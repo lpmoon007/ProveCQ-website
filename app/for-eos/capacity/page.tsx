@@ -83,6 +83,11 @@ export default function EosCapacityPage() {
               <em>for</em> EOS by measuring behavior over time, which is much
               harder to fake than a checkbox.
             </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#615B4F]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
+            </p>
           </div>
         </Container>
       </Section>

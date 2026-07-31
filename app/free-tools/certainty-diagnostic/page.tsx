@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "A free 2-minute diagnostic for founders and CEOs: answer 10 quick questions and get an instant read on how much you're guessing about your people — hiring, promoting, and identifying high-potential employees. See your Certainty Score.",
   keywords: [
     "high potential assessment",
-    "leadership readiness assessment",
+    "development focus assessment",
     "people decision diagnostic",
     "certainty score",
   ],

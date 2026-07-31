@@ -20,8 +20,8 @@ const STAGES = [
     title: "Snapshot — 15 minutes",
     body: (
       <>
-        A quick behavioral read produces an initial score on Initiative, Applied
-        Grit, and Learnability. Treat it as a hypothesis, never a verdict — the
+        A quick behavioral read produces an initial score on Initiative,
+        Follow-Through, and Learnability. Treat it as a hypothesis, never a verdict — the
         starting signal, not the proof.
       </>
     ),
@@ -49,7 +49,7 @@ const STAGES = [
       <>
         You get a Commitment Map and a blunt leader debrief that cuts through
         excuses. You see who&rsquo;s investment-ready, who to coach and in which
-        trait, and who to wait on — so you invest fast and without regret.
+        signal, and who to wait on — so you invest fast and without regret.
       </>
     ),
     foot: (
@@ -133,6 +133,11 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <CQDiagram />
+          <p className="mx-auto mt-6 max-w-[600px] text-center text-[13.5px] leading-[1.6] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
         </Container>
       </Section>
 
@@ -148,10 +153,8 @@ export default function HowItWorksPage() {
             <p className="m-0 text-[17px] leading-[1.65] text-[#B8B4A6]">
               Most tools rely on self-report, which is easy to game — you can pass
               without ever touching the wheel. Prove treats self-report as a
-              hypothesis and then pressure-tests it against observed behavior. When
-              you decide who to hand the keys to, you don&rsquo;t bet on a paper
-              exam. You bet on how they actually handle the road when it gets
-              rough.
+              hypothesis and then pressure-tests it against observed behavior. You
+              see how they actually handle the road when it gets rough.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -177,9 +180,12 @@ export default function HowItWorksPage() {
             </div>
           </div>
           <p className="mx-auto mt-8 max-w-[760px] text-center text-[14.5px] leading-[1.6] text-content-faint">
-            Prove is a behavioral signal system, transparently presented as one
-            input in a larger decision — paired with your judgment and
-            role-relevant data, never a psychometric verdict on its own.
+            CQ results may be used to identify coaching focus areas, allocate
+            development investment, design team interventions, and support
+            individual self-directed growth. CQ results may not be used, in whole
+            or in part, as a factor in hiring, candidate screening, termination,
+            demotion, discipline, compensation, or as a gate on promotion
+            eligibility.
           </p>
         </Container>
       </Section>

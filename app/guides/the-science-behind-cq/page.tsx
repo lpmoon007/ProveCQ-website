@@ -11,21 +11,21 @@ import { site } from "@/lib/site";
 const CANONICAL = "/guides/the-science-behind-cq";
 
 const DESCRIPTION =
-  "Engagement measures how people feel — it was never built to predict who delivers. The five first-principles behavioral traits behind the Commitment Quotient, and how they resolve into the score.";
+  "Engagement measures how people feel — it was never built to predict who delivers. The five first-principles behavioral signals behind the Commitment Quotient, and how they resolve into the score.";
 
 export const metadata: Metadata = {
-  title: "The 5 Behavioral Traits That Predict Value at Work",
+  title: "The 5 Behavioral Signals That Predict Value at Work",
   description: DESCRIPTION,
   keywords: [
-    "behavioral traits that predict performance",
+    "behavioral signals that predict performance",
     "what predicts job performance",
-    "traits that predict success at work",
+    "signals that predict success at work",
     "commitment quotient methodology",
     "first principles hiring",
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "The 5 Behavioral Traits That Predict Value at Work",
+    title: "The 5 Behavioral Signals That Predict Value at Work",
     description:
       "The first-principles method behind the Commitment Quotient — five foundational, observable behaviors that predict who delivers.",
     url: CANONICAL,
@@ -63,7 +63,7 @@ const FOUNDATIONAL = [
     markers: [
       "Openness to feedback",
       "Pattern recognition across time and domains",
-      "Growth velocity over static competence",
+      "Acts on feedback over time",
     ],
     fail: "Stagnation, skill decay, obsolescence.",
   },
@@ -102,7 +102,7 @@ const CRITERIA = [
   },
   {
     h: "Distinct & influenceable",
-    b: "Non-redundant with the others, and it can be developed or selected for — not a fixed, unchangeable trait.",
+    b: "Non-redundant with the others, and it can be developed or selected for — not a fixed, unchangeable signal.",
   },
 ];
 
@@ -113,7 +113,7 @@ const MAPPING = [
     sub: "Proactive Start · Follow-Through · Resourcefulness",
   },
   {
-    dim: "Applied Grit",
+    dim: "Follow-Through",
     from: "Stress Adaptability + Ownership Instinct",
     sub: "Resilience · Ownership · Long-Game Drive",
   },
@@ -126,7 +126,7 @@ const MAPPING = [
 
 const FAQ = [
   {
-    q: "What behavioral traits actually predict performance at work?",
+    q: "What behavioral signals actually predict performance at work?",
     a: "Working from first principles, five foundational, observable behaviors predict value across almost any role: Action Orientation (do they move?), Stress Adaptability (do they hold under pressure?), Learnability (do they evolve?), Ownership Instinct (do they own outcomes?), and Relational Reliability (do they coordinate with others?). Each is behavior-based, predictive across contexts, distinct, and developable.",
   },
   {
@@ -134,8 +134,8 @@ const FAQ = [
     a: "Engagement measures how people feel about their work — it was designed to read emotional investment and retention risk, not to predict who delivers under pressure. It is worth keeping, but it was never built for high-stakes people decisions. The Commitment Quotient measures behavior instead of sentiment.",
   },
   {
-    q: "How do the five traits become the Commitment Quotient?",
-    a: "For most decisions, CQ Core measures three dimensions built from those foundations: Initiative (from Action Orientation), Applied Grit (from Stress Adaptability and Ownership Instinct), and Learnability. A fourth dimension, Relational Reliability, is used in leadership-specific tools. So the score you see rests on the same first-principles behaviors.",
+    q: "How do the five signals become the Commitment Quotient?",
+    a: "For most decisions, CQ Core measures three dimensions built from those foundations: Initiative (from Action Orientation), Follow-Through (from Stress Adaptability and Ownership Instinct), and Learnability. A fourth dimension, Relational Reliability, is used in leadership-specific tools. So the score you see rests on the same first-principles behaviors.",
   },
   {
     q: "Is a high CQ always better than a low CQ?",
@@ -160,7 +160,7 @@ const faqJsonLd = {
 const definedTermSet = {
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
-  name: "The Five Foundational Behavioral Traits",
+  name: "The Five Foundational Behavioral Signals",
   hasDefinedTerm: FOUNDATIONAL.map((t) => ({
     "@type": "DefinedTerm",
     name: t.name,
@@ -183,7 +183,7 @@ export default function ScienceBehindCQPage() {
       <PageHero
         crumb="Guides › The science behind CQ"
         eyebrow="Methodology"
-        title={<>The 5 behavioral traits that actually predict value at work.</>}
+        title={<>The 5 behavioral signals that actually predict value at work.</>}
       >
         Engagement tells you how people <em>feel</em> about work. It was never
         built to tell you who will <em>deliver</em> when it gets hard. So we
@@ -192,7 +192,7 @@ export default function ScienceBehindCQPage() {
       </PageHero>
 
       <ArticleMeta
-        headline="The 5 behavioral traits that actually predict value at work."
+        headline="The 5 behavioral signals that actually predict value at work."
         description={DESCRIPTION}
         canonical={CANONICAL}
         crumbs={[
@@ -210,7 +210,7 @@ export default function ScienceBehindCQPage() {
               Instead of patching engagement, we stripped the question down to a
               fundamental one &mdash; <em>what behaviors actually create value at
               work?</em> &mdash; and rebuilt from there. Five observable,
-              role-agnostic traits survived the cut. The Commitment Quotient
+              role-agnostic signals survived the cut. The Commitment Quotient
               measures them.
             </p>
           </div>
@@ -248,7 +248,7 @@ export default function ScienceBehindCQPage() {
       <Section tone="paper2">
         <Container className="max-w-[900px]">
           <h2 className="mb-6 font-display text-[26px] font-bold tracking-[-.02em] sm:text-[32px]">
-            What makes a trait &ldquo;foundational&rdquo;
+            What makes a signal &ldquo;foundational&rdquo;
           </h2>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {CRITERIA.map((c) => (
@@ -269,7 +269,7 @@ export default function ScienceBehindCQPage() {
       <Section tone="paper">
         <Container className="max-w-[1000px]">
           <h2 className="mb-2 font-display text-[28px] font-bold tracking-[-.02em] sm:text-[34px]">
-            The five foundational traits
+            The five foundational signals
           </h2>
           <p className="m-0 mb-8 max-w-[640px] text-[16px] leading-[1.6] text-content-muted">
             Each answers a plain functional question, shows up as specific
@@ -354,9 +354,14 @@ export default function ScienceBehindCQPage() {
             </Link>{" "}
             rest on the same first-principles behaviors. Each of the{" "}
             <Link href="/glossary" className="font-semibold text-green">
-              nine sub-traits is defined in plain English in the glossary
+              nine sub-signals is defined in plain English in the glossary
             </Link>
             .
+          </p>
+          <p className="m-0 mt-6 text-[13px] leading-[1.6] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
           </p>
         </Container>
       </Section>
@@ -424,8 +429,8 @@ export default function ScienceBehindCQPage() {
             See the method on your own team.
           </h2>
           <p className="m-0 mb-8 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            These traits aren&rsquo;t theory &mdash; they&rsquo;re measurable. Book
-            a call to see how Prove scores Initiative, Applied Grit, and
+            These signals aren&rsquo;t theory &mdash; they&rsquo;re measurable. Book
+            a call to see how Prove scores Initiative, Follow-Through, and
             Learnability from real behavior, or start with the free diagnostic.
           </p>
           <div className="flex flex-wrap justify-center gap-3">

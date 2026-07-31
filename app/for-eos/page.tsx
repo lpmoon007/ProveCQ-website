@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/for-eos" },
   title: "Prove for EOS — Make the Capacity Box Real",
   description:
-    "EOS scores every seat on GWC — but Capacity is treated as a yes/no checkbox. Prove measures the behavioral truth of capacity (Initiative, Applied Grit, Learnability) so EOS leaders and Implementers stop mis-placing people.",
+    "EOS scores every seat on GWC — but Capacity is treated as a yes/no checkbox. Prove measures the behavioral truth of capacity (Initiative, Follow-Through, Learnability) so EOS leaders and Implementers stop mis-placing people.",
 };
 
 const GWC = [
@@ -19,9 +19,9 @@ const GWC = [
 ];
 
 const CQ_ROWS = [
-  { label: "Initiative", desc: "Acts without being told." },
-  { label: "Applied Grit", desc: "Follows through when it's hard." },
-  { label: "Learnability", desc: "Adapts and grows." },
+  { label: "Initiative", desc: "How consistently someone acts without being prompted." },
+  { label: "Follow-Through", desc: "How consistently someone completes what they committed to." },
+  { label: "Learnability", desc: "How consistently someone acts on feedback." },
 ];
 
 const LEADER_POINTS = [
@@ -159,12 +159,17 @@ export default function EosPage() {
             </div>
             <p className="m-0 font-display text-[20px] font-medium italic leading-[1.5] sm:text-[24px]">
               &ldquo;We were about to promote a technician who looked perfect. His
-              CQ showed high applied grit and learnability, but low initiative. In
+              CQ showed high follow-through and learnability, but low initiative. In
               the conversation, he admitted he didn&rsquo;t want the added
               responsibility right now. We avoided a costly mis-promotion — and
               kept him engaged in the right seat.&rdquo;
             </p>
           </div>
+          <p className="mx-auto mt-6 max-w-[820px] text-[13.5px] leading-[1.6] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
+          </p>
         </Container>
       </Section>
 

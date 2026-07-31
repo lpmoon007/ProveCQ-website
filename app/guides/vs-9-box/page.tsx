@@ -36,7 +36,7 @@ const COMPARE: { row: string; nineBox: string; prove: string }[] = [
   {
     row: "What it measures",
     nineBox: "Performance on one axis, potential on the other, plotted into nine cells.",
-    prove: "Three observed behaviors: Initiative, Applied Grit, and Learnability.",
+    prove: "Three observed behaviors: Initiative, Follow-Through, and Learnability.",
   },
   {
     row: "How “potential” is judged",
@@ -115,7 +115,7 @@ const FAQ = [
   },
   {
     q: "Prove vs the 9-box — what's the difference?",
-    a: "The 9-box is a framework for sorting talent into a grid; the placement on the potential axis is a subjective read. Prove is a measurement — it scores Initiative, Applied Grit, and Learnability from real behavior over a defined window. Put simply, the 9-box gives you the grid and the shared language; Prove gives you a defensible number for the axis the grid guesses at.",
+    a: "The 9-box is a framework for sorting talent into a grid; the placement on the potential axis is a subjective read. Prove is a measurement — it scores Initiative, Follow-Through, and Learnability from real behavior over a defined window. Put simply, the 9-box gives you the grid and the shared language; Prove gives you a defensible number for the axis the grid guesses at.",
   },
   {
     q: "Can you use Prove and the 9-box together?",
@@ -171,7 +171,7 @@ export default function Vs9BoxPage() {
               leadership team a shared, portfolio-level view of talent. Its weak
               spot is the potential axis &mdash; a subjective, once-a-year opinion.
               Prove keeps the grid but scores that axis from measured behavior
-              &mdash; Initiative, Applied Grit, and Learnability &mdash; so each
+              &mdash; Initiative, Follow-Through, and Learnability &mdash; so each
               placement rests on proof, not a show of hands.
             </p>
           </div>
@@ -307,6 +307,11 @@ export default function Vs9BoxPage() {
                 identifying high-potential employees
               </Link>{" "}
               breaks down the behaviors that belong on that axis.
+            </p>
+            <p className="m-0 mt-6 text-[13px] leading-[1.6] text-content-muted">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

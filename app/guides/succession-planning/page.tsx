@@ -51,8 +51,8 @@ const CHECKLIST = [
   "Write down the knowledge and relationships that live only in each person's head, and start documenting them.",
   "Name at least one candidate who could grow into each critical role, even if they are not ready yet.",
   "Give that candidate a scoped stretch and watch whether they actually rise when handed more.",
-  "Score the gap in behavioral terms — Initiative, Applied Grit, or Learnability — so you know exactly what to develop.",
-  "Coach the one missing behavior deliberately, and re-check readiness before you are forced to rely on it.",
+  "Score the gap in behavioral terms — Initiative, Follow-Through, or Learnability — so you know exactly what to develop.",
+  "Coach the one missing behavior deliberately, and re-check development focus before you are forced to rely on it.",
 ];
 
 // FAQ — the format AI answer engines extract and cite. Answers stay faithful to
@@ -68,7 +68,7 @@ const FAQ = [
   },
   {
     q: "How do I know if someone is ready to be a successor?",
-    a: "Do not assume — test it. Hand the candidate a real, scoped stretch that resembles the bigger role and watch what they do. Readiness shows up as behavior: taking initiative, following through when it is hard, and learning fast under new demands. That is far more reliable than a title or years of tenure.",
+    a: "Do not assume — test it. Hand the candidate a real, scoped stretch that resembles the bigger role and watch what they do. Readiness shows up as behavior: taking initiative, following through when it is hard, and acting on feedback. That is far more reliable than a title or years of tenure.",
   },
   {
     q: "What is key-person risk?",
@@ -149,19 +149,19 @@ export default function SuccessionPlanningPage() {
               its tracks.
             </p>
             <p className="m-0 mb-4 text-[17px] leading-[1.65] text-content-muted">
-              The mechanism that makes it work is proof of readiness. Most small
+              The mechanism that makes it work is proof of development focus. Most small
               teams have an assumption &mdash; &ldquo;so-and-so could probably run
               that&rdquo; &mdash; but never test it until they are forced to, at the
               worst possible moment. A better approach hands the candidate a scoped
               stretch that resembles the bigger role and watches what they actually
               do: whether they take initiative, follow through when it gets hard, and
-              learn fast under unfamiliar demands. Readiness is a behavior you can
+              act on feedback. Readiness is a behavior you can
               observe, not a title you can assign.
             </p>
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               This matters because the cost of getting it wrong is continuity itself.
               An untested successor who freezes under real pressure is worse than
-              knowing early that you need to develop someone. Measuring readiness in
+              knowing early that you need to develop someone. Measuring development focus in
               behavioral terms &mdash; the same signals behind{" "}
               <Link href="/guides/high-potential-employees" className="font-semibold text-green underline-offset-2 hover:underline">
                 identifying high-potential employees
@@ -274,7 +274,7 @@ export default function SuccessionPlanningPage() {
             Build your bench before you need it.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call to see how Prove maps readiness for your key roles.
+            Book a call to see how Prove maps development focus for your key roles.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

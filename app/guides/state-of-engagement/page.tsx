@@ -59,9 +59,9 @@ const STATS = [
 ];
 
 const BEHAVIORS = [
-  { name: "Initiative", body: "Acts without being told." },
-  { name: "Applied Grit", body: "Follows through when it’s hard." },
-  { name: "Learnability", body: "Adapts and grows under new demands." },
+  { name: "Initiative", body: "How consistently someone acts without being prompted." },
+  { name: "Follow-Through", body: "How consistently someone completes what they committed to." },
+  { name: "Learnability", body: "How consistently someone acts on feedback." },
 ];
 
 export default function StateOfEngagementPage() {
@@ -200,7 +200,7 @@ export default function StateOfEngagementPage() {
           </div>
           <p className="m-0 mb-4 text-[18px] leading-[1.7] text-[#3A362C]">
             Behavior is harder to fake than a survey response, and it&rsquo;s the
-            thing that actually predicts who you can bet on.{" "}
+            thing that actually predicts where to focus development.{" "}
             <Link href="/guides/measure-commitment" className="font-semibold text-green">
               Measuring it
             </Link>{" "}
@@ -213,8 +213,8 @@ export default function StateOfEngagementPage() {
           </h2>
           <p className="m-0 mb-4 text-[18px] leading-[1.7] text-[#3A362C]">
             Keep running your engagement survey &mdash; it has its place. But stop
-            making high-stakes people decisions on it. Before you hire, promote, or
-            hand over the keys, add one behavioral signal you can trust. That
+            making high-stakes people decisions on it. Add one behavioral signal
+            you can trust. That
             single change is the difference between guessing and knowing &mdash;
             and in a tight market, certainty per dollar is the metric that matters.
           </p>

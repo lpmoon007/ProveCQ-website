@@ -42,7 +42,7 @@ const personJsonLd = {
     "Founder of Be Legendary and creator of the Flag Model, and creator of the Commitment Quotient (CQ) — the behavioral method behind Prove.",
   knowsAbout: [
     "employee commitment",
-    "leadership readiness",
+    "development focus",
     "promotion decisions",
     "hiring",
     "employee retention",
@@ -89,7 +89,7 @@ export default function JamesCarterPage() {
         creator of the <strong className="text-paper">Commitment Quotient</strong>{" "}
         &mdash; the behavioral method behind Prove. He works with founders and
         CEOs on the hardest calls a leader makes: who to hire, who to promote,
-        and who to bet on.
+        and where to focus development.
       </PageHero>
 
       <Section tone="paper">
@@ -101,7 +101,7 @@ export default function JamesCarterPage() {
               on gut feel, a strong interview, or last quarter&rsquo;s numbers.
               The Commitment Quotient exists to replace that guesswork with{" "}
               <strong>behavioral proof</strong> &mdash; measuring Initiative,
-              Applied Grit, and Learnability from what people actually do under
+              Follow-Through, and Learnability from what people actually do under
               pressure.
             </p>
             <p className="m-0 mb-5">

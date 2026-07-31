@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/case-studies/snapshot" },
   title: "Sample Deliverable: A CQ Snapshot Report",
   description:
-    "See the actual deliverable: a sample CQ Snapshot scoring a team of HVAC technicians on Initiative, Applied Grit, and Learnability — with zones, profiles, and a recommended leadership move for each person. A behavioral read for development and investment decisions.",
+    "See the actual deliverable: a sample CQ Snapshot scoring a team of HVAC technicians on Initiative, Follow-Through, and Learnability — with areas, profiles, and a recommended development suggestion for each person. A behavioral read for development and investment decisions.",
 };
 
 const ARTICLE_LD = {
@@ -20,7 +20,7 @@ const ARTICLE_LD = {
   author: { "@type": "Organization", name: "Be Legendary" },
   publisher: { "@type": "Organization", name: "Be Legendary" },
   about:
-    "An example of the CQ Snapshot deliverable, scoring team members on Initiative, Applied Grit, and Learnability with recommended leadership moves.",
+    "An example of the CQ Snapshot deliverable, scoring team members on Initiative, Follow-Through, and Learnability with recommended development suggestions.",
 };
 
 const ROWS = [
@@ -31,7 +31,7 @@ const ROWS = [
     learn: "8.0",
     cq: "8.3",
     cqColor: "#2E9E5B",
-    zone: "Green",
+    zone: "Strength",
     zoneBg: "#173A2A",
     zoneColor: "#8FD6AC",
   },
@@ -42,7 +42,7 @@ const ROWS = [
     learn: "7.0",
     cq: "6.7",
     cqColor: "#E0A73E",
-    zone: "Yellow",
+    zone: "Growth",
     zoneBg: "#3A310F",
     zoneColor: "#E8C878",
   },
@@ -53,7 +53,7 @@ const ROWS = [
     learn: "4.0",
     cq: "4.2",
     cqColor: "#D0492E",
-    zone: "Red",
+    zone: "Structure",
     zoneBg: "#3A1712",
     zoneColor: "#E9A08C",
   },
@@ -62,27 +62,27 @@ const ROWS = [
 const PROFILES = [
   {
     name: "Dana P.",
-    badge: "Green · 8.3",
+    badge: "Strength · 8.3",
     badgeBg: "#E3F0E7",
     badgeColor: "#1F8B57",
     profile:
-      "High across all traits. Consistently steps in without prompting, even when things are unclear. Strong investment signal.",
+      "High across all signals. Consistently steps in without prompting, even when things are unclear. Strong investment signal.",
     move: "Promote or stretch into a high-autonomy role with continued support.",
     caution: "Avoid burnout — grow scope at a sustainable pace.",
   },
   {
     name: "Chris L.",
-    badge: "Yellow · 6.7",
+    badge: "Growth · 6.7",
     badgeBg: "#FBF0DA",
     badgeColor: "#B5822A",
     profile:
-      "Good Applied Grit, but Initiative drops under pressure. May need role clarity and coaching before a leadership promotion.",
+      "Good Follow-Through, but Initiative drops under pressure. May need role clarity and coaching before a leadership promotion.",
     move: "Coach with targeted role clarity and short-cycle stretch projects.",
     caution: "Without coaching, risks stalling in mid-range performance.",
   },
   {
     name: "Mark R.",
-    badge: "Red · 4.2",
+    badge: "Structure · 4.2",
     badgeBg: "#FBE3DC",
     badgeColor: "#C0492F",
     profile:
@@ -123,16 +123,22 @@ export default function CaseStudySnapshotPage() {
               </div>
               <p className="m-0 mb-2.5 text-[16px] leading-[1.6] text-[#2A261D]">
                 CQ scores three behaviors under pressure, each 1&ndash;10 &mdash;{" "}
-                <strong>Initiative</strong> (who acts without being told),{" "}
-                <strong>Applied Grit</strong> (who stays with it when it&rsquo;s
-                hard), and <strong>Learnability</strong> (who adapts and grows).
-                The CQ Score is the average.
+                <strong>Initiative</strong> (how consistently someone acts without
+                being prompted), <strong>Follow-Through</strong> (how consistently
+                someone completes what they committed to), and{" "}
+                <strong>Learnability</strong> (how consistently someone acts on
+                feedback). The CQ Score is the average.
               </p>
               <div className="flex flex-wrap gap-[18px] text-[14.5px] font-semibold text-[#2A261D]">
-                <span>&#128994; Green &mdash; ready for more scope</span>
-                <span>&#128993; Yellow &mdash; growth potential with coaching</span>
-                <span>&#128308; Red &mdash; needs structure before a stretch</span>
+                <span>&#128994; Strength &mdash; ready for more scope</span>
+                <span>&#128993; Growth &mdash; growth potential with coaching</span>
+                <span>&#128308; Structure &mdash; needs structure before a stretch</span>
               </div>
+              <p className="m-0 mt-3 text-[13px] leading-[1.6] text-[#575249]">
+                A CQ result reflects observed behavior during a defined window and
+                is valid for twelve months. Anyone assessed receives their own
+                result and may request re-assessment at any time.
+              </p>
             </div>
 
             {/* scoreboard */}
@@ -149,10 +155,10 @@ export default function CaseStudySnapshotPage() {
                 >
                   <span>Technician</span>
                   <span className="text-center">Init.</span>
-                  <span className="text-center">A. Grit</span>
+                  <span className="text-center">Follow-Thr.</span>
                   <span className="text-center">Learn</span>
                   <span className="text-center">CQ</span>
-                  <span className="text-center">Zone</span>
+                  <span className="text-center">Area</span>
                 </div>
                 {ROWS.map((r) => (
                   <div
@@ -207,7 +213,7 @@ export default function CaseStudySnapshotPage() {
                   <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                     <div className="rounded-[10px] bg-[#F3F8F5] p-[14px_16px]">
                       <div className="mb-1 text-[12px] font-bold uppercase tracking-[.05em] text-green">
-                        Leadership move
+                        Development Suggestion
                       </div>
                       <div className="text-[14px] leading-[1.5] text-[#3A362C]">
                         {p.move}
@@ -233,17 +239,20 @@ export default function CaseStudySnapshotPage() {
               </div>
               <p className="m-0 mb-2.5 text-[14.5px] leading-[1.65]">
                 Some of your best people will score lower on CQ. It measures
-                behavioral readiness under pressure &mdash; not talent, skill, or
-                worth. A low score simply signals someone may need more structure,
+                behavioral development focus under pressure &mdash; not talent,
+                skill, or worth. A low score simply signals someone may need more structure,
                 clarity, or support before stepping into a higher-scope or
                 leadership role; many thrive in well-defined roles.
               </p>
               <p className="m-0 text-[13px] leading-[1.6] text-[#7C7767]">
                 This report is a confidential behavioral snapshot for leadership
-                development, coaching focus, and investment decisions only. It is{" "}
-                <strong>not</strong> a performance review and is not to be used as
-                the sole basis for termination, demotion, or other adverse
-                employment actions.
+                development, coaching focus, and investment decisions only. CQ
+                results may be used to identify coaching focus areas, allocate
+                development investment, design team interventions, and support
+                individual self-directed growth. CQ results may not be used, in
+                whole or in part, as a factor in hiring, candidate screening,
+                termination, demotion, discipline, compensation, or as a gate on
+                promotion eligibility.
               </p>
             </div>
           </div>

@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How to Hire People Who Actually Follow Through",
   description:
-    "Interviews reward people who talk well, not people who follow through. Learn how to hire for behavior — initiative, applied grit, and learnability — so your next hire delivers.",
+    "Interviews reward people who talk well, not people who follow through. Learn how to hire for behavior — initiative, follow-through, and learnability — so your next hire delivers.",
   alternates: { canonical: "/guides/hire-for-follow-through" },
 };
 
@@ -39,7 +39,7 @@ const MEASURE = [
     b: "Did they do more than the minimum in the application and trial task?",
   },
   {
-    h: "Applied Grit",
+    h: "Follow-Through",
     b: "Did they push through friction, or fade when it got tedious?",
   },
   {
@@ -51,7 +51,7 @@ const MEASURE = [
 // Actionable checklist — GEO "how to" structure for hiring on behavior.
 const STEPS = [
   "Give a small, real task, not a hypothetical. Ask candidates to do a scaled-down version of the actual work, with a real deadline — then watch what they do with it, not just what they submit.",
-  "Score behavior, not polish. Rate each candidate on initiative, applied grit, and learnability using the same rubric, so the read is consistent instead of a gut reaction to charisma.",
+  "Score behavior, not polish. Rate each candidate on initiative, follow-through, and learnability using the same rubric, so the read is consistent instead of a gut reaction to charisma.",
   "Insert one piece of friction on purpose. Change a requirement mid-task or leave a detail ambiguous, and see who pushes through and clarifies versus who stalls or ghosts.",
   "Deliver feedback and watch the next round. The strongest signal of learnability is a visible change after a note — not a gracious nod in the moment.",
   "Weight what they did over what they said. When the interview and the work sample disagree, trust the behavior. A single real demand predicts the big one better than any answer to “tell me about a time.”",
@@ -62,7 +62,7 @@ const STEPS = [
 const FAQ = [
   {
     q: "How do you hire someone who will actually follow through?",
-    a: "Stop relying on the interview alone and score observed behavior instead. Give a small, real task with a real deadline, rate candidates on initiative, applied grit, and learnability using the same rubric, and add a piece of friction to see who pushes through. What someone does under a small real demand predicts what they will do under a big one far better than how well they talk about work.",
+    a: "Stop relying on the interview alone and score observed behavior instead. Give a small, real task with a real deadline, rate candidates on initiative, follow-through, and learnability using the same rubric, and add a piece of friction to see who pushes through. What someone does under a small real demand predicts what they will do under a big one far better than how well they talk about work.",
   },
   {
     q: "Why do interviews fail to predict follow-through?",
@@ -70,7 +70,7 @@ const FAQ = [
   },
   {
     q: "What should you look for instead of a good interview?",
-    a: "Look for behavior under a real demand. Initiative shows in whether they did more than the minimum on an application or trial task. Applied grit shows in whether they pushed through friction or faded when it got tedious. Learnability shows in whether they absorbed feedback and improved inside the process. These are visible in what candidates do, not in what they claim.",
+    a: "Look for behavior under a real demand. Initiative shows in whether they did more than the minimum on an application or trial task. Follow-Through shows in whether they pushed through friction or faded when it got tedious. Learnability shows in whether they absorbed feedback and improved inside the process. These are visible in what candidates do, not in what they claim.",
   },
   {
     q: "Do work samples and trial tasks really predict on-the-job behavior?",
@@ -112,7 +112,7 @@ export default function HireFollowThroughPage() {
 
       <ArticleMeta
         headline="How to hire people who actually follow through."
-        description="Interviews reward people who talk well, not people who follow through. Learn how to hire for behavior — initiative, applied grit, and learnability — so your next hire delivers."
+        description="Interviews reward people who talk well, not people who follow through. Learn how to hire for behavior — initiative, follow-through, and learnability — so your next hire delivers."
         canonical="/guides/hire-for-follow-through"
         crumbs={[
           { name: "Home", url: "" },
@@ -166,7 +166,7 @@ export default function HireFollowThroughPage() {
               The alternative is to make the hiring process a small proving ground.
               Give candidates a scaled-down version of the actual work, add a piece
               of friction, deliver feedback, and score what they do on three
-              behaviors: initiative, applied grit, and learnability. What someone
+              behaviors: initiative, follow-through, and learnability. What someone
               does under a small real demand is the best available predictor of what
               they will do under a big one &mdash; and it sets up the{" "}
               <Link href="/guides/first-90-days" className="font-semibold text-green underline-offset-2 hover:underline">

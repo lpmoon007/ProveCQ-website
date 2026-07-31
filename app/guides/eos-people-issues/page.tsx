@@ -93,7 +93,7 @@ const FAQ = [
   },
   {
     q: "Can you measure the capacity behind a people issue?",
-    a: "Yes. A Prove cycle scores Initiative, Applied Grit, and Learnability from roughly six weeks of real behavior, so the capacity question in a people issue becomes evidence instead of a hunch. That gives your Level 10 a shared read of what a person is actually doing over time — which is exactly what a circular Discuss is missing.",
+    a: "Yes. A Prove cycle scores Initiative, Follow-Through, and Learnability from roughly six weeks of real behavior, so the capacity question in a people issue becomes evidence instead of a hunch. That gives your Level 10 a shared read of what a person is actually doing over time — which is exactly what a circular Discuss is missing.",
   },
 ];
 
@@ -275,6 +275,11 @@ export default function EosPeopleIssuesPage() {
                 For EOS hub
               </Link>{" "}
               to see where Prove fits alongside your toolset.
+            </p>
+            <p className="m-0 mt-4 text-[15.5px] leading-[1.65] text-content-muted">
+              A CQ result reflects observed behavior during a defined window and is
+              valid for twelve months. Anyone assessed receives their own result and
+              may request re-assessment at any time.
             </p>
           </div>
         </Container>

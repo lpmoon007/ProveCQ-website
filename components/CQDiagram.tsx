@@ -8,15 +8,15 @@ export default function CQDiagram({ className = "" }: { className?: string }) {
       viewBox="0 0 880 336"
       className={`h-auto w-full ${className}`}
       role="img"
-      aria-label="The Commitment Quotient is built from three weighted behaviors: Initiative (40%), Applied Grit (35%), and Learnability (25%)."
+      aria-label="The Commitment Quotient is built from three weighted behaviors: Initiative (40%), Follow-Through (35%), and Learnability (25%)."
       fontFamily="var(--font-figtree), ui-sans-serif, system-ui, sans-serif"
     >
       <title>How the Commitment Quotient is calculated</title>
       {/* inputs */}
       {[
-        { y: 24, name: "Initiative", desc: "Acts without being told", w: "40%" },
-        { y: 124, name: "Applied Grit", desc: "Follows through when it’s hard", w: "35%" },
-        { y: 224, name: "Learnability", desc: "Adapts and grows", w: "25%" },
+        { y: 24, name: "Initiative", desc: "Acts without being prompted", w: "40%" },
+        { y: 124, name: "Follow-Through", desc: "Completes what they committed to", w: "35%" },
+        { y: 224, name: "Learnability", desc: "Acts on feedback", w: "25%" },
       ].map((r) => (
         <g key={r.name}>
           <rect x="4" y={r.y} width="340" height="84" rx="16" fill="#ffffff" stroke="#E3DCCB" />

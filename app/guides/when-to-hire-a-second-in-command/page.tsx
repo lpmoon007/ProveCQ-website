@@ -77,7 +77,7 @@ const FAQ = [
   },
   {
     q: "Why do second-in-command hires fail?",
-    a: "Because the #2 touches everything, a wrong hire does more damage than an empty seat — the whole operation absorbs their gaps. Most failures trace back to hiring on a great interview and a strong resume rather than proof of capacity and follow-through. The candidate looked the part, but had never actually run day-to-day execution at that level. The fix is to prove it before you hand over the keys.",
+    a: "Because the #2 touches everything, a wrong hire does more damage than an empty seat — the whole operation absorbs their gaps. Most failures trace back to hiring on a great interview and a strong resume rather than proof of capacity and follow-through. The candidate looked the part, but had never actually run day-to-day execution at that level. The fix is to prove it first.",
   },
 ];
 
@@ -249,7 +249,7 @@ export default function WhenToHireSecondInCommandPage() {
               trust but may never have run execution at the next level. An external
               hire brings scale experience but is unproven inside your context.
               Either path fails the same way: assuming capacity instead of proving
-              it. Prove it before you hand over the keys.
+              it. Prove it first.
             </p>
           </div>
         </Container>
@@ -284,7 +284,7 @@ export default function WhenToHireSecondInCommandPage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            Prove your #2 before you hand over the keys.
+            Prove your #2 first.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
             Book a call to see how Prove measures capacity and follow-through from

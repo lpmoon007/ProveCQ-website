@@ -13,7 +13,7 @@ const CANONICAL = "/guides/high-potential-employees";
 export const metadata: Metadata = {
   title: "How to Identify High-Potential Employees",
   description:
-    "High potential is not high performance. Learn how to identify high-potential employees from behavioral signals — initiative, applied grit, and learnability — the characteristics that separate real potential from this quarter's numbers.",
+    "High potential is not high performance. Learn how to identify high-potential employees from behavioral signals — initiative, follow-through, and learnability — the characteristics that separate real potential from this quarter's numbers.",
   keywords: [
     "high-potential employees",
     "how to identify high-potential employees",
@@ -41,13 +41,13 @@ const SIGNALS = [
   },
   {
     n: "02",
-    h: "Grit on hard problems",
+    h: "Follow-Through on hard problems",
     b: "They stay with difficult work long enough to crack it.",
   },
   {
     n: "03",
-    h: "Fast learnability",
-    b: "They absorb new demands and level up without hand-holding.",
+    h: "Learnability",
+    b: "They act on feedback and adjust without hand-holding.",
   },
 ];
 
@@ -68,7 +68,7 @@ const MISLEADS = [
 const CHARACTERISTICS = [
   "They act before it is their job — taking initiative beyond their defined role.",
   "They push through hard, unglamorous problems instead of stalling.",
-  "They learn fast when demands change, without needing hand-holding.",
+  "They act on feedback as demands change, without needing hand-holding.",
   "They stay coachable as scope grows, rather than clinging to what worked before.",
   "Their potential shows up in behavior over time — not in one quarter's numbers.",
 ];
@@ -78,15 +78,15 @@ const CHARACTERISTICS = [
 const FAQ = [
   {
     q: "What is a high-potential employee?",
-    a: "A high-potential employee — often shortened to “HiPo” — is someone with the capacity to grow into a larger or more ambiguous role. Unlike a high performer, whose value is proven in their current job, a high-potential employee shows the behaviors that predict success in a bigger one: initiative beyond their role, follow-through on hard problems, and fast learnability.",
+    a: "A high-potential employee — often shortened to “HiPo” — is someone with the capacity to grow into a larger or more ambiguous role. Unlike a high performer, whose value is proven in their current job, a high-potential employee shows the behaviors that predict success in a bigger one: initiative beyond their role, follow-through on hard problems, and learnability.",
   },
   {
     q: "How do you identify high-potential employees?",
-    a: "Look at behavior over time, not a single result. The three most predictive signals are initiative (acting before it is their job), applied grit (staying with hard work until it is cracked), and learnability (leveling up when demands change). Because these show up in what people do rather than what they say, they are best measured from observed behavior — not a personality test.",
+    a: "Look at behavior over time, not a single result. The three most predictive signals are initiative (acting before it is their job), follow-through (staying with hard work until it is cracked), and learnability (acting on feedback). Because these show up in what people do rather than what they say, they are best measured from observed behavior — not a personality test.",
   },
   {
     q: "What are the characteristics of high-potential employees?",
-    a: "They take initiative beyond their defined role, push through difficult problems instead of stalling, learn fast without hand-holding, and stay coachable as their scope grows. Strong current performance is common but not sufficient — potential is about capacity for the next role, not mastery of the current one.",
+    a: "They take initiative beyond their defined role, push through difficult problems instead of stalling, act on feedback without hand-holding, and stay coachable as their scope grows. Strong current performance is common but not sufficient — potential is about capacity for the next role, not mastery of the current one.",
   },
   {
     q: "Is a high performer the same as a high-potential employee?",
@@ -94,7 +94,7 @@ const FAQ = [
   },
   {
     q: "What tools help identify high-potential employees?",
-    a: "Free starting points are the Hidden Gem Identifier, which surfaces overlooked performers and strivers, and the Certainty Diagnostic, which shows how much of your talent read is proof versus gut feel. For a measured read, a Prove cycle scores Initiative, Applied Grit, and Learnability from six weeks of real behavior.",
+    a: "Free starting points are the Hidden Gem Identifier, which surfaces overlooked performers and strivers, and the Certainty Diagnostic, which shows how much of your talent read is proof versus gut feel. For a measured read, a Prove cycle scores Initiative, Follow-Through, and Learnability from six weeks of real behavior.",
   },
 ];
 
@@ -128,7 +128,7 @@ export default function HighPotentialEmployeesPage() {
 
       <ArticleMeta
         headline="How to identify high-potential employees."
-        description="High potential is not high performance. Learn how to identify high-potential employees from behavioral signals — initiative, applied grit, and learnability — the characteristics that separate real potential from this quarter's numbers."
+        description="High potential is not high performance. Learn how to identify high-potential employees from behavioral signals — initiative, follow-through, and learnability — the characteristics that separate real potential from this quarter's numbers."
         canonical={CANONICAL}
         crumbs={[
           { name: "Home", url: "" },
@@ -273,6 +273,11 @@ export default function HighPotentialEmployeesPage() {
                 </p>
               </Link>
             </div>
+            <p className="m-0 mt-6 text-[13px] leading-[1.55] text-content-faint">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
+            </p>
           </div>
         </Container>
       </Section>

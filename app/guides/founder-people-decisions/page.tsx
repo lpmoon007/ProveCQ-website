@@ -51,7 +51,7 @@ const PAINS: Pain[] = [
       "You're re-doing work you delegated and smoothing over friction the promotion created. Worse, the team is watching: “if that's what leadership looks like here, I'm out.” The next promotion gets second-guessed by everyone, including you.",
     helps: (
       <>
-        You needed to see the real readiness <em>before</em> the title changed —
+        You needed to see the real development focus <em>before</em> the title changed —
         the behaviors the new role demands, proven in lower-stakes work first.
         Start with{" "}
         <Link href="/guides/who-to-promote" className="font-semibold text-green">
@@ -160,17 +160,17 @@ const PAINS: Pain[] = [
 
 const ZONES = [
   {
-    zone: "Green",
+    zone: "Strength Area",
     dot: "🟢",
     line: "Ready for more scope. Promote or stretch — with support so they don't burn out.",
   },
   {
-    zone: "Yellow",
+    zone: "Growth Area",
     dot: "🟡",
     line: "Growth potential. Coach with role clarity before a leadership move.",
   },
   {
-    zone: "Red",
+    zone: "Structure Area",
     dot: "🔴",
     line: "Needs structure first. Thrives in clear lanes; ambiguity-heavy roles would strain them.",
   },
@@ -329,7 +329,7 @@ export default function FounderPeopleDecisionsPage() {
             </h2>
             <p className="m-0 mb-6 max-w-[620px] text-[16px] leading-[1.65] text-content-muted">
               A CQ Snapshot scores each person 1&ndash;10 on the three behaviors a
-              bigger role actually needs &mdash; Initiative, Applied Grit, and
+              bigger role actually needs &mdash; Initiative, Follow-Through, and
               Learnability &mdash; and sorts the read into three plain zones with a
               recommended move for each person:
             </p>
@@ -355,6 +355,11 @@ export default function FounderPeopleDecisionsPage() {
                 See the full sample report, exactly as you&rsquo;d receive it
                 &rarr;
               </Link>
+            </p>
+            <p className="m-0 mt-4 text-[13px] leading-[1.55] text-content-faint">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

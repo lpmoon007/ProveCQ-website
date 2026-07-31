@@ -33,16 +33,16 @@ const CERTAINTY_COSTS = [
 ];
 
 const TRAITS = [
-  { name: "Initiative", desc: "Acts without being told." },
-  { name: "Applied Grit", desc: "Follows through when it's hard." },
-  { name: "Learnability", desc: "Adapts and grows under new demands." },
+  { name: "Initiative", desc: "How consistently someone acts without being prompted." },
+  { name: "Follow-Through", desc: "How consistently someone completes what they committed to." },
+  { name: "Learnability", desc: "How consistently someone acts on feedback." },
 ];
 
 const STEPS = [
   {
     n: "01",
     title: "Snapshot",
-    body: "A 15-minute behavioral read scores Initiative, Applied Grit, and Learnability — a hypothesis, not a verdict.",
+    body: "A 15-minute behavioral read scores Initiative, Follow-Through, and Learnability — a hypothesis, not a verdict.",
   },
   {
     n: "02",
@@ -70,7 +70,7 @@ const FLYWHEEL = [
   {
     tag: "KEEP",
     title: "Better Every Day",
-    body: "Keep your proven players growing and in motion — so your best don't burn out next to passengers.",
+    body: "Keep your proven players growing and in motion — so your best don't burn out.",
     link: { href: "/better-every-day", label: "Keep proven players growing →" },
   },
 ];
@@ -218,6 +218,11 @@ export default function HomePage() {
                   What CQ is &amp; isn&rsquo;t &rarr;
                 </a>
               </p>
+              <p className="mb-0 mt-[18px] text-[13px] leading-[1.55] text-content-faint">
+                A CQ result reflects observed behavior during a defined window and
+                is valid for twelve months. Anyone assessed receives their own
+                result and may request re-assessment at any time.
+              </p>
             </div>
             <MiniHeatmap />
           </div>
@@ -234,7 +239,7 @@ export default function HomePage() {
             </h2>
             <p className="m-0 max-w-[560px] text-[16px] leading-[1.6] text-content-muted">
               Take the free Certainty Diagnostic, find your hidden gems, or
-              explore the full Get to Green readiness map. No pitch &mdash; just a
+              explore the full Get to Green development-focus map. No pitch &mdash; just a
               clear read on where you&rsquo;re exposed.
             </p>
           </div>

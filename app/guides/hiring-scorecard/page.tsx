@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 const CANONICAL = "/guides/hiring-scorecard";
 
 const DESCRIPTION =
-  "A free hiring scorecard for behavioral interviews. Rate candidates 1–5 on Initiative, Applied Grit, and Learnability with clear anchors — so you decide on evidence, not the last good impression.";
+  "A free hiring scorecard for behavioral interviews. Rate candidates 1–5 on Initiative, Follow-Through, and Learnability with clear anchors — so you decide on evidence, not the last good impression.";
 
 export const metadata: Metadata = {
   title: "The Hiring Scorecard: Score a Behavioral Interview",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Hiring Scorecard: Score a Behavioral Interview",
     description:
-      "Rate candidates 1–5 on Initiative, Applied Grit, and Learnability with clear anchors — free.",
+      "Rate candidates 1–5 on Initiative, Follow-Through, and Learnability with clear anchors — free.",
     url: CANONICAL,
     type: "article",
   },
@@ -62,7 +62,7 @@ const TRAITS: Trait[] = [
     ],
   },
   {
-    name: "Applied Grit",
+    name: "Follow-Through",
     ask: "Did they follow through when it got hard?",
     anchors: [
       {
@@ -87,7 +87,7 @@ const TRAITS: Trait[] = [
   },
   {
     name: "Learnability",
-    ask: "Do they adapt and grow from feedback?",
+    ask: "Do they act on feedback?",
     anchors: [
       {
         level: "Strong",
@@ -134,11 +134,11 @@ const howToJsonLd = {
   "@type": "HowTo",
   name: "How to score a behavioral interview",
   description:
-    "Score a candidate on Initiative, Applied Grit, and Learnability from their behavioral interview answers to decide on evidence instead of impression.",
+    "Score a candidate on Initiative, Follow-Through, and Learnability from their behavioral interview answers to decide on evidence instead of impression.",
   step: [
-    { "@type": "HowToStep", position: 1, name: "Ask behavioral questions", text: "Ask for specific past examples across Initiative, Applied Grit, and Learnability." },
-    { "@type": "HowToStep", position: 2, name: "Rate each trait 1–5", text: "Score each trait against the anchors, and write down the exact example behind the score." },
-    { "@type": "HowToStep", position: 3, name: "Total the score out of 15", text: "Add the three trait scores for an overall read from 3 to 15." },
+    { "@type": "HowToStep", position: 1, name: "Ask behavioral questions", text: "Ask for specific past examples across Initiative, Follow-Through, and Learnability." },
+    { "@type": "HowToStep", position: 2, name: "Rate each signal 1–5", text: "Score each signal against the anchors, and write down the exact example behind the score." },
+    { "@type": "HowToStep", position: 3, name: "Total the score out of 15", text: "Add the three signal scores for an overall read from 3 to 15." },
     { "@type": "HowToStep", position: 4, name: "Check it against your gut", text: "Compare the score to your overall impression. Where they disagree, probe that gap before deciding." },
     { "@type": "HowToStep", position: 5, name: "Choose the next step", text: "Map the total to a recommendation: strong yes, yes, hold and probe, or no." },
   ],
@@ -147,7 +147,7 @@ const howToJsonLd = {
 const FAQ = [
   {
     q: "What is a hiring scorecard?",
-    a: "A hiring scorecard is a simple, structured way to rate every candidate against the same defined criteria — here, Initiative, Applied Grit, and Learnability, each scored 1–5. It replaces a vague overall impression with evidence you can compare across candidates and across interviewers.",
+    a: "A hiring scorecard is a simple, structured way to rate every candidate against the same defined criteria — here, Initiative, Follow-Through, and Learnability, each scored 1–5. It replaces a vague overall impression with evidence you can compare across candidates and across interviewers.",
   },
   {
     q: "Why use a scorecard instead of going with your gut?",
@@ -215,12 +215,7 @@ export default function HiringScorecardPage() {
               behavioral interview questions
             </Link>{" "}
             &mdash; ask for a specific example, then score the answer against the
-            anchors below. Rate each trait as you go, while the example is fresh.
-            Want to do it on screen?{" "}
-            <Link href="/free-tools/interview-kit" className="font-semibold text-green">
-              The interactive CQ Interview Kit
-            </Link>{" "}
-            runs the questions and totals the score for you.
+            anchors below. Rate each signal as you go, while the example is fresh.
           </p>
         </Container>
       </Section>
@@ -265,7 +260,7 @@ export default function HiringScorecardPage() {
             Add it up, then check it against your gut
           </h2>
           <p className="m-0 mb-6 text-[17px] leading-[1.7] text-content-muted">
-            Total the three trait scores for a read out of 15. Then do the one
+            Total the three signal scores for a read out of 15. Then do the one
             step most interviewers skip: ask whether the number matches your
             overall impression. When they agree, trust it. When they don&rsquo;t,{" "}
             <strong>that disagreement is the most valuable signal in the room</strong>{" "}

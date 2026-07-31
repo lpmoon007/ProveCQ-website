@@ -110,11 +110,11 @@ const FAQ = [
   },
   {
     q: "What predicts follow-through?",
-    a: "Behavior over time, not first impressions. The strongest signal is how a person actually acts on real work in their first weeks: whether they take initiative before it is their job, push through hard problems instead of stalling, and learn fast when demands change. Behavioral evidence beats both the resume and the interview because it cannot be rehearsed.",
+    a: "Behavior over time, not first impressions. The strongest signal is how a person actually acts on real work in their first weeks: whether they take initiative before it is their job, push through hard problems instead of stalling, and act on feedback as demands change. Behavioral evidence beats both the resume and the interview because it cannot be rehearsed.",
   },
   {
     q: "How do you test for follow-through before hiring?",
-    a: "Use the interview to filter, then prove it. Define what follow-through means in the role, put a genuinely hard piece of work in front of the person early, and watch how they behave over the first 90 days rather than how they answer in a single conversation. A Prove cycle scores Initiative, Applied Grit, and Learnability from real behavior so the read is evidence, not a gut feel.",
+    a: "Use the interview to filter, then prove it. Define what follow-through means in the role, put a genuinely hard piece of work in front of the person early, and watch how they behave over the first 90 days rather than how they answer in a single conversation. A Prove cycle scores Initiative, Follow-Through, and Learnability from real behavior so the read is evidence, not a gut feel.",
   },
 ];
 
@@ -286,6 +286,11 @@ export default function VsResumesInterviewsPage() {
                 hiring for follow-through
               </Link>
               .
+            </p>
+            <p className="m-0 mt-6 text-[13px] leading-[1.6] text-content-muted">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

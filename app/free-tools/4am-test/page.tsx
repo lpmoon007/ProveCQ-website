@@ -112,7 +112,7 @@ export default function FourAMTestPage() {
           </h2>
           <p className="m-0 mb-3 text-[17px] leading-[1.6] text-[#B8B4A6]">
             The Readiness Snapshot&trade; has 3&ndash;5 peers weigh in
-            anonymously on initiative, applied grit, and growth. You get a
+            anonymously on initiative, follow-through, and growth. You get a
             signal map and founder-ready action steps in 72 hours. No coaching,
             no fluff &mdash; just proof.
           </p>

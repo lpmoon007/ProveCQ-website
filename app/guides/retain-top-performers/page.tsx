@@ -218,7 +218,7 @@ export default function RetainTopPerformersPage() {
             <p className="m-0 mb-5 text-[17px] leading-[1.65] text-content-muted">
               In practice, they show three things consistently. They take initiative
               beyond their role &mdash; they see the problem no one owns and pick it
-              up. They apply grit to hard, unglamorous work instead of stalling when
+              up. They apply follow-through to hard, unglamorous work instead of stalling when
               it gets difficult. And they keep learning as the demands change rather
               than clinging to what used to work. That combination is what makes them
               hard to replace, and it is exactly what you are trying to protect. If
@@ -231,7 +231,7 @@ export default function RetainTopPerformersPage() {
             <p className="m-0 mb-5 text-[17px] leading-[1.65] text-content-muted">
               This matters for retention because those same behaviors are the first
               to fade when a top performer starts to check out. The initiative goes
-              quiet. The grit narrows to the minimum. The person who used to close
+              quiet. The follow-through narrows to the minimum. The person who used to close
               every loop starts letting a few slip. You will often see the drift in
               what they do weeks before you hear a word about it &mdash; which is the
               whole case for watching behavior over time instead of waiting for the

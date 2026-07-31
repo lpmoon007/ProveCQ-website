@@ -42,7 +42,7 @@ const FAQ = [
   },
   {
     q: "How does Prove work alongside a fractional CPO or CHRO?",
-    a: "Prove is the behavioral read a People leader brings in when the question is 'who is actually ready.' While the CPO owns the broader function, Prove measures Initiative, Applied Grit, and Learnability from real work over about six weeks and returns a per-person Commitment Quotient and a team heatmap. It makes the People leader's promotion and stretch-assignment calls rest on evidence instead of a hunch — which makes the People leader look good.",
+    a: "Prove is the behavioral read a People leader brings in when the question is 'who is actually ready.' While the CPO owns the broader function, Prove measures Initiative, Follow-Through, and Learnability from real work over about six weeks and returns a per-person Commitment Quotient and a team heatmap. It makes the People leader's promotion and stretch-assignment calls rest on evidence instead of a hunch — which makes the People leader look good.",
   },
   {
     q: "Fractional CPO or behavioral measurement — which do we need first?",
@@ -108,7 +108,7 @@ const COMPARE = [
   {
     attr: "What it builds",
     a: "The People function: hiring, comp, org design, culture, HR operations.",
-    b: "Behavioral proof of who delivers: Initiative, Applied Grit, Learnability from real work.",
+    b: "Behavioral proof of who delivers: Initiative, Follow-Through, Learnability from real work.",
   },
   {
     attr: "Best when",
@@ -191,8 +191,8 @@ export default function FractionalCPOPage() {
               <strong className="text-content">systems and programs</strong>. It&rsquo;s
               the People <em>function</em> &mdash; the infrastructure the whole
               company runs on. It is not, and isn&rsquo;t designed to be, a
-              behavioral read on the specific person you&rsquo;re about to promote,
-              stretch, or hand the keys to.
+              behavioral read on the specific person you&rsquo;re about to promote
+              or stretch.
             </p>
           </div>
         </Container>
@@ -228,8 +228,12 @@ export default function FractionalCPOPage() {
               <Link href="/guides/measure-commitment" className="font-semibold text-green underline-offset-2 hover:underline">
                 Commitment Quotient
               </Link>{" "}
-              &mdash; a read of who actually delivers, used as one input and never as
-              an automated verdict.
+              &mdash; a read of who actually delivers. CQ results may be used to
+              identify coaching focus areas, allocate development investment, design
+              team interventions, and support individual self-directed growth. CQ
+              results may not be used, in whole or in part, as a factor in hiring,
+              candidate screening, termination, demotion, discipline, compensation,
+              or as a gate on promotion eligibility.
             </p>
           </div>
         </Container>
@@ -262,6 +266,11 @@ export default function FractionalCPOPage() {
                 </tbody>
               </table>
             </div>
+            <p className="mt-5 text-[13px] leading-[1.6] text-content-faint">
+              A CQ result reflects observed behavior during a defined window and is
+              valid for twelve months. Anyone assessed receives their own result and
+              may request re-assessment at any time.
+            </p>
           </div>
         </Container>
       </Section>

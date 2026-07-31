@@ -39,7 +39,7 @@ export const GUIDE_ARTICLES: GuideRef[] = [
   { href: "/guides/leadership-styles", title: "The 9 leadership styles, with examples" },
   { href: "/guides/leadership-style-clash", title: "Leadership styles & the CQ clash matrix" },
   { href: "/guides/behavioral-interview-questions", title: "Behavioral interview questions that predict follow-through" },
-  { href: "/guides/the-science-behind-cq", title: "The 5 behavioral traits that predict value at work" },
+  { href: "/guides/the-science-behind-cq", title: "The 5 behavioral signals that predict value at work" },
   { href: "/guides/hiring-scorecard", title: "The hiring scorecard: score a behavioral interview" },
   { href: "/guides/high-performer-vs-high-potential", title: "High performer vs. high potential vs. high commitment" },
   { href: "/guides/people-decisions-by-the-numbers", title: "People decisions by the numbers: what the research says" },
@@ -65,7 +65,6 @@ export const FREE_TOOLS: GuideRef[] = [
   { href: "/free-tools/get-to-green", title: "Get to Green" },
   { href: "/free-tools/cost-of-a-bad-bet", title: "Cost of a Bad Bet" },
   { href: "/free-tools/scorecard", title: "Talent Development Scorecard" },
-  { href: "/free-tools/interview-kit", title: "The CQ Interview Kit" },
 ];
 
 /** Case-study detail pages — used by the More Case Studies cross-links. */

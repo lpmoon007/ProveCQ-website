@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Give Your EOS People Analyzer a Real Capacity Score",
   description:
-    "The EOS People Analyzer scores everyone on GWC and core values — but Capacity stays a guess. Prove adds a behavioral capacity signal (initiative, applied grit, learnability) so your People Analyzer runs on evidence, alongside EOS, not instead of it.",
+    "The EOS People Analyzer scores everyone on GWC and core values — but Capacity stays a guess. Prove adds a behavioral capacity signal (initiative, follow-through, learnability) so your People Analyzer runs on evidence, alongside EOS, not instead of it.",
   alternates: { canonical: "/for-eos/people-analyzer" },
 };
 
@@ -55,7 +55,7 @@ export default function EosPeopleAnalyzerPage() {
 
       <ArticleMeta
         headline="Give your People Analyzer a real Capacity score."
-        description="The EOS People Analyzer scores everyone on GWC and core values — but Capacity stays a guess. Prove adds a behavioral capacity signal (initiative, applied grit, learnability) so your People Analyzer runs on evidence, alongside EOS, not instead of it."
+        description="The EOS People Analyzer scores everyone on GWC and core values — but Capacity stays a guess. Prove adds a behavioral capacity signal (initiative, follow-through, learnability) so your People Analyzer runs on evidence, alongside EOS, not instead of it."
         canonical="/for-eos/people-analyzer"
         crumbs={[
           { name: "Home", url: "" },
@@ -70,11 +70,16 @@ export default function EosPeopleAnalyzerPage() {
           <div className="mx-auto max-w-[760px] rounded-[14px] border-l-4 border-green bg-paper-2 p-7 sm:p-8">
             <div className="eyebrow mb-2.5 text-green">The short answer</div>
             <p className="m-0 text-[18px] leading-[1.65] text-[#2A261D]">
-              Prove maps a behavioral capacity read &mdash; initiative, applied
-              grit, and learnability, measured over time &mdash; directly onto
+              Prove maps a behavioral capacity read &mdash; initiative,
+              follow-through, and learnability, measured over time &mdash; directly onto
               the Capacity column of your People Analyzer. Gets it and Wants it
               stay yours to judge; Capacity becomes evidence instead of a hunch.
               It runs alongside EOS, never in place of it.
+            </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#615B4F]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

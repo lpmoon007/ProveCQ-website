@@ -17,7 +17,7 @@ const TIERS: (Tier | "All")[] = ["All", "Investment-ready", "Coach", "Develop fi
 const SORTS: { key: SortKey; label: string }[] = [
   { key: "cq", label: "CQ" },
   { key: "initiative", label: "Init" },
-  { key: "applied_grit", label: "A. Grit" },
+  { key: "applied_grit", label: "Follow" },
   { key: "learnability", label: "Learn" },
 ];
 
@@ -81,7 +81,7 @@ export default function Heatmap() {
           >
             <span>Person</span>
             <span className="text-center">Init.</span>
-            <span className="text-center">A. Grit</span>
+            <span className="text-center">Follow</span>
             <span className="text-center">Learn</span>
             <span className="text-center">CQ</span>
           </div>
@@ -123,7 +123,7 @@ export default function Heatmap() {
           <div className="mb-5 flex gap-2.5">
             {[
               { label: "Initiative", val: sel.initiative, accent: false },
-              { label: "A. Grit", val: sel.applied_grit, accent: false },
+              { label: "Follow-Through", val: sel.applied_grit, accent: false },
               { label: "Learn", val: sel.learnability, accent: false },
               { label: "CQ", val: Math.round(sel.cq), accent: true },
             ].map((cell) => (

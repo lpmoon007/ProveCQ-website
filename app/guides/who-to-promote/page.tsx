@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How to Know Who to Promote — Without Guessing",
   description:
-    "Most promotions are bets on past performance, not future capacity. Learn how to know who to promote using behavioral proof — Initiative, Applied Grit, and Learnability — instead of gut feel.",
+    "Most promotions are bets on past performance. Learn how to know who to promote using behavioral proof — Initiative, Follow-Through, and Learnability — instead of gut feel.",
   alternates: { canonical: "/guides/who-to-promote" },
 };
 
@@ -39,12 +39,12 @@ const PREDICTS = [
     b: "Do they already act without being told — before the title makes it their job?",
   },
   {
-    h: "Applied Grit",
+    h: "Follow-Through",
     b: "Do they follow through when the work gets hard and unglamorous?",
   },
   {
     h: "Learnability",
-    b: "Do they adapt when the demands change, instead of clinging to what worked before?",
+    b: "Do they act on feedback, instead of clinging to what worked before?",
   },
 ];
 
@@ -52,7 +52,7 @@ const PREDICTS = [
 const STEPS = [
   "Define the next role by behavior, not by title — write down what a person in that seat must consistently do, not just what they must know.",
   "Look back across two or three quarters, not the last standout month, so a single recent win or a likeable personality cannot carry the decision.",
-  "Score the candidate on the three predictive behaviors — Initiative, Applied Grit, and Learnability — against real examples you can point to.",
+  "Score the candidate on the three predictive behaviors — Initiative, Follow-Through, and Learnability — against real examples you can point to.",
   "Give a small slice of the future role now — a stretch project or a lead-without-the-title assignment — and watch how they handle it.",
   "Separate performance from potential on paper, so you never promote a great contributor into a role that will make them miserable and mediocre.",
   "Decide from the evidence, then name the gap — every promotion has one, and the honest ones get coached instead of hidden.",
@@ -63,7 +63,7 @@ const STEPS = [
 const FAQ = [
   {
     q: "How do you decide who to promote?",
-    a: "Promote the person who has already shown the behavior the new role demands — initiative, follow-through under pressure, and fast learning — rather than the person with the best results in their current job. Past results describe the old role. Behavioral proof, gathered across several months, is the only thing that speaks to the new one.",
+    a: "Promote the person who has already shown the behavior the new role demands — initiative, follow-through under pressure, and acting on feedback — rather than the person with the best results in their current job. Past results describe the old role. Behavioral proof, gathered across several months, is the only thing that speaks to the new one.",
   },
   {
     q: "Should you promote your best performer?",
@@ -79,7 +79,7 @@ const FAQ = [
   },
   {
     q: "How can you test someone before promoting them?",
-    a: "Give a slice of the future role first: a stretch project, a temporary lead role, or ownership of a hard problem, then watch how they handle it. A Prove cycle formalizes this by scoring Initiative, Applied Grit, and Learnability from six weeks of real behavior, so you bet on evidence instead of hope.",
+    a: "Give a slice of the future role first: a stretch project, a temporary lead role, or ownership of a hard problem, then watch how they handle it. A Prove cycle formalizes this by scoring Initiative, Follow-Through, and Learnability from six weeks of real behavior, so you bet on evidence instead of hope.",
   },
 ];
 
@@ -113,7 +113,7 @@ export default function WhoToPromotePage() {
 
       <ArticleMeta
         headline="How to know who to promote — without guessing."
-        description="Most promotions are bets on past performance, not future capacity. Learn how to know who to promote using behavioral proof — Initiative, Applied Grit, and Learnability — instead of gut feel."
+        description="Most promotions are bets on past performance. Learn how to know who to promote using behavioral proof — Initiative, Follow-Through, and Learnability — instead of gut feel."
         canonical="/guides/who-to-promote"
         crumbs={[
           { name: "Home", url: "" },
@@ -128,8 +128,8 @@ export default function WhoToPromotePage() {
             <Eyebrow tone="soft">The short answer</Eyebrow>
             <p className="m-0 mt-3 text-[18px] leading-[1.65] text-[#D8D4C6]">
               Promote the person who has already shown the behavior the new role
-              demands &mdash; initiative, follow-through under pressure, and the
-              ability to learn fast. Past results tell you what they did in the{" "}
+              demands &mdash; initiative, follow-through under pressure, and
+              acting on feedback. Past results tell you what they did in the{" "}
               <em>old</em> job; behavioral proof tells you whether they will
               deliver in the new one.
             </p>
@@ -163,9 +163,9 @@ export default function WhoToPromotePage() {
               Knowing who to promote, then, means reading the behaviors that
               actually travel across roles. Three predict promotion success more
               reliably than any performance score: initiative &mdash; do they act
-              before the title makes it their job; applied grit &mdash; do they
+              before the title makes it their job; follow-through &mdash; do they
               finish the hard, unglamorous work; and learnability &mdash; do they
-              adapt when the demands change instead of clinging to what worked
+              act on feedback instead of clinging to what worked
               before. These are visible in what a person already does, which means
               you can gather proof before you hand over the authority rather than
               after.
@@ -261,6 +261,11 @@ export default function WhoToPromotePage() {
                 how to identify high-potential employees
               </Link>{" "}
               for the behavioral signals that predict who grows into a bigger role.
+            </p>
+            <p className="m-0 mt-6 text-[13px] leading-[1.6] text-content-muted">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

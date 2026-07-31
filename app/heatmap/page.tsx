@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/heatmap" },
   title: "The CQ Heatmap — See Your Whole Team in Black and White",
   description:
-    "An interactive CQ Heatmap: a team roster scored on Initiative, Applied Grit, and Learnability, with a per-person CQ score, tier, recommended founder action, and risk note.",
+    "An interactive CQ Heatmap: a team roster scored on Initiative, Follow-Through, and Learnability, with a per-person CQ score, tier, recommended founder action, and risk note.",
 };
 
 export default function HeatmapPage() {
@@ -29,10 +29,15 @@ export default function HeatmapPage() {
           See your whole team in black and white.
         </h1>
         <p className="m-0 max-w-[680px] text-[18px] leading-[1.55] text-[#B8B4A6]">
-          This is a sample CQ Heatmap. Filter by tier, sort by trait, and click
+          This is a sample CQ Heatmap. Filter by tier, sort by signal, and click
           any person to see their read, the recommended founder action, and the
           risk to watch. Sample data — your real Heatmap comes out of a Prove
           cycle.
+        </p>
+        <p className="m-0 mt-4 max-w-[680px] text-[13.5px] leading-[1.55] text-content-faint">
+          A CQ result reflects observed behavior during a defined window and is
+          valid for twelve months. Anyone assessed receives their own result and
+          may request re-assessment at any time.
         </p>
       </section>
 

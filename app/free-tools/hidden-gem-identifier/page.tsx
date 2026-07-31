@@ -111,7 +111,7 @@ export default function HiddenGemPage() {
             </h2>
             <p className="m-0 mb-[26px] text-[17px] leading-[1.6] text-[#B8B4A6]">
               The tool tells you who to look at. A Prove Sprint tells you &mdash; in
-              six weeks of real behavior &mdash; who to bet on.
+              six weeks of real behavior &mdash; where to focus development.
             </p>
             <ButtonLink href={site.bookingUrl}>Book a call</ButtonLink>
           </div>

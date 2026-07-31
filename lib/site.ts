@@ -9,7 +9,7 @@ export const site = {
   domain: "https://provecq.com",
   tagline: "Stop betting on the wrong people.",
   description:
-    "Prove gives founders and CEOs behavioral proof of who will deliver — before they promote, hire, or hand over the keys. Powered by the Commitment Quotient (Initiative, Applied Grit, Learnability).",
+    "Prove gives founders and CEOs behavioral proof of who is delivering. Powered by the Commitment Quotient (Initiative, Follow-Through, Learnability).",
   bookingUrl: "https://meetings-na2.hubspot.com/jcarter28",
   parentUrl: "https://www.belegendary.org",
   telephone: "+1-800-513-8759",

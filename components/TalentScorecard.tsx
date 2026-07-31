@@ -24,11 +24,11 @@ const QUESTIONS: Question[] = [
     text: "We have clear development opportunities that keep top talent engaged.",
   },
   {
-    cat: "Knowing who to bet on",
+    cat: "Knowing where to focus development",
     text: "I can tell — with evidence, not gut feel — who's truly ready for more scope.",
   },
   {
-    cat: "Knowing who to bet on",
+    cat: "Knowing where to focus development",
     text: "When I promote or hand off, the right person consistently steps up.",
   },
 ];

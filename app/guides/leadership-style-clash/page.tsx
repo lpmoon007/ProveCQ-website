@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leadership Styles & the CQ Clash Matrix",
     description:
-      "How 9 leadership styles fit or clash with your team's commitment behavior (Initiative, Applied Grit, Learnability).",
+      "How 9 leadership styles fit or clash with your team's commitment behavior (Initiative, Follow-Through, Learnability).",
     url: CANONICAL,
     type: "article",
   },
@@ -39,7 +39,7 @@ type Style = {
   def: string;
   fit: "low" | "medium" | "high";
   fitNote: string;
-  traits: { Initiative: Row; "Applied Grit": Row; Learnability: Row };
+  traits: { Initiative: Row; "Follow-Through": Row; Learnability: Row };
 };
 
 const STYLES: Style[] = [
@@ -54,8 +54,8 @@ const STYLES: Style[] = [
         low: "Comfortable with direction, but dependent.",
         clash: "Rebellion or disengagement; innovation blocked.",
       },
-      "Applied Grit": {
-        high: "Grit wasted on compliance survival.",
+      "Follow-Through": {
+        high: "Follow-Through wasted on compliance survival.",
         low: "Crumbles under pressure, seen as weak.",
         clash: "Misapplied effort; burnout without progress.",
       },
@@ -77,7 +77,7 @@ const STYLES: Style[] = [
         low: "Thrives with clear rewards.",
         clash: "Disengagement when creativity is blocked.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Drives hard, but only for the reward.",
         low: "Gives up without an external push.",
         clash: "Resilience tied to extrinsic factors.",
@@ -100,7 +100,7 @@ const STYLES: Style[] = [
         low: "Relies too much on the leader.",
         clash: "Dependency vs. independence tension.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Loyal, but misdirected if the vision is unclear.",
         low: "Fades when the enthusiasm dips.",
         clash: "Sustainability tied to the leader's presence.",
@@ -116,14 +116,14 @@ const STYLES: Style[] = [
     name: "Transformational",
     def: "Rallies people around a big vision and stretch goals.",
     fit: "medium",
-    fitNote: "Fits high-CQ",
+    fitNote: "Fits higher current signal",
     traits: {
       Initiative: {
         high: "Energized by the vision.",
         low: "Overwhelmed by expectations.",
         clash: "Low-initiative people dragged into the stretch zone.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Stays resilient under pressure.",
         low: "Burns out quickly.",
         clash: "Mismatch creates turnover risk.",
@@ -139,14 +139,14 @@ const STYLES: Style[] = [
     name: "Democratic",
     def: "Decides by input and consensus; everyone has a voice.",
     fit: "medium",
-    fitNote: "Fits high-CQ",
+    fitNote: "Fits higher current signal",
     traits: {
       Initiative: {
         high: "Flourishes with a voice.",
         low: "May stall in indecision.",
         clash: "Low-initiative people drag the consensus.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Carries shared outcomes.",
         low: "Over-relies on others.",
         clash: "Uneven workload distribution.",
@@ -169,7 +169,7 @@ const STYLES: Style[] = [
         low: "Needs direction, may coast.",
         clash: "Clashes if the leader avoids tough calls.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Sustains effort with support.",
         low: "Coddled, avoids hard challenges.",
         clash: "Risk of enabling low performers.",
@@ -192,7 +192,7 @@ const STYLES: Style[] = [
         low: "Stalls and drifts.",
         clash: "Polarizes team outcomes.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Persists independently.",
         low: "Gives up without structure.",
         clash: "High performers shine; low performers collapse.",
@@ -215,7 +215,7 @@ const STYLES: Style[] = [
         low: "Supported until ready.",
         clash: "Low clash — the style adapts.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Pushed further with resilience.",
         low: "Coached to build stamina.",
         clash: "Minimal clash if the leader is skilled.",
@@ -238,7 +238,7 @@ const STYLES: Style[] = [
         low: "Slowly builds ownership.",
         clash: "Clashes if low-initiative resists responsibility.",
       },
-      "Applied Grit": {
+      "Follow-Through": {
         high: "Refines resilience through feedback.",
         low: "May struggle with constant stretch.",
         clash: "Risk of overwhelm without balance.",
@@ -260,30 +260,30 @@ const FIT_BADGE: Record<Style["fit"], string> = {
 
 const TRAITS: (keyof Style["traits"])[] = [
   "Initiative",
-  "Applied Grit",
+  "Follow-Through",
   "Learnability",
 ];
 
 const FAQ = [
   {
     q: "What is the best leadership style?",
-    a: "There isn't one. A style is only as good as its fit with the people under it. The same autocratic approach that steadies a low-CQ team in a crisis will drive your high-initiative people to quit. The useful question isn't which style is best in the abstract — it's which style fits the commitment behavior of the specific people you're leading.",
+    a: "There isn't one. A style is only as good as its fit with the people under it. The same autocratic approach that steadies a team with lower current signal in a crisis will drive your high-initiative people to quit. The useful question isn't which style is best in the abstract — it's which style fits the commitment behavior of the specific people you're leading.",
   },
   {
     q: "How does leadership style affect employee performance?",
-    a: "Style sets the conditions your people operate in. A high-CQ person — someone who takes initiative, follows through, and adapts — needs room to move, and withers under tight control. A person who thrives on structure drifts under a hands-off leader. Performance suffers most when the style and the person are mismatched, not because either is wrong.",
+    a: "Style sets the conditions your people operate in. A person with higher current signal — someone who takes initiative, follows through, and adapts — needs room to move, and withers under tight control. A person who thrives on structure drifts under a hands-off leader. Performance suffers most when the style and the person are mismatched, not because either is wrong.",
   },
   {
     q: "What is a leadership style clash?",
-    a: "A clash is when your default way of leading works against the behavior of the person you're leading. Laissez-faire leadership reveals your self-starters but lets your low-CQ people drift into chaos. Autocratic leadership keeps a shaky team in line but wastes the grit of your best people on mere compliance. The clash — not the style — is what costs you.",
+    a: "A clash is when your default way of leading works against the behavior of the person you're leading. Laissez-faire leadership reveals your self-starters but lets your people with lower current signal drift into chaos. Autocratic leadership keeps a shaky team in line but wastes the follow-through of your best people on mere compliance. The clash — not the style — is what costs you.",
   },
   {
     q: "How do I choose the right leadership style for my team?",
-    a: "Start by seeing your team clearly. Once you know who is high or low on Initiative, Applied Grit, and Learnability, you can flex: give your high-CQ people autonomy and stretch, and give your structure-preferring people clarity and guardrails. Situational and coaching styles clash least precisely because they adapt to the person in front of them.",
+    a: "Start by seeing your team clearly. Once you know who is high or low on Initiative, Follow-Through, and Learnability, you can flex: give your people with higher current signal autonomy and stretch, and give your structure-preferring people clarity and guardrails. Situational and coaching styles clash least precisely because they adapt to the person in front of them.",
   },
   {
-    q: "Is a low-CQ employee a bad employee?",
-    a: "No. CQ measures behavioral readiness under pressure and ambiguity — not talent, skill, or worth. Plenty of excellent people score low on CQ because they do their best work inside clear, well-structured lanes. CQ is a fit map, not a ranking. The goal is to match your style and your roles to the person, not to push everyone toward high CQ.",
+    q: "Is a person with lower current signal a bad employee?",
+    a: "No. CQ measures behavior under pressure and ambiguity — not talent, skill, or worth. Plenty of excellent people score low on CQ because they do their best work inside clear, well-structured lanes. CQ is a fit map, not a ranking. The goal is to match your style and your roles to the person, not to push everyone toward high CQ.",
   },
 ];
 
@@ -336,7 +336,7 @@ export default function LeadershipStyleClashPage() {
             <Eyebrow tone="soft">The short answer</Eyebrow>
             <p className="m-0 mt-3 text-[18px] leading-[1.65] text-[#D8D4C6]">
               The same style that steadies one team quietly sabotages another. An
-              autocratic leader keeps a shaky group in line but wastes the grit of
+              autocratic leader keeps a shaky group in line but wastes the follow-through of
               their best people; a hands-off leader frees the self-starters but
               lets everyone else drift. The fix isn&rsquo;t a &ldquo;better&rdquo;
               style &mdash; it&rsquo;s knowing the commitment behavior of the people
@@ -353,22 +353,27 @@ export default function LeadershipStyleClashPage() {
           </h2>
           <p className="m-0 mb-4 text-[17px] leading-[1.7] text-content-muted">
             The Commitment Quotient scores three behaviors under pressure:{" "}
-            <strong>Initiative</strong> (acting without being told),{" "}
-            <strong>Applied Grit</strong> (following through when it&rsquo;s hard),
-            and <strong>Learnability</strong> (adapting and growing). High CQ
+            <strong>Initiative</strong> (acting without being prompted),{" "}
+            <strong>Follow-Through</strong> (completing what they committed to),
+            and <strong>Learnability</strong> (acting on feedback). High CQ
             isn&rsquo;t automatically &ldquo;good,&rdquo; and low CQ isn&rsquo;t
             &ldquo;bad.&rdquo; Some of your most valuable people score low because
             they do excellent work inside clear, structured lanes.
           </p>
           <p className="m-0 text-[17px] leading-[1.7] text-content-muted">
             That&rsquo;s why the matrix below reads high <em>and</em> low for every
-            trait &mdash; the risk is almost never the style or the person alone.
+            signal &mdash; the risk is almost never the style or the person alone.
             It&rsquo;s the <strong>mismatch</strong> between them. Read your own
             default style, then read your people. (New here? Start with the{" "}
             <Link href="/guides/leadership-styles" className="font-semibold text-green">
               9 leadership styles explained, with examples
             </Link>
             .)
+          </p>
+          <p className="m-0 mt-4 text-[13px] leading-[1.55] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
           </p>
         </Container>
       </Section>
@@ -420,7 +425,7 @@ export default function LeadershipStyleClashPage() {
             ))}
           </div>
           <p className="mt-5 text-[13px] text-content-faint">
-            Read each cell as: how a person <strong>high</strong> on that trait
+            Read each cell as: how a person <strong>high</strong> on that signal
             fares under this style, how a <strong>low</strong> person fares, and
             the resulting <strong>clash</strong> to watch for.
           </p>
@@ -443,7 +448,7 @@ export default function LeadershipStyleClashPage() {
             The most adaptive styles &mdash; <strong>situational</strong> and{" "}
             <strong>coaching</strong> &mdash; clash least precisely because they
             flex to the person. But you can only flex to what you can see. Give
-            your high-CQ people autonomy and stretch; give your structure-preferring
+            your people with higher current signal autonomy and stretch; give your structure-preferring
             people clarity and guardrails. Same leader, different setting, far less
             friction.
           </p>

@@ -57,7 +57,7 @@ const SHIFTS = [
   "Name one outcome you own today that someone else should own in ninety days.",
   "Write down what &ldquo;good&rdquo; looks like for it, so the standard lives outside your head.",
   "Hand the outcome to a person and watch how they carry it &mdash; not just whether they say yes.",
-  "Look for proof of follow-through: initiative when it is not asked for, grit when it gets hard, learning when they get it wrong.",
+  "Look for proof of follow-through: initiative when it is not asked for, follow-through when it gets hard, learning when they get it wrong.",
   "Stop being the backstop for that outcome. Let the gap show so the real owner steps into it.",
   "Bank the time you just freed and spend it building the next system, not refilling the old one.",
 ];

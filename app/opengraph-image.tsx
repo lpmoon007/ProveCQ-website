@@ -57,8 +57,7 @@ export default function OpengraphImage() {
             Stop betting on the wrong people.
           </div>
           <div style={{ fontSize: 30, color: "#B8B4A6", maxWidth: "920px" }}>
-            Behavioral proof of who will deliver — before you promote, hire, or
-            hand over the keys.
+            Behavioral proof of who will deliver — before you promote or hire.
           </div>
         </div>
 

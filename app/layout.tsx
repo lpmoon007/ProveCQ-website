@@ -73,7 +73,7 @@ const orgJsonLd = {
   areaServed: "US",
   knowsAbout: [
     "employee commitment",
-    "leadership readiness",
+    "development focus",
     "promotion decisions",
     "hiring",
     "employee retention",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/case-studies/accountability" },
   title: "Case Study: From Driving Results to Building Accountability",
   description:
-    "A high-grit functional leader protected results by taking over — creating a dependency loop that capped her team's accountability. How exposing the pattern and changing a few behaviors distributed ownership and freed her for strategic work.",
+    "A high-Follow-Through functional leader protected results by taking over — creating a dependency loop that capped her team's accountability. How exposing the pattern and changing a few behaviors distributed ownership and freed her for strategic work.",
 };
 
 const ARTICLE_LD = {
@@ -20,7 +20,7 @@ const ARTICLE_LD = {
   author: { "@type": "Organization", name: "Be Legendary" },
   publisher: { "@type": "Organization", name: "Be Legendary" },
   about:
-    "A leadership behavior-change case study: converting overextended Applied Grit into distributed accountability.",
+    "A leadership behavior-change case study: converting overextended Follow-Through into distributed accountability.",
 };
 
 const SNAPSHOT = [
@@ -75,7 +75,7 @@ export default function CaseStudyAccountabilityPage() {
       <Nav />
       <PageHero
         crumb="Case studies › From driving results to building accountability"
-        eyebrow="Applied Grit, overextended"
+        eyebrow="Follow-Through, overextended"
         title="From driving results to building accountability"
       >
         Her greatest strength &mdash; the will to make the outcome happen
@@ -125,7 +125,7 @@ export default function CaseStudyAccountabilityPage() {
               The leadership constraint
             </h2>
             <p className="m-0 mb-3 text-[17px] leading-[1.7] text-[#3A362C]">
-              Her strongest trait was <strong>Applied Grit</strong> &mdash; she
+              Her strongest signal was <strong>Follow-Through</strong> &mdash; she
               would keep working until the outcome was achieved. Overextended,
               that strength inverted:
             </p>
@@ -193,8 +193,12 @@ export default function CaseStudyAccountabilityPage() {
             </div>
             <p className="m-0 mt-[22px] text-[13px] text-[#8A8474]">
               Anonymized and generalized to protect client confidentiality. CQ
-              informs development and investment decisions, not adverse
-              employment actions.
+              results may be used to identify coaching focus areas, allocate
+              development investment, design team interventions, and support
+              individual self-directed growth. CQ results may not be used, in whole
+              or in part, as a factor in hiring, candidate screening, termination,
+              demotion, discipline, compensation, or as a gate on promotion
+              eligibility.
             </p>
           </div>
         </Container>

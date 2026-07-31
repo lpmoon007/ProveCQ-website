@@ -95,7 +95,7 @@ const FAQ = [
   },
   {
     q: "Can you measure Capacity objectively?",
-    a: "You can measure the behavior that reveals it. A Prove cycle scores Initiative, Applied Grit, and Learnability from about six weeks of real behavior — voluntary action, follow-through under pressure, and how fast someone levels up. That gives the Capacity box evidence to rest on instead of a hunch.",
+    a: "You can measure the behavior that reveals it. A Prove cycle scores Initiative, Follow-Through, and Learnability from about six weeks of real behavior — voluntary action, follow-through under pressure, and how consistently someone acts on feedback. That gives the Capacity box evidence to rest on instead of a hunch.",
   },
 ];
 
@@ -150,6 +150,11 @@ export default function EosGwcPage() {
               it surface over time as you watch someone work. Capacity is the one
               most teams guess on. Prove measures Capacity from behavior, so all
               three letters rest on evidence instead of a checkbox.
+            </p>
+            <p className="m-0 mt-4 text-[13.5px] leading-[1.55] text-[#A8A290]">
+              A CQ result reflects observed behavior during a defined window and
+              is valid for twelve months. Anyone assessed receives their own
+              result and may request re-assessment at any time.
             </p>
           </div>
         </Container>

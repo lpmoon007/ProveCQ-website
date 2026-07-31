@@ -35,12 +35,12 @@ const RULES = [
   },
   {
     title: "2. A signal, not the final word",
-    body: "CQ is one input, paired with structured interviews, work samples, references, and real job requirements. You make the call — it's a conversation starter, never a gate.",
+    body: "CQ results may be used to identify coaching focus areas, allocate development investment, design team interventions, and support individual self-directed growth. CQ results may not be used, in whole or in part, as a factor in hiring, candidate screening, termination, demotion, discipline, compensation, or as a gate on promotion eligibility.",
     dark: false,
   },
   {
     title: "3. Behavior, not identity",
-    body: "Scoring is blind to race, gender, age, religion, disability, and every protected class. We don't collect or use identity data — and neither should you when reading a result.",
+    body: "Scoring does not collect or store protected characteristics such as race, gender, age, religion, or disability. We don't collect or use identity data — and neither should you when reading a result.",
     dark: false,
   },
   {
@@ -50,7 +50,7 @@ const RULES = [
   },
   {
     title: "5. Be transparent",
-    body: "Tell people what the assessment is, what it measures (Initiative, Applied Grit, Learnability), and how it will be used — as one part of the process. Transparency builds trust.",
+    body: "Tell people what the assessment is, what it measures (Initiative, Follow-Through, Learnability), and how it will be used — as one part of the process. Transparency builds trust.",
     dark: false,
   },
   {
@@ -123,6 +123,11 @@ export default function EthicsPage() {
             support before taking on a higher-scope or more ambiguous role. Many
             people do their best work, for years, in well-defined roles. Using a
             score to rank human worth is not just unhelpful — it&rsquo;s wrong.
+          </p>
+          <p className="m-0 mb-8 text-[14px] leading-[1.65] text-content-faint">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
           </p>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="rounded-[18px] border border-edge-light bg-white p-7">

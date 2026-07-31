@@ -73,7 +73,7 @@ const FAQ = [
     a: "A high performer delivers results in their current role — real, present value. A high-potential employee shows promise for a future, bigger role. The catch is that performance is role-bound (being great at today's job says little about a different one), and “potential” is usually a subjective judgment that's easy to inflate with confidence and polish.",
   },
   {
-    q: "What is a high-commitment (high-CQ) employee?",
+    q: "What is a high-commitment employee?",
     a: "A high-commitment employee actively takes initiative to grow, seeks out hard problems, and follows through when it gets difficult. Unlike performance (present) or potential (a guess about the future), commitment shows up as observable behavior under pressure — which makes it both measurable and predictive of who can carry more.",
   },
   {
@@ -212,7 +212,7 @@ export default function HighsPage() {
             differences only show up under pressure and over time. None of the
             three is a &ldquo;bad&rdquo; employee &mdash; a high performer and a
             genuine high-potential are both real assets. The claim is narrower:
-            for a bigger, more ambiguous role, commitment is the trait that
+            for a bigger, more ambiguous role, commitment is the signal that
             predicts who carries it.
           </p>
         </Container>
@@ -224,7 +224,7 @@ export default function HighsPage() {
             Why the mix-up is so expensive
           </h2>
           <p className="m-0 mb-4 text-[17px] leading-[1.7] text-content-muted">
-            Confusing performance for readiness is how a brilliant individual
+            Confusing performance for development focus is how a brilliant individual
             contributor gets promoted into a manager&rsquo;s seat they never
             wanted &mdash; the{" "}
             <Link href="/guides/failed-promotion" className="font-semibold text-green">
@@ -282,9 +282,14 @@ export default function HighsPage() {
             Bet on the one you can measure.
           </h2>
           <p className="m-0 mb-8 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Prove scores commitment behavior &mdash; Initiative, Applied Grit, and
+            Prove scores commitment behavior &mdash; Initiative, Follow-Through, and
             Learnability &mdash; from real work, so your next promotion rests on
             proof, not a label. Book a call, or start with the free diagnostic.
+          </p>
+          <p className="m-0 mb-8 text-[13px] leading-[1.55] text-[#CFEBDC]">
+            A CQ result reflects observed behavior during a defined window and is
+            valid for twelve months. Anyone assessed receives their own result and
+            may request re-assessment at any time.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[17px]">
