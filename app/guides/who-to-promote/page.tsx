@@ -29,7 +29,7 @@ const WHY = [
   {
     n: "03",
     h: "No test before the bet",
-    b: "You hand over authority first and find out if they can handle it second. Prove reverses that order.",
+    b: "You hand over authority first and find out if they can handle it second — instead of building the behavior while the stakes are still low.",
   },
 ];
 
@@ -79,7 +79,7 @@ const FAQ = [
   },
   {
     q: "How can you test someone before promoting them?",
-    a: "Give a slice of the future role first: a stretch project, a temporary lead role, or ownership of a hard problem, then watch how they handle it. A Prove cycle formalizes this by scoring Initiative, Follow-Through, and Learnability from six weeks of real behavior, so you bet on evidence instead of hope.",
+    a: "Give a slice of the future role first: a stretch project, a temporary lead role, or ownership of a hard problem, then watch how they handle it. A Prove cycle supports this as a development aid: over a 42-day cycle it shows a person where to focus development on Initiative, Follow-Through, and Learnability, so they can build the behavior before the stakes rise. It informs growth — the promotion decision stays yours.",
   },
 ];
 
@@ -300,11 +300,11 @@ export default function WhoToPromotePage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            Prove your next promotion.
+            Develop the behavior a bigger role needs.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call and we will show you how a Prove cycle de-risks your next
-            big promotion decision.
+            Book a call and we will show you how a Prove cycle helps a person
+            build one behavior over a 42-day cycle.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

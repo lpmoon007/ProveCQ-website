@@ -30,7 +30,7 @@ const GLOSSARY_JSONLD = `{
     {"@type":"DefinedTerm","name":"Quality of hire","description":"A measure of how well a new hire performs and stays, ideally assessed by behavior in the first 90 days."},
     {"@type":"DefinedTerm","name":"GWC (Gets it, Wants it, Capacity)","description":"An EOS framework for evaluating whether a person fits a seat; Capacity is the component Prove makes measurable."},
     {"@type":"DefinedTerm","name":"Proactive Start","description":"A sub-behavior of Initiative: starting on what needs doing before being asked or assigned, rather than waiting for direction."},
-    {"@type":"DefinedTerm","name":"Follow-Through","description":"A sub-behavior of Initiative: carrying work all the way to done — especially the unglamorous last mile — not just starting strong."},
+    {"@type":"DefinedTerm","name":"Closes the loop","description":"A sub-behavior of Initiative: carrying work all the way to done — especially the unglamorous last mile — not just starting strong."},
     {"@type":"DefinedTerm","name":"Resourcefulness","description":"A sub-behavior of Initiative: finding a way around obstacles with the access and tools at hand instead of stalling until the path is cleared."},
     {"@type":"DefinedTerm","name":"Resilience","description":"A sub-behavior of Follow-Through: recovering from setbacks and staying in the work after a failure rather than deflating or disengaging."},
     {"@type":"DefinedTerm","name":"Ownership","description":"A sub-behavior of Follow-Through: taking responsibility for outcomes — including the messy and shared ones — instead of assigning blame."},
@@ -54,7 +54,7 @@ const SUBTRAITS: {
     href: "/guides/the-science-behind-cq",
     items: [
       { name: "Proactive Start", def: "Starting on what needs doing before being asked or assigned — moving first instead of waiting for direction." },
-      { name: "Follow-Through", def: "Carrying work all the way to done, especially the unglamorous last mile — not just starting strong." },
+      { name: "Closes the loop", def: "Carrying work all the way to done, especially the unglamorous last mile — not just starting strong." },
       { name: "Resourcefulness", def: "Finding a way around obstacles with the access and tools at hand, instead of stalling until someone clears the path." },
     ],
   },

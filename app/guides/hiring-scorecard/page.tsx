@@ -122,11 +122,10 @@ const TONE_LABEL: Record<Anchor["tone"], string> = {
   red: "text-signal-red",
 };
 
-const DECISIONS = [
-  { band: "13–15", rec: "Strong yes", note: "High signal across all three, and it matches your read. Move fast." },
-  { band: "10–12", rec: "Yes", note: "Solid evidence with a soft spot or two — worth a confirming reference or work sample." },
-  { band: "6–9", rec: "Hold / probe", note: "Mixed, or your score and your gut disagree. That gap is the signal — dig into it next round before deciding." },
-  { band: "3–5", rec: "No", note: "Low signal with red flags. A polished interview won't change what the behavior is telling you." },
+const READS = [
+  { case: "They agree", rec: "Trust the read", note: "Your scores and your gut point the same way. Bring the specific examples to the debrief so the whole panel reacts to evidence, not impressions." },
+  { case: "They disagree", rec: "Probe the gap", note: "Your scores and your instinct diverge. That gap is the signal — it's where charm inflates a weak answer, or where a quiet operator gets underrated. Dig into it in the next round." },
+  { case: "Thin evidence", rec: "Get more signal", note: "You couldn't tie a rating to a concrete example. Ask for a work sample or another example before you lean on the interview at all." },
 ];
 
 const howToJsonLd = {
@@ -138,9 +137,9 @@ const howToJsonLd = {
   step: [
     { "@type": "HowToStep", position: 1, name: "Ask behavioral questions", text: "Ask for specific past examples across Initiative, Follow-Through, and Learnability." },
     { "@type": "HowToStep", position: 2, name: "Rate each signal 1–5", text: "Score each signal against the anchors, and write down the exact example behind the score." },
-    { "@type": "HowToStep", position: 3, name: "Total the score out of 15", text: "Add the three signal scores for an overall read from 3 to 15." },
-    { "@type": "HowToStep", position: 4, name: "Check it against your gut", text: "Compare the score to your overall impression. Where they disagree, probe that gap before deciding." },
-    { "@type": "HowToStep", position: 5, name: "Choose the next step", text: "Map the total to a recommendation: strong yes, yes, hold and probe, or no." },
+    { "@type": "HowToStep", position: 3, name: "Review the evidence together", text: "Read the three signal scores next to the examples you noted, so the read rests on what candidates actually said and did." },
+    { "@type": "HowToStep", position: 4, name: "Check it against your gut", text: "Compare your scores to your overall impression. Where they disagree, probe that gap in the next round." },
+    { "@type": "HowToStep", position: 5, name: "Bring the notes to the debrief", text: "Take the scored examples into the hiring conversation so the panel discusses evidence, not impressions." },
   ],
 };
 
@@ -155,7 +154,7 @@ const FAQ = [
   },
   {
     q: "How do you score a behavioral interview?",
-    a: "Ask for a specific past example for each trait, rate it 1–5 against the anchors, and note the evidence. Total the three scores out of 15, then check that total against your overall gut read. Where the number and your instinct disagree, that's exactly where to probe in the next round.",
+    a: "Ask for a specific past example for each trait, rate it 1–5 against the anchors, and note the evidence. Then read your scores next to the examples and check them against your overall gut read. Where a score and your instinct disagree, that's exactly where to probe in the next round.",
   },
   {
     q: "Should a scorecard be the only thing you hire on?",
@@ -192,8 +191,8 @@ export default function HiringScorecardPage() {
       >
         The confident talker scores high in your head; the quiet operator gets
         underrated. A simple scorecard fixes that &mdash; rate every candidate
-        1&ndash;5 on the three behaviors that predict who delivers, so you decide
-        on evidence, not the last good impression. Free, no sign-up.
+        1&ndash;5 on three concrete behaviors, so you capture evidence, not the
+        last good impression. Free, no sign-up.
       </PageHero>
 
       <ArticleMeta
@@ -257,24 +256,26 @@ export default function HiringScorecardPage() {
       <Section tone="paper2">
         <Container className="max-w-[820px]">
           <h2 className="mb-4 font-display text-[26px] font-bold tracking-[-.02em] sm:text-[32px]">
-            Add it up, then check it against your gut
+            Read the scores, then check them against your gut
           </h2>
           <p className="m-0 mb-6 text-[17px] leading-[1.7] text-content-muted">
-            Total the three signal scores for a read out of 15. Then do the one
-            step most interviewers skip: ask whether the number matches your
-            overall impression. When they agree, trust it. When they don&rsquo;t,{" "}
+            Lay the three signal scores next to the examples you wrote down. Then
+            do the one step most interviewers skip: ask whether that read matches
+            your overall impression. When they agree, trust it. When they
+            don&rsquo;t,{" "}
             <strong>that disagreement is the most valuable signal in the room</strong>{" "}
             &mdash; it&rsquo;s where charm inflates a weak candidate, or where a
-            quiet one is being underrated.
+            quiet one is being underrated. The scorecard sharpens the
+            conversation; it doesn&rsquo;t make the call for you.
           </p>
           <div className="flex flex-col gap-2.5">
-            {DECISIONS.map((d) => (
+            {READS.map((d) => (
               <div
-                key={d.band}
-                className="grid grid-cols-1 gap-1 rounded-[12px] border border-edge-light bg-white px-5 py-3.5 sm:grid-cols-[90px_130px_1fr] sm:items-baseline sm:gap-3"
+                key={d.case}
+                className="grid grid-cols-1 gap-1 rounded-[12px] border border-edge-light bg-white px-5 py-3.5 sm:grid-cols-[130px_140px_1fr] sm:items-baseline sm:gap-3"
               >
                 <span className="font-display text-[16px] font-bold text-content">
-                  {d.band}
+                  {d.case}
                 </span>
                 <span className="text-[14px] font-bold text-green">{d.rec}</span>
                 <span className="text-[14px] leading-[1.5] text-content-muted">
@@ -334,12 +335,13 @@ export default function HiringScorecardPage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[760px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            A scorecard sharpens the interview. Proof settles it.
+            The interview is a sample. Development is the work.
           </h2>
           <p className="m-0 mb-8 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Even a well-scored interview only samples one hour. A Prove cycle
-            scores the same three behaviors from six weeks of real work &mdash; so
-            your final call rests on proof, not a good day in a conference room.
+            A scorecard sharpens one hour in a room. Prove picks up after the
+            hire &mdash; it follows the same three behaviors across real work, so
+            you can see where to focus development and build one behavior at a time
+            over a 42-day cycle.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[17px]">

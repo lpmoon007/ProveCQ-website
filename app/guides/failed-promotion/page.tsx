@@ -35,8 +35,8 @@ const MISMATCHES = [
 
 const PREVENT = [
   {
-    h: "Prove before you promote",
-    b: "Run a scoped stretch that demands the exact behavior the new role needs — and watch what happens.",
+    h: "Develop the behavior first",
+    b: "Run a scoped stretch that demands the exact behavior the new role needs — and coach it while the stakes are still low.",
   },
   {
     h: "Coach the gap first",
@@ -294,11 +294,11 @@ export default function FailedPromotionPage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            De-risk the next promotion.
+            Build the behavior before the title.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call and we will show you how to prove readiness before the
-            title change.
+            Book a call and we will show you how a Prove cycle helps a person
+            build the behavior a bigger role needs.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

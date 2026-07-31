@@ -36,8 +36,8 @@ const GAP = [
 
 const PLAN = [
   {
-    h: "Prove readiness",
-    b: "Run a scoped stretch to see who actually rises when given more.",
+    h: "Watch who rises",
+    b: "Hand out a scoped stretch and see who steps up when given more — real behavior, not assumption.",
   },
   {
     h: "Coach the specific gap",
@@ -274,7 +274,9 @@ export default function SuccessionPlanningPage() {
             Build your bench before you need it.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call to see how Prove maps development focus for your key roles.
+            Book a call to see how Prove maps development focus for your key roles
+            &mdash; where to coach a successor, one behavior at a time. You still
+            make the call; Prove shows you what to build.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

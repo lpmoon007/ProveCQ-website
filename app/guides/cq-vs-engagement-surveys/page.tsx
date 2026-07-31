@@ -10,7 +10,7 @@ import { ArticleMeta } from "@/components/ArticleMeta";
 export const metadata: Metadata = {
   title: "CQ vs. Engagement Surveys: Why Feelings Don't Predict Delivery",
   description:
-    "Engagement surveys measure how employees feel; the Commitment Quotient measures how they behave under pressure. Here's why high engagement scores can hide poor delivery — and what to measure instead to know who will actually perform.",
+    "Engagement surveys measure how employees feel; the Commitment Quotient measures how they behave under pressure. Here's why high engagement scores can hide poor delivery — and what to measure instead to see where to focus development.",
   alternates: { canonical: "/guides/cq-vs-engagement-surveys" },
 };
 
@@ -26,9 +26,9 @@ const SURVEY = [
 const CQ = [
   "Measures how people behave",
   "Observed over a six-week window",
-  "Individual, decision-focused",
-  "Built for promotion & hiring bets",
-  "Predicts who's ready for more scope",
+  "Individual, development-focused",
+  "Built to focus coaching & development",
+  "Shows where to develop toward more scope",
   "Surfaces the say-do gap",
 ];
 
@@ -42,13 +42,14 @@ export default function CqVsEngagementSurveysGuidePage() {
         title="CQ vs. engagement surveys"
       >
         They answer different questions. One tells you how your team{" "}
-        <em>feels</em>. The other tells you who will <em>deliver</em>. You need
-        both — but only one predicts where to focus development.
+        <em>feels</em>. The other shows you where each person{" "}
+        <em>follows through</em>. You need both — but only one points to where to
+        focus development.
       </PageHero>
 
       <ArticleMeta
         headline="CQ vs. engagement surveys"
-        description="Engagement surveys measure how employees feel; the Commitment Quotient measures how they behave under pressure. Here's why high engagement scores can hide poor delivery — and what to measure instead to know who will actually perform."
+        description="Engagement surveys measure how employees feel; the Commitment Quotient measures how they behave under pressure. Here's why high engagement scores can hide poor delivery — and what to measure instead to see where to focus development."
         canonical="/guides/cq-vs-engagement-surveys"
         crumbs={[
           { name: "Home", url: "" },
@@ -130,9 +131,9 @@ export default function CqVsEngagementSurveysGuidePage() {
         </Container>
       </Section>
 
-      <CTASection title="Measure the behavior that predicts delivery.">
-        See how a Prove cycle scores your team on the behaviors that actually move
-        outcomes.
+      <CTASection title="See where to focus your team's development.">
+        See how a Prove cycle scores the behaviors behind follow-through &mdash; so
+        you know where to coach and build over the next cycle.
       </CTASection>
 
       <RelatedGuides current="/guides/cq-vs-engagement-surveys" />

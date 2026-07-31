@@ -277,11 +277,13 @@ export default function HireFollowThroughPage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            Hire the doers.
+            Hire the doer. Then grow the behavior.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call to see how Prove screens candidates on behavior from day
-            one.
+            A work sample sharpens the hire. Prove takes it from there &mdash; once
+            someone&rsquo;s on the team, it follows initiative, follow-through, and
+            learnability across real work, so you can see where to focus
+            development and build one behavior over a 42-day cycle.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

@@ -68,7 +68,7 @@ const FAQ = [
   },
   {
     q: "How does behavioral proof help with the promote-versus-hire decision?",
-    a: "Behavioral proof replaces the gut call with a signal built from observed behavior. A Prove cycle scores Initiative, Follow-Through, and Learnability from several weeks of real work, so you can compare an internal candidate and an external one on the same evidence — capacity to do the next job — rather than on charm, tenure, or a strong interview.",
+    a: "Behavioral proof — observed behavior rather than charm, tenure, or a strong interview — gives you something concrete to reason about when you weigh the two paths. Prove itself is a development aid, not a hiring input: a Prove cycle shows a person where to focus development on Initiative, Follow-Through, and Learnability over a defined window. Use it to grow people; keep the promote-versus-hire call a human judgment.",
   },
 ];
 
@@ -278,11 +278,11 @@ export default function PromoteVsHirePage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            Make the call on proof.
+            Develop people on proof.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call to see how Prove compares internal and external candidates
-            on behavior.
+            Book a call to see how Prove helps a person build the behavior a
+            bigger role needs.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

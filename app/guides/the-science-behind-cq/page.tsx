@@ -110,7 +110,7 @@ const MAPPING = [
   {
     dim: "Initiative",
     from: "Action Orientation",
-    sub: "Proactive Start · Follow-Through · Resourcefulness",
+    sub: "Proactive Start · Closes the loop · Resourcefulness",
   },
   {
     dim: "Follow-Through",

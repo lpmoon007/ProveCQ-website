@@ -36,7 +36,7 @@ const COMPARISON = [
   {
     row: "Time direction",
     review: "Backward — rates what already happened.",
-    prove: "Forward — measures behavior that predicts what comes next.",
+    prove: "Forward — shows the behavior to develop next.",
   },
   {
     row: "Cadence",
@@ -49,14 +49,14 @@ const COMPARISON = [
     prove: "Observed behavior under pressure, not a single impression.",
   },
   {
-    row: "What it predicts",
+    row: "What it surfaces",
     review: "Mastery of the current role.",
-    prove: "Readiness to carry more — initiative, follow-through, learnability.",
+    prove: "Where to focus development — initiative, follow-through, learnability.",
   },
   {
-    row: "Decision it supports",
+    row: "What it supports",
     review: "Compensation and the HR record.",
-    prove: "Promotion, hand-off, and “can they carry more?”",
+    prove: "Development and coaching — where to grow someone and where added structure helps.",
   },
 ];
 
@@ -96,7 +96,7 @@ const PROMOTION_CALL = [
   "Score the three forward-looking signals: initiative, follow-through, and learnability.",
   "Look at conduct under pressure — the hard problem, not the easy quarter.",
   "Separate the promotion decision from the compensation cycle so recency bias doesn't drive it.",
-  "Use the review for the record and the raise; use the proof for who carries more.",
+  "Use the review for the record and the raise; use behavioral proof to see where to develop someone toward more scope. You still make the call.",
 ];
 
 const FAQ = [
@@ -110,15 +110,15 @@ const FAQ = [
   },
   {
     q: "What's the alternative to performance reviews?",
-    a: "You don't have to replace them. Reviews are genuinely good for compensation, calibration, and the HR record. The alternative is to add a forward-looking, continuous measure for the decisions reviews can't support — a Prove cycle scores commitment behavior (initiative, follow-through, learnability) from weeks of real work, under pressure, so the promotion call rests on proof rather than the last quarter.",
+    a: "You don't have to replace them. Reviews are genuinely good for compensation, calibration, and the HR record. The alternative is to add a forward-looking, continuous view of development — a Prove cycle scores commitment behavior (initiative, follow-through, learnability) from weeks of real work, under pressure, so a manager can see where to coach someone toward more scope. It is a development aid, not a decision that decides who gets promoted; the manager still owns that call.",
   },
   {
     q: "Prove vs performance reviews?",
-    a: "A performance review is a backward-looking, infrequent rating of the current role that supports pay and the record. Prove is a forward-looking, continuous measure of commitment behavior that supports the promotion, hand-off, and 'can they carry more?' decision. They answer different questions, so the strongest teams run both.",
+    a: "A performance review is a backward-looking, infrequent rating of the current role that supports pay and the record. Prove is a forward-looking, continuous measure of commitment behavior that shows where to focus someone's development — the coaching and added structure that help them grow toward more scope. They answer different questions, so the strongest teams run both. Neither one decides a promotion; the manager does.",
   },
   {
     q: "Should you replace reviews with Prove?",
-    a: "No. Keep performance reviews for what they do well — compensation and the HR record — and use Prove where reviews are weak: the forward-looking promotion, hand-off, and readiness decisions. Using them together gives you both a defensible record of past performance and real proof of who will deliver next.",
+    a: "No. Keep performance reviews for what they do well — compensation and the HR record — and use Prove where reviews are weak: seeing, forward-looking and continuously, where to develop someone's initiative, follow-through, and learnability. Using them together gives you both a defensible record of past performance and a clear read on where to coach next. Prove informs development; it does not decide who advances.",
   },
 ];
 
@@ -171,8 +171,9 @@ export default function VsPerformanceReviewsPage() {
               toward the last quarter &mdash; and they rate the current role,
               which is a weak predictor of readiness for a bigger one. Prove
               measures forward-looking commitment behavior continuously and under
-              pressure. Keep reviews for pay and the record; use Prove for the
-              promotion.
+              pressure. Keep reviews for pay and the record; use Prove to see
+              where to develop someone toward more scope. You still make the
+              promotion call.
             </p>
           </div>
         </Container>
@@ -282,13 +283,15 @@ export default function VsPerformanceReviewsPage() {
             <p className="m-0 text-[17px] leading-[1.65] text-content-muted">
               This is not a case for scrapping reviews. Keep them for
               compensation and the HR record, where a documented rating cycle
-              does real work. Then bring forward-looking proof to the moments a
-              rating can&rsquo;t reach: deciding{" "}
+              does real work. Then bring forward-looking behavioral proof to the
+              questions a rating can&rsquo;t reach: where to develop someone as you
+              weigh{" "}
               <Link href="/guides/who-to-promote" className="font-semibold text-green hover:underline">
                 who to promote
               </Link>
-              , handing off scope, and asking whether someone can carry more. One
-              measure defends the past; the other predicts the next role.
+              , how to prepare them for a hand-off, and where added structure
+              helps them carry more. One measure defends the past; the other shows
+              where to grow. The people decision stays yours.
             </p>
             <p className="m-0 mt-6 text-[13px] leading-[1.6] text-content-muted">
               A CQ result reflects observed behavior during a defined window and
@@ -361,12 +364,12 @@ export default function VsPerformanceReviewsPage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            Promote on proof, not the last quarter.
+            Develop the behavior a review can&rsquo;t see.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call to see how Prove measures the forward-looking behavior a
-            review can&rsquo;t &mdash; so your next promotion is a bet you can
-            defend.
+            Book a call to see how Prove surfaces the forward-looking behavior a
+            review can&rsquo;t &mdash; so you know where to focus development and
+            coaching next.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">

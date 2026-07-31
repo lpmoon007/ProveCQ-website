@@ -114,7 +114,7 @@ const FAQ = [
   },
   {
     q: "How do you test for follow-through before hiring?",
-    a: "Use the interview to filter, then prove it. Define what follow-through means in the role, put a genuinely hard piece of work in front of the person early, and watch how they behave over the first 90 days rather than how they answer in a single conversation. A Prove cycle scores Initiative, Follow-Through, and Learnability from real behavior so the read is evidence, not a gut feel.",
+    a: "Use the interview to filter, then watch the work. Define what follow-through means in the role, put a genuinely hard piece of work in front of the person early, and watch how they behave over the first 90 days rather than how they answer in a single conversation. Once someone is on the team, a Prove cycle scores Initiative, Follow-Through, and Learnability from real behavior — a development read that shows a manager where to coach and where added structure helps, not a gate on the offer.",
   },
 ];
 
@@ -352,11 +352,12 @@ export default function VsResumesInterviewsPage() {
       <section className="bg-green px-5 py-16 text-center text-white sm:px-8 md:py-20 on-dark">
         <div className="mx-auto max-w-[720px]">
           <h2 className="m-0 mb-4 font-display text-[30px] font-bold leading-[1.06] tracking-[-.02em] sm:text-[38px]">
-            Hire the follow-through, not the first impression.
+            Develop follow-through from day one.
           </h2>
           <p className="m-0 mb-7 text-[18px] leading-[1.6] text-[#E4F5EB]">
-            Book a call to see how Prove confirms who actually delivers &mdash;
-            before you commit.
+            Book a call to see how a Prove cycle surfaces a new hire&rsquo;s
+            follow-through on real work &mdash; so their manager knows where to
+            focus coaching in the first 90 days.
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <ButtonLink href={site.bookingUrl} variant="dark" className="text-[16px]">
