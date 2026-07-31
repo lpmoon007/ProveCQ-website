@@ -58,11 +58,6 @@ const STEPS = [
 
 const FLYWHEEL = [
   {
-    tag: "HIRE",
-    title: "Screen for commitment",
-    body: "Score candidates on behavior from day one — no resumes, no charmers. Hire the doers.",
-  },
-  {
     tag: "PROVE",
     title: "Validate under pressure",
     body: "Confirm or disprove the signal during onboarding and before every big bet — a promotion, a project, the keys.",
@@ -359,11 +354,11 @@ export default function HomePage() {
               Bet on proof at every stage.
             </h2>
             <p className="mx-auto m-0 max-w-[600px] text-[17px] text-[#B8B4A6]">
-              Prove isn&rsquo;t a one-off. It becomes how you hire, promote, and
-              keep your best people in motion.
+              Prove isn&rsquo;t a one-off. It becomes how you develop and keep
+              your best people in motion.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-[18px] md:grid-cols-3">
+          <div className="mx-auto grid max-w-[720px] grid-cols-1 gap-[18px] md:grid-cols-2">
             {FLYWHEEL.map((f) => (
               <div
                 key={f.tag}

@@ -11,10 +11,10 @@ import { site } from "@/lib/site";
 const CANONICAL = "/guides/the-science-behind-cq";
 
 const DESCRIPTION =
-  "Engagement measures how people feel — it was never built to predict who delivers. The five first-principles behavioral signals behind the Commitment Quotient, and how they resolve into the score.";
+  "Engagement measures how people feel. The five first-principles behavioral signals behind the Commitment Quotient, and how they resolve into the score.";
 
 export const metadata: Metadata = {
-  title: "The 5 Behavioral Signals That Predict Value at Work",
+  title: "How CQ Works: The Behavioral Signals Behind the Score",
   description: DESCRIPTION,
   keywords: [
     "behavioral signals that predict performance",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "The 5 Behavioral Signals That Predict Value at Work",
+    title: "How CQ Works: The Behavioral Signals Behind the Score",
     description:
-      "The first-principles method behind the Commitment Quotient — five foundational, observable behaviors that predict who delivers.",
+      "The first-principles method behind the Commitment Quotient — five foundational, observable behaviors and how they resolve into the score.",
     url: CANONICAL,
     type: "article",
   },
@@ -181,9 +181,9 @@ export default function ScienceBehindCQPage() {
       />
       <Nav />
       <PageHero
-        crumb="Guides › The science behind CQ"
+        crumb="Guides › How CQ works"
         eyebrow="Methodology"
-        title={<>The 5 behavioral signals that actually predict value at work.</>}
+        title={<>How CQ works: the behavioral signals behind the score.</>}
       >
         Engagement tells you how people <em>feel</em> about work. It was never
         built to tell you who will <em>deliver</em> when it gets hard. So we
@@ -321,8 +321,8 @@ export default function ScienceBehindCQPage() {
             How five foundations become the CQ score
           </h2>
           <p className="m-0 mb-6 text-[17px] leading-[1.7] text-content-muted">
-            You don&rsquo;t score five separate numbers in a hiring or promotion
-            call &mdash; that&rsquo;s too much to act on. For most decisions,{" "}
+            You don&rsquo;t act on five separate numbers &mdash; that&rsquo;s too
+            much to hold at once. For most development decisions,{" "}
             <strong>CQ Core</strong> resolves the foundations into three
             measured dimensions:
           </p>
